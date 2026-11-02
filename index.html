@@ -3,765 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LMS Tracker</title>
-<style>
-:root {
-  --bg: #f7f6f2; --panel: #ffffff; --fg: #1d1c1a; --muted: #6b6860; --line: #e3e0d8;
-  --accent: #c2603f; --ok: #2f7a4a; --warn: #a86a12; --bad: #b3352b; --chip: #f1efe9;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --serif: Georgia, "Times New Roman", serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #191816; --panel: #23221f; --fg: #edeae3; --muted: #a29e94; --line: #3a3833;
-    --accent: #e0805f; --ok: #6cc28c; --warn: #e3a94a; --bad: #ef7d72; --chip: #2d2b27; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.45; }
-.wrap { max-width: 1200px; margin: 0 auto; padding: 32px 16px 48px; display: flex; flex-direction: column; gap: 24px; }
-h1 { font-family: var(--serif); font-weight: 400; font-size: 2rem; margin: 0 0 6px; }
-.head p { margin: 0; color: var(--muted); max-width: 70ch; }
-.updated { font-size: 0.8rem; color: var(--muted); margin-top: 8px !important; }
-.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; min-width: 0; }
-.card h2 { font-size: 1.1rem; font-weight: 600; margin: 0 0 4px; }
-.note { margin: 0 0 14px; color: var(--muted); font-size: 0.85rem; }
-.label { font-size: 0.8rem; color: var(--muted); margin: 0; }
-.big { font-family: var(--serif); font-size: 2rem; margin: 4px 0; font-variant-numeric: tabular-nums; }
-.big small { font-size: 1.1rem; color: var(--muted); margin-left: 6px; }
-.sub { font-size: 0.8rem; color: var(--muted); margin: 0; }
-.tablewrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
-th { text-align: left; font-weight: 600; color: var(--muted); padding: 6px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-td { padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-.num { text-align: right; }
-tr.weekstart td { border-top: 2px solid var(--line); }
-.reason { min-width: 16rem; color: var(--muted); }
-.pick { font-weight: 600; }
-.chip { display: inline-block; padding: 0 6px; border-radius: 6px; background: var(--chip); white-space: nowrap; }
-.ok { color: var(--ok); } .warn { color: var(--warn); } .bad { color: var(--bad); } .muted { color: var(--muted); }
-.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
-.tabs button { font: inherit; font-size: 0.85rem; padding: 4px 12px; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer; }
-.tabs button[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 12px; }
-ul { margin: 0; padding-left: 1.1rem; }
-li { margin-bottom: 6px; }
-.hedge { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 12px; margin-top: 16px; }
-.hedge .big { font-size: 1.4rem; }
-.bars { display: flex; flex-direction: column; gap: 8px; }
-.bar { display: grid; grid-template-columns: 7.5rem 1fr 3rem; align-items: center; gap: 10px; font-size: 0.85rem; }
-.bar .name { text-align: right; }
-.bar .track { height: 22px; background: var(--chip); border-radius: 4px; overflow: hidden; }
-.bar .fill { height: 100%; background: var(--accent); border-radius: 4px; }
-.bar .val { color: var(--muted); font-variant-numeric: tabular-nums; }
-footer { font-size: 0.8rem; color: var(--muted); }
-footer a { color: inherit; }
-</style>
+<title>Last Man Standing</title>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div class="wrap">
   <header class="head">
-    <h1>Last Man Standing tracker</h1>
-    <p>LOS Week 1 is PL gameweek 10 (6 to 8 November). Three entries, three different teams each week. Arsenal at home to Hull is the banker; the hard week is Week 3. Prices re-checked on the Friday of each week.</p>
-    <p class="updated">Last updated: <span id="updated"></span></p>
+    <h1>Last Man Standing</h1>
+    <p>All the LMS games I'm in. Click a game to see the plan, picks and fixtures.</p>
   </header>
 
-  <section class="tiles">
-    <div class="card"><p class="label">Entries remaining</p><p class="big" id="t-remaining"></p><p class="sub" id="t-remaining-d"></p></div>
-    <div class="card"><p class="label">Knocked out last week</p><p class="big"><span id="t-ko"></span><small id="t-ko-pct"></small></p><p class="sub" id="t-ko-d"></p></div>
-    <div class="card"><p class="label">My entries alive</p><p class="big" id="t-alive"></p><p class="sub" id="t-alive-d"></p></div>
-    <div class="card"><p class="label">Next pick</p><p class="big"><span id="t-next"></span><small id="t-next-pct"></small></p><p class="sub" id="t-next-d"></p></div>
-  </section>
-
-  <section class="card">
-    <h2>My entries</h2>
-    <p class="note">Actual picks, filled in from the player sheet each week.</p>
-    <div class="tablewrap"><table>
-      <thead><tr><th>Entry</th><th>Status</th><th>Week 1</th><th>Week 2</th><th>Week 3</th></tr></thead>
-      <tbody id="entries"></tbody>
-    </table></div>
-  </section>
-
-  <section class="card">
-    <h2>Plan: LOS Weeks 1 to 3</h2>
-    <p class="note">No two entries on the same team in the same week. Win % is the bookmaker price with the margin removed where a price exists, otherwise a goals model built on StatsUltra team ratings.</p>
-    <div class="tablewrap"><table>
-      <thead><tr><th>Week</th><th>Dates</th><th>Entry</th><th>Pick</th><th>Fixture</th><th class="num">Win %</th><th>Price source</th><th>Backup</th><th>Reason</th></tr></thead>
-      <tbody id="plan"></tbody>
-    </table></div>
-    <div class="hedge" id="hedge"></div>
-  </section>
-
-  <section class="grid2">
-    <div class="card"><h2>Flags</h2><ul id="flags"></ul></div>
-    <div class="card"><h2>Where the field will go</h2><ul id="pileons"></ul></div>
-  </section>
-
-  <section class="card">
-    <h2>The field: entries that can still use each main team</h2>
-    <p class="note">Share of remaining entries that have not used the team.</p>
-    <div class="bars" id="field"></div>
-  </section>
-
-  <section class="card">
-    <h2>Fixtures</h2>
-    <p class="note">Favourite and implied win %. Under 45% counts as no clear favourite. "My entries" shows how many of your live entries can still use the favourite.</p>
-    <div class="tabs" role="tablist" id="tabs">
-      <button type="button" role="tab" data-tab="Week 1" aria-selected="true">Week 1 (GW10)</button>
-      <button type="button" role="tab" data-tab="Week 2" aria-selected="false">Week 2 (GW11)</button>
-      <button type="button" role="tab" data-tab="Week 3" aria-selected="false">Week 3 (GW12)</button>
-      <button type="button" role="tab" data-tab="All" aria-selected="false">All</button>
+  <section>
+    <div class="section-head" style="margin-bottom:12px">
+      <h2>Active games</h2>
     </div>
-    <div class="tablewrap"><table>
-      <thead><tr><th>Week</th><th>Date</th><th>Fixture</th><th>Favourite</th><th class="num">Win %</th><th>Price source</th><th>My entries</th></tr></thead>
-      <tbody id="fixtures"></tbody>
-    </table></div>
+    <div class="games" id="active"></div>
+    <p class="empty" id="active-empty" hidden>No active games right now.</p>
   </section>
 
-  <footer>Prices from FanDuel, bet365, DraftKings and best-price comparisons; model figures from <a href="https://statsultra.com/forecasts/premier-league/">StatsUltra</a> ratings. Not betting advice.</footer>
+  <section id="finished-section" hidden>
+    <div class="section-head" style="margin-bottom:12px">
+      <h2>Finished games</h2>
+      <button type="button" class="toggle" id="toggle" aria-expanded="false"></button>
+    </div>
+    <div class="games" id="finished" hidden></div>
+  </section>
+
+  <footer>Not betting advice.</footer>
 </div>
 
 <script>
-const DATA = {
- "updated": "Monday 2 November 2026",
- "summary": [
-  {
-   "metric": "entries_remaining",
-   "value": "TBC",
-   "detail": "Send the player sheet to fill this in"
-  },
-  {
-   "metric": "knocked_out",
-   "value": "n/a",
-   "detail": "LOS Week 1 not played yet"
-  },
-  {
-   "metric": "knocked_out_pct",
-   "value": "n/a",
-   "detail": ""
-  },
-  {
-   "metric": "my_alive",
-   "value": "3 of 3",
-   "detail": "All entries live for LOS Week 1"
-  },
-  {
-   "metric": "next_pick",
-   "value": "Arsenal",
-   "detail": "Entry 1 v Hull (H) Sat 7 Nov 15:00"
-  },
-  {
-   "metric": "next_pick_pct",
-   "value": "82",
-   "detail": "FanDuel price -750 with margin removed"
-  }
- ],
- "entries": [
-  {
-   "entry": "Entry 1",
-   "status": "Alive",
-   "wk1": "Not picked yet",
-   "wk2": "",
-   "wk3": ""
-  },
-  {
-   "entry": "Entry 2",
-   "status": "Alive",
-   "wk1": "Not picked yet",
-   "wk2": "",
-   "wk3": ""
-  },
-  {
-   "entry": "Entry 3",
-   "status": "Alive",
-   "wk1": "Not picked yet",
-   "wk2": "",
-   "wk3": ""
-  }
- ],
- "plan": [
-  {
-   "id": "E1-W1",
-   "entry": "Entry 1",
-   "lms_week": "Week 1 (GW10)",
-   "dates": "6-8 Nov",
-   "pick": "Arsenal",
-   "fixture": "Arsenal v Hull (H)",
-   "win_pct": "82",
-   "source": "FanDuel",
-   "backup": "Brighton v Brentford (H) 52%",
-   "reason": "Best fixture of the week and one of Arsenal's best all season. Hull are bottom-three material. Most of the field will be here too."
-  },
-  {
-   "id": "E2-W1",
-   "entry": "Entry 2",
-   "lms_week": "Week 1 (GW10)",
-   "dates": "6-8 Nov",
-   "pick": "Liverpool",
-   "fixture": "Crystal Palace v Liverpool (A)",
-   "win_pct": "57",
-   "source": "Best prices via Wincomparator",
-   "backup": "Chelsea at Sunderland 51%",
-   "reason": "Palace have lost three of their last four and their rating is falling. Keeps Entry 2 off Arsenal."
-  },
-  {
-   "id": "E3-W1",
-   "entry": "Entry 3",
-   "lms_week": "Week 1 (GW10)",
-   "dates": "6-8 Nov",
-   "pick": "Everton",
-   "fixture": "Everton v Coventry (H)",
-   "win_pct": "55",
-   "source": "FanDuel",
-   "backup": "Man City at Forest 52% (model)",
-   "reason": "Disposable team at home to a likely relegation side. Flag: Coventry form WWLLW and Everton trending down. Everton play Newcastle tonight; re-check."
-  },
-  {
-   "id": "E1-W2",
-   "entry": "Entry 1",
-   "lms_week": "Week 2 (GW11)",
-   "dates": "21-23 Nov",
-   "pick": "Man City",
-   "fixture": "Man City v Fulham (H)",
-   "win_pct": "67",
-   "source": "Model",
-   "backup": "Chelsea v Leeds (H) 57%",
-   "reason": "Strongest home fixture of the week. Spends City before their best spot (Hull at home on 19 Dec) to buy survival in a week with few safe picks."
-  },
-  {
-   "id": "E2-W2",
-   "entry": "Entry 2",
-   "lms_week": "Week 2 (GW11)",
-   "dates": "21-23 Nov",
-   "pick": "Brighton",
-   "fixture": "Hull v Brighton (A)",
-   "win_pct": "76",
-   "source": "Model",
-   "backup": "Bournemouth v Forest (H) 55%",
-   "reason": "Highest win % of the week. Hull are the weakest side in the model. Expect a field pile-on here."
-  },
-  {
-   "id": "E3-W2",
-   "entry": "Entry 3",
-   "lms_week": "Week 2 (GW11)",
-   "dates": "21-23 Nov",
-   "pick": "Spurs",
-   "fixture": "Spurs v Ipswich (H)",
-   "win_pct": "64",
-   "source": "Model",
-   "backup": "Liverpool v Man Utd (H) 55%",
-   "reason": "Spurs are rising and Ipswich have the second-worst defence in the model. Good use of a mid-table team."
-  },
-  {
-   "id": "E1-W3",
-   "entry": "Entry 1",
-   "lms_week": "Week 3 (GW12)",
-   "dates": "27-29 Nov",
-   "pick": "Leeds",
-   "fixture": "Leeds v Coventry (H)",
-   "win_pct": "58",
-   "source": "Model",
-   "backup": "Aston Villa at Ipswich 51%",
-   "reason": "Disposable team at home to a weak side. Flag: Coventry are improving. Thin week."
-  },
-  {
-   "id": "E2-W3",
-   "entry": "Entry 2",
-   "lms_week": "Week 3 (GW12)",
-   "dates": "27-29 Nov",
-   "pick": "Crystal Palace",
-   "fixture": "Crystal Palace v Hull (H)",
-   "win_pct": "60",
-   "source": "Model",
-   "backup": "Aston Villa at Ipswich 51%",
-   "reason": "Pure disposable pick at home to the weakest side. Flag: Hull draw a lot (5 in 9) and draws knock you out. Thin week."
-  },
-  {
-   "id": "E3-W3",
-   "entry": "Entry 3",
-   "lms_week": "Week 3 (GW12)",
-   "dates": "27-29 Nov",
-   "pick": "Brighton",
-   "fixture": "Brighton v Newcastle (H)",
-   "win_pct": "69",
-   "source": "Model",
-   "backup": "Leeds v Coventry (H) 58% (clashes with Entry 1)",
-   "reason": "Best pick of a thin week. Newcastle have the leakiest defence outside the bottom four. Field likely to pile on."
-  }
- ],
- "field": [
-  {
-   "team": "Arsenal",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Man City",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Brighton",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Liverpool",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Chelsea",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Bournemouth",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Spurs",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Aston Villa",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Man Utd",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  },
-  {
-   "team": "Newcastle",
-   "share_can_use": "1",
-   "entries_can_use": "TBC"
-  }
- ],
- "fixtures": [
-  {
-   "id": "W1-EVE-COV",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Fri 6 Nov",
-   "fixture": "Everton v Coventry",
-   "favourite": "Everton",
-   "win_pct": "55",
-   "source": "FanDuel",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W1-LEE-TOT",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sat 7 Nov",
-   "fixture": "Leeds v Spurs",
-   "favourite": "Leeds",
-   "win_pct": "37",
-   "source": "FanDuel",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W1-ARS-HUL",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sat 7 Nov",
-   "fixture": "Arsenal v Hull",
-   "favourite": "Arsenal",
-   "win_pct": "82",
-   "source": "FanDuel",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W1-FUL-NEW",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sat 7 Nov",
-   "fixture": "Fulham v Newcastle",
-   "favourite": "Fulham",
-   "win_pct": "41",
-   "source": "Model",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W1-NFO-MCI",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sat 7 Nov",
-   "fixture": "Forest v Man City",
-   "favourite": "Man City",
-   "win_pct": "52",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W1-BHA-BRE",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sun 8 Nov",
-   "fixture": "Brighton v Brentford",
-   "favourite": "Brighton",
-   "win_pct": "52",
-   "source": "DraftKings / 888",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W1-CRY-LIV",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sun 8 Nov",
-   "fixture": "Crystal Palace v Liverpool",
-   "favourite": "Liverpool",
-   "win_pct": "57",
-   "source": "Best prices (Wincomparator)",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W1-IPS-AFC",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sun 8 Nov",
-   "fixture": "Ipswich v Bournemouth",
-   "favourite": "Bournemouth",
-   "win_pct": "41",
-   "source": "Best prices (Wincomparator)",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W1-SUN-CHE",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sun 8 Nov",
-   "fixture": "Sunderland v Chelsea",
-   "favourite": "Chelsea",
-   "win_pct": "51",
-   "source": "bet365",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W1-MUN-AVL",
-   "lms_week": "Week 1",
-   "gw": "GW10",
-   "date": "Sun 8 Nov",
-   "fixture": "Man Utd v Aston Villa",
-   "favourite": "Man Utd",
-   "win_pct": "42",
-   "source": "FanDuel",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W2-MCI-FUL",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Man City v Fulham",
-   "favourite": "Man City",
-   "win_pct": "67",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-AFC-NFO",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Bournemouth v Forest",
-   "favourite": "Bournemouth",
-   "win_pct": "55",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-AVL-SUN",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Aston Villa v Sunderland",
-   "favourite": "Aston Villa",
-   "win_pct": "52",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-CHE-LEE",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Chelsea v Leeds",
-   "favourite": "Chelsea",
-   "win_pct": "57",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-COV-CRY",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Coventry v Crystal Palace",
-   "favourite": "Crystal Palace",
-   "win_pct": "41",
-   "source": "Model",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W2-TOT-IPS",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Spurs v Ipswich",
-   "favourite": "Spurs",
-   "win_pct": "64",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-NEW-ARS",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sat 21 Nov",
-   "fixture": "Newcastle v Arsenal",
-   "favourite": "Arsenal",
-   "win_pct": "62",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-HUL-BHA",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sun 22 Nov",
-   "fixture": "Hull v Brighton",
-   "favourite": "Brighton",
-   "win_pct": "76",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-LIV-MUN",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Sun 22 Nov",
-   "fixture": "Liverpool v Man Utd",
-   "favourite": "Liverpool",
-   "win_pct": "55",
-   "source": "FanDuel",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W2-BRE-EVE",
-   "lms_week": "Week 2",
-   "gw": "GW11",
-   "date": "Mon 23 Nov",
-   "fixture": "Brentford v Everton",
-   "favourite": "Brentford",
-   "win_pct": "50",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-NFO-CHE",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Fri 27 Nov",
-   "fixture": "Forest v Chelsea",
-   "favourite": "Chelsea",
-   "win_pct": "44",
-   "source": "Model",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W3-LEE-COV",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sat 28 Nov",
-   "fixture": "Leeds v Coventry",
-   "favourite": "Leeds",
-   "win_pct": "58",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-MUN-BRE",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sat 28 Nov",
-   "fixture": "Man Utd v Brentford",
-   "favourite": "Man Utd",
-   "win_pct": "45",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-IPS-AVL",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sat 28 Nov",
-   "fixture": "Ipswich v Aston Villa",
-   "favourite": "Aston Villa",
-   "win_pct": "51",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-EVE-LIV",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Everton v Liverpool",
-   "favourite": "Liverpool",
-   "win_pct": "50",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-BHA-NEW",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Brighton v Newcastle",
-   "favourite": "Brighton",
-   "win_pct": "69",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-CRY-HUL",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Crystal Palace v Hull",
-   "favourite": "Crystal Palace",
-   "win_pct": "60",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-FUL-AFC",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Fulham v Bournemouth",
-   "favourite": "Bournemouth",
-   "win_pct": "49",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  },
-  {
-   "id": "W3-SUN-TOT",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Sunderland v Spurs",
-   "favourite": "Spurs",
-   "win_pct": "43",
-   "source": "Model",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "id": "W3-ARS-MCI",
-   "lms_week": "Week 3",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Arsenal v Man City",
-   "favourite": "Arsenal",
-   "win_pct": "49",
-   "source": "Model",
-   "my_entries": "Yes (3 of 3)"
-  }
- ],
- "flags": [
-  "Week 3 is thin. Only Brighton at home to Newcastle is a clear pick, so two entries go on disposable teams (Leeds, Crystal Palace).",
-  "Everton v Coventry: Coventry's form is improving and Everton's is fading. Drop to Man City at Forest if Everton look shaky.",
-  "Entry 1 spends Man City in Week 2. Their best fixture is Hull at home on 19 December. Chelsea v Leeds is the swap to save City.",
-  "Hull draw a lot. Crystal Palace v Hull in Week 3 is a pick for the win %, not for comfort."
- ],
- "pileons": [
-  "Week 1: Arsenal v Hull. Expect most of the field on it, which is why only one entry is there.",
-  "Week 2: Brighton at Hull and Man City v Fulham will take most picks.",
-  "Week 3: Brighton v Newcastle for anyone who still has Brighton.",
-  "Prices for Weeks 2 and 3 are model figures until bookmakers open markets."
- ]
-};
+const bust = '?v=' + Date.now();
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 
-const $ = (id) => document.getElementById(id);
-const pct = (x) => Math.round(x * 100) + '%';
-const cell = (text, cls) => { const td = document.createElement('td'); td.textContent = text ?? ''; if (cls) td.className = cls; return td; };
-const s = Object.fromEntries(DATA.summary.map((r) => [r.metric, r]));
-
-$('updated').textContent = DATA.updated;
-$('t-remaining').textContent = s.entries_remaining.value; $('t-remaining-d').textContent = s.entries_remaining.detail;
-$('t-ko').textContent = s.knocked_out.value; $('t-ko-pct').textContent = s.knocked_out_pct.value === 'n/a' ? '' : s.knocked_out_pct.value; $('t-ko-d').textContent = s.knocked_out.detail;
-$('t-alive').textContent = s.my_alive.value; $('t-alive-d').textContent = s.my_alive.detail;
-$('t-next').textContent = s.next_pick.value; $('t-next-pct').textContent = s.next_pick_pct.value + '%'; $('t-next-d').textContent = s.next_pick.detail;
-
-DATA.entries.forEach((r) => {
-  const tr = document.createElement('tr');
-  tr.append(cell(r.entry), cell(r.status, r.status === 'Alive' ? 'ok' : 'bad'));
-  ['wk1', 'wk2', 'wk3'].forEach((k) => tr.append(cell(r[k], r[k] === 'Not picked yet' ? 'muted' : '')));
-  $('entries').append(tr);
-});
-
-let last = null;
-DATA.plan.forEach((r) => {
-  const tr = document.createElement('tr');
-  if (last !== null && r.lms_week !== last) tr.className = 'weekstart';
-  last = r.lms_week;
-  const w = Number(r.win_pct);
-  tr.append(cell(r.lms_week), cell(r.dates), cell(r.entry), cell(r.pick, 'pick'), cell(r.fixture),
-    cell(w + '%', 'num ' + (w >= 65 ? 'ok' : w >= 55 ? '' : 'warn')), cell(r.source), cell(r.backup), cell(r.reason, 'reason'));
-  $('plan').append(tr);
-});
-
-const w1 = DATA.plan.filter((r) => r.lms_week.startsWith('Week 1')).map((r) => Number(r.win_pct) / 100);
-const hedgeItems = [
-  ['Week 1: at least one entry through, split as planned', 1 - w1.reduce((a, p) => a * (1 - p), 1)],
-  ['Week 1: all three on the favourite (one result decides all)', Math.max(...w1)],
-];
-const entries = [...new Set(DATA.plan.map((r) => r.entry))];
-entries.forEach((e) => hedgeItems.push([e + ' through all three weeks',
-  DATA.plan.filter((r) => r.entry === e).reduce((a, r) => a * Number(r.win_pct) / 100, 1)]));
-hedgeItems.forEach(([label, v]) => {
-  const d = document.createElement('div');
-  const l = document.createElement('p'); l.className = 'sub'; l.textContent = label;
-  const b = document.createElement('p'); b.className = 'big'; b.textContent = pct(v);
-  d.append(l, b); $('hedge').append(d);
-});
-
-DATA.flags.forEach((t) => { const li = document.createElement('li'); li.textContent = t; $('flags').append(li); });
-DATA.pileons.forEach((t) => { const li = document.createElement('li'); li.textContent = t; $('pileons').append(li); });
-
-DATA.field.forEach((r) => {
-  const share = Number(r.share_can_use);
-  const row = document.createElement('div'); row.className = 'bar';
-  const n = document.createElement('div'); n.className = 'name'; n.textContent = r.team;
-  const t = document.createElement('div'); t.className = 'track';
-  const f = document.createElement('div'); f.className = 'fill'; f.style.width = (share * 100) + '%'; t.append(f);
-  const v = document.createElement('div'); v.className = 'val';
-  v.textContent = r.entries_can_use && r.entries_can_use !== 'TBC' ? r.entries_can_use : pct(share);
-  row.title = r.team + ': ' + pct(share) + ' of remaining entries can still use them';
-  row.append(n, t, v); $('field').append(row);
-});
-
-function drawFixtures(tab) {
-  const tb = $('fixtures'); tb.replaceChildren();
-  DATA.fixtures.filter((r) => tab === 'All' || r.lms_week === tab).forEach((r) => {
-    const tr = document.createElement('tr');
-    const chipTd = document.createElement('td');
-    const chip = document.createElement('span');
-    chip.className = 'chip ' + (r.my_entries.startsWith('Yes') ? 'ok' : r.my_entries.startsWith('Used') ? 'bad' : 'warn');
-    chip.textContent = r.my_entries; chipTd.append(chip);
-    tr.append(cell(r.lms_week), cell(r.date), cell(r.fixture), cell(r.favourite), cell(r.win_pct + '%', 'num'), cell(r.source), chipTd);
-    tb.append(tr);
-  });
+function stat(label, value) {
+  const d = el('div');
+  d.append(el('p', 'label', label), el('p', 'big', value));
+  return d;
 }
-document.querySelectorAll('#tabs button').forEach((b) => b.addEventListener('click', () => {
-  document.querySelectorAll('#tabs button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
-  drawFixtures(b.dataset.tab);
-}));
-drawFixtures('Week 1');
+
+function card(g) {
+  const s = g.summary || {};
+  const a = el('a', 'card game' + (g.status === 'finished' ? ' finished' : ''));
+  a.href = 'game.html?g=' + encodeURIComponent(g.slug);
+  const top = el('div', 'row');
+  top.append(el('h2', null, g.name), el('span', 'status ' + g.status, g.status === 'finished' ? 'Finished' : 'Active'));
+  a.append(top, el('p', 'sub', (g.competition || '') + ' · started ' + (g.started || '')));
+  const stats = el('div', 'stats');
+  stats.append(
+    stat('My entries alive', s.my_alive + ' of ' + s.my_total),
+    stat('Entries left', String(s.entries_remaining ?? '—')),
+    stat('Out last week', String(s.knocked_out ?? '—') + (s.knocked_out_pct ? ' (' + s.knocked_out_pct + ')' : '')),
+  );
+  a.append(stats);
+  const next = el('div', 'next');
+  if (g.status === 'finished') {
+    next.textContent = g.result || 'Game finished';
+  } else {
+    next.append(el('span', 'muted', 'Next: ' + (g.next_week || '') + ' · '));
+    next.append(el('strong', null, (s.next_pick || 'TBC') + (s.next_pick_pct ? ' ' + s.next_pick_pct + '%' : '')));
+    if (g.deadline) next.append(el('div', 'sub', 'Deadline ' + g.deadline));
+  }
+  a.append(next, el('p', 'sub', 'Updated ' + (g.updated || '')));
+  return a;
+}
+
+(async () => {
+  const reg = await (await fetch('games.json' + bust)).json();
+  const games = (await Promise.all(reg.games.map(async (slug) => {
+    try { return await (await fetch('games/' + slug + '.json' + bust)).json(); } catch { return null; }
+  }))).filter(Boolean);
+  const active = games.filter((g) => g.status !== 'finished');
+  const finished = games.filter((g) => g.status === 'finished');
+  active.forEach((g) => document.getElementById('active').append(card(g)));
+  document.getElementById('active-empty').hidden = active.length > 0;
+  if (finished.length) {
+    document.getElementById('finished-section').hidden = false;
+    finished.forEach((g) => document.getElementById('finished').append(card(g)));
+    const t = document.getElementById('toggle'), box = document.getElementById('finished');
+    const label = () => { t.textContent = (box.hidden ? 'Show' : 'Hide') + ' finished (' + finished.length + ')'; t.setAttribute('aria-expanded', String(!box.hidden)); };
+    t.addEventListener('click', () => { box.hidden = !box.hidden; label(); });
+    label();
+  }
+})();
 </script>
 </body>
 </html>

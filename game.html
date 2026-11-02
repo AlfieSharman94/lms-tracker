@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LMS game</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <a class="back" href="index.html">&larr; All games</a>
+    <h1 id="name"></h1>
+    <p id="headline"></p>
+    <p class="meta" id="meta"></p>
+  </header>
+
+  <section class="tiles">
+    <div class="card"><p class="label">Entries remaining</p><p class="big" id="t-remaining"></p><p class="sub" id="t-remaining-d"></p></div>
+    <div class="card"><p class="label">Knocked out last week</p><p class="big"><span id="t-ko"></span><small id="t-ko-pct"></small></p><p class="sub" id="t-ko-d"></p></div>
+    <div class="card"><p class="label">My entries alive</p><p class="big" id="t-alive"></p><p class="sub" id="t-alive-d"></p></div>
+    <div class="card"><p class="label">Next pick</p><p class="big"><span id="t-next"></span><small id="t-next-pct"></small></p><p class="sub" id="t-next-d"></p></div>
+  </section>
+
+  <section class="card">
+    <h2>My entries</h2>
+    <p class="note">Picks made each week, with results.</p>
+    <div class="tablewrap"><table>
+      <thead><tr id="entries-head"><th>Entry</th><th>Status</th></tr></thead>
+      <tbody id="entries"></tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="history-card" hidden>
+    <h2>Game so far</h2>
+    <p class="note">How the field has shrunk week by week.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Week</th><th>Gameweek</th><th class="num">Entries at start</th><th class="num">Knocked out</th><th class="num">% out</th><th>Notes</th></tr></thead>
+      <tbody id="history"></tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="plan-card">
+    <h2>Plan</h2>
+    <p class="note">No two entries on the same team in the same week. Win % is the bookmaker price with the margin removed where a price exists, otherwise a goals model built on StatsUltra team ratings.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Week</th><th>Dates</th><th>Entry</th><th>Pick</th><th>Fixture</th><th class="num">Win %</th><th>Price source</th><th>Backup</th><th>Reason</th></tr></thead>
+      <tbody id="plan"></tbody>
+    </table></div>
+    <div class="hedge" id="hedge"></div>
+  </section>
+
+  <section class="grid2" id="notes">
+    <div class="card"><h2>Flags</h2><ul id="flags"></ul></div>
+    <div class="card"><h2>Where the field will go</h2><ul id="pileons"></ul></div>
+  </section>
+
+  <section class="card" id="field-card">
+    <h2>The field: entries that can still use each main team</h2>
+    <p class="note">Share of remaining entries that have not used the team.</p>
+    <div class="bars" id="field"></div>
+  </section>
+
+  <section class="card" id="fixtures-card">
+    <h2>Fixtures</h2>
+    <p class="note">Favourite and implied win %. "My entries" shows how many of my live entries can still use the favourite, or that there is no clear favourite.</p>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Week</th><th>Date</th><th>Fixture</th><th>Favourite</th><th class="num">Win %</th><th>Price source</th><th>My entries</th></tr></thead>
+      <tbody id="fixtures"></tbody>
+    </table></div>
+  </section>
+
+  <footer>Not betting advice.</footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const pct = (x) => Math.round(x * 100) + '%';
+const cell = (text, cls) => { const td = document.createElement('td'); td.textContent = text ?? ''; if (cls) td.className = cls; return td; };
+const li = (t) => { const l = document.createElement('li'); l.textContent = t; return l; };
+
+(async () => {
+  const slug = new URLSearchParams(location.search).get('g');
+  let g;
+  try { g = await (await fetch('games/' + encodeURIComponent(slug) + '.json?v=' + Date.now())).json(); }
+  catch { $('name').textContent = 'Game not found'; return; }
+
+  document.title = g.name + ' · LMS';
+  $('name').textContent = g.name;
+  $('headline').textContent = g.status === 'finished' ? (g.result || 'Game finished') : (g.headline || '');
+  $('meta').textContent = [g.competition, 'started ' + g.started, g.status === 'finished' ? 'finished' : 'next: ' + g.next_week + (g.deadline ? ', deadline ' + g.deadline : ''), 'updated ' + g.updated].filter(Boolean).join(' · ');
+
+  const s = g.summary;
+  $('t-remaining').textContent = s.entries_remaining; $('t-remaining-d').textContent = s.entries_remaining_note || '';
+  $('t-ko').textContent = s.knocked_out; $('t-ko-pct').textContent = s.knocked_out_pct || ''; $('t-ko-d').textContent = s.knocked_out_note || '';
+  $('t-alive').textContent = s.my_alive + ' of ' + s.my_total; $('t-alive-d').textContent = s.my_alive_note || '';
+  $('t-next').textContent = s.next_pick || '—'; $('t-next-pct').textContent = s.next_pick_pct ? s.next_pick_pct + '%' : ''; $('t-next-d').textContent = s.next_pick_note || '';
+
+  // Entries: one column per LOS week played or planned
+  const weeks = g.weeks || [];
+  weeks.forEach((w) => { const th = document.createElement('th'); th.textContent = w; $('entries-head').append(th); });
+  g.entries.forEach((e) => {
+    const tr = document.createElement('tr');
+    tr.append(cell(e.entry), cell(e.status, e.status === 'Alive' ? 'ok' : 'bad'));
+    weeks.forEach((w) => {
+      const p = (e.picks || []).find((x) => x.week === w);
+      const td = document.createElement('td');
+      if (p) {
+        td.append(document.createTextNode(p.team + ' '));
+        if (p.result) { const r = document.createElement('span'); r.className = 'res-' + p.result; r.textContent = p.result; td.append(r); }
+      } else { td.textContent = e.status === 'Alive' ? 'Not picked yet' : ''; td.className = 'muted'; }
+      tr.append(td);
+    });
+    $('entries').append(tr);
+  });
+
+  if ((g.history || []).length) {
+    $('history-card').hidden = false;
+    g.history.forEach((h) => {
+      const tr = document.createElement('tr');
+      tr.append(cell(h.week), cell(h.gw), cell(h.entries_start, 'num'), cell(h.knocked_out, 'num'),
+        cell(h.entries_start ? pct(h.knocked_out / h.entries_start) : '', 'num'), cell(h.note || '', 'muted'));
+      $('history').append(tr);
+    });
+  }
+
+  if ((g.plan || []).length) {
+    let last = null;
+    g.plan.forEach((r) => {
+      const tr = document.createElement('tr');
+      if (last !== null && r.lms_week !== last) tr.className = 'weekstart';
+      last = r.lms_week;
+      const w = Number(r.win_pct);
+      tr.append(cell(r.lms_week), cell(r.dates), cell(r.entry), cell(r.pick, 'pick'), cell(r.fixture),
+        cell(w + '%', 'num ' + (w >= 65 ? 'ok' : w >= 55 ? '' : 'warn')), cell(r.source), cell(r.backup), cell(r.reason, 'reason'));
+      $('plan').append(tr);
+    });
+    // Hedge maths for the first planned week, and each entry's run through the plan
+    const firstWeek = g.plan[0].lms_week;
+    const w1 = g.plan.filter((r) => r.lms_week === firstWeek).map((r) => Number(r.win_pct) / 100);
+    const items = [];
+    if (w1.length > 1) {
+      items.push([firstWeek + ': at least one entry through, split as planned', 1 - w1.reduce((a, p) => a * (1 - p), 1)]);
+      items.push([firstWeek + ': all entries on the favourite (one result decides all)', Math.max(...w1)]);
+    }
+    [...new Set(g.plan.map((r) => r.entry))].forEach((e) => items.push([e + ' through every planned week',
+      g.plan.filter((r) => r.entry === e).reduce((a, r) => a * Number(r.win_pct) / 100, 1)]));
+    items.forEach(([label, v]) => {
+      const d = document.createElement('div');
+      const l = document.createElement('p'); l.className = 'sub'; l.textContent = label;
+      const b = document.createElement('p'); b.className = 'big'; b.textContent = pct(v);
+      d.append(l, b); $('hedge').append(d);
+    });
+  } else { $('plan-card').hidden = true; }
+
+  (g.flags || []).forEach((t) => $('flags').append(li(t)));
+  (g.pileons || []).forEach((t) => $('pileons').append(li(t)));
+  if (!(g.flags || []).length && !(g.pileons || []).length) $('notes').hidden = true;
+
+  if ((g.field || []).length) {
+    g.field.forEach((r) => {
+      const row = document.createElement('div'); row.className = 'bar';
+      const n = document.createElement('div'); n.className = 'name'; n.textContent = r.team;
+      const t = document.createElement('div'); t.className = 'track';
+      const f = document.createElement('div'); f.className = 'fill'; f.style.width = (r.share * 100) + '%'; t.append(f);
+      const v = document.createElement('div'); v.className = 'val'; v.textContent = r.count != null ? r.count : pct(r.share);
+      row.title = r.team + ': ' + pct(r.share) + ' of remaining entries can still use them';
+      row.append(n, t, v); $('field').append(row);
+    });
+  } else { $('field-card').hidden = true; }
+
+  const fx = g.fixtures || [];
+  if (fx.length) {
+    const tabs = [...new Set(fx.map((r) => r.week))];
+    const gwOf = (w) => (fx.find((r) => r.week === w) || {}).gw;
+    const draw = (tab) => {
+      $('fixtures').replaceChildren();
+      fx.filter((r) => tab === 'All' || r.week === tab).forEach((r) => {
+        const tr = document.createElement('tr');
+        const td = document.createElement('td'); const c = document.createElement('span');
+        c.className = 'chip ' + (r.my_entries.startsWith('Yes') ? 'ok' : r.my_entries.startsWith('Used') ? 'bad' : 'warn');
+        c.textContent = r.my_entries; td.append(c);
+        tr.append(cell(r.week), cell(r.date), cell(r.fixture), cell(r.favourite), cell(r.win_pct + '%', 'num'), cell(r.source), td);
+        $('fixtures').append(tr);
+      });
+    };
+    [...tabs, 'All'].forEach((t, i) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', String(i === 0));
+      b.textContent = t === 'All' ? 'All' : t + (gwOf(t) ? ' (' + gwOf(t) + ')' : '');
+      b.addEventListener('click', () => {
+        $('tabs').querySelectorAll('button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+        draw(t);
+      });
+      $('tabs').append(b);
+    });
+    draw(tabs[0]);
+  } else { $('fixtures-card').hidden = true; }
+})();
+</script>
+</body>
+</html>

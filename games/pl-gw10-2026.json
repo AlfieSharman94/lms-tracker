@@ -1,0 +1,515 @@
+{
+ "slug": "pl-gw10-2026",
+ "name": "Premier League LMS (from GW10)",
+ "competition": "Premier League",
+ "status": "active",
+ "started": "GW10, Fri 6 Nov 2026",
+ "updated": "Mon 2 Nov 2026",
+ "next_week": "Week 1 (GW10)",
+ "deadline": "Fri 6 Nov, 20:00",
+ "headline": "LOS Week 1 is PL gameweek 10 (6 to 8 November). Three entries, three different teams each week. Arsenal at home to Hull is the banker; the hard week is Week 3.",
+ "result": "",
+ "summary": {
+  "entries_remaining": "TBC",
+  "entries_remaining_note": "Waiting for the player sheet",
+  "knocked_out": "n/a",
+  "knocked_out_pct": "",
+  "knocked_out_note": "LOS Week 1 not played yet",
+  "my_alive": 3,
+  "my_total": 3,
+  "my_alive_note": "All entries live for Week 1",
+  "next_pick": "Arsenal",
+  "next_pick_pct": 82,
+  "next_pick_note": "Entry 1 v Hull (H), Sat 7 Nov 15:00"
+ },
+ "weeks": [
+  "Week 1",
+  "Week 2",
+  "Week 3"
+ ],
+ "entries": [
+  {
+   "entry": "Entry 1",
+   "status": "Alive",
+   "picks": []
+  },
+  {
+   "entry": "Entry 2",
+   "status": "Alive",
+   "picks": []
+  },
+  {
+   "entry": "Entry 3",
+   "status": "Alive",
+   "picks": []
+  }
+ ],
+ "plan": [
+  {
+   "entry": "Entry 1",
+   "lms_week": "Week 1 (GW10)",
+   "dates": "6-8 Nov",
+   "pick": "Arsenal",
+   "fixture": "Arsenal v Hull (H)",
+   "win_pct": 82,
+   "source": "FanDuel",
+   "backup": "Brighton v Brentford (H) 52%",
+   "reason": "Best fixture of the week and one of Arsenal's best all season. Hull are bottom-three material. Most of the field will be here too."
+  },
+  {
+   "entry": "Entry 2",
+   "lms_week": "Week 1 (GW10)",
+   "dates": "6-8 Nov",
+   "pick": "Liverpool",
+   "fixture": "Crystal Palace v Liverpool (A)",
+   "win_pct": 57,
+   "source": "Best prices via Wincomparator",
+   "backup": "Chelsea at Sunderland 51%",
+   "reason": "Palace have lost three of their last four and their rating is falling. Keeps Entry 2 off Arsenal."
+  },
+  {
+   "entry": "Entry 3",
+   "lms_week": "Week 1 (GW10)",
+   "dates": "6-8 Nov",
+   "pick": "Everton",
+   "fixture": "Everton v Coventry (H)",
+   "win_pct": 55,
+   "source": "FanDuel",
+   "backup": "Man City at Forest 52% (model)",
+   "reason": "Disposable team at home to a likely relegation side. Flag: Coventry form WWLLW and Everton trending down. Everton play Newcastle tonight; re-check."
+  },
+  {
+   "entry": "Entry 1",
+   "lms_week": "Week 2 (GW11)",
+   "dates": "21-23 Nov",
+   "pick": "Man City",
+   "fixture": "Man City v Fulham (H)",
+   "win_pct": 67,
+   "source": "Model",
+   "backup": "Chelsea v Leeds (H) 57%",
+   "reason": "Strongest home fixture of the week. Spends City before their best spot (Hull at home on 19 Dec) to buy survival in a week with few safe picks."
+  },
+  {
+   "entry": "Entry 2",
+   "lms_week": "Week 2 (GW11)",
+   "dates": "21-23 Nov",
+   "pick": "Brighton",
+   "fixture": "Hull v Brighton (A)",
+   "win_pct": 76,
+   "source": "Model",
+   "backup": "Bournemouth v Forest (H) 55%",
+   "reason": "Highest win % of the week. Hull are the weakest side in the model. Expect a field pile-on here."
+  },
+  {
+   "entry": "Entry 3",
+   "lms_week": "Week 2 (GW11)",
+   "dates": "21-23 Nov",
+   "pick": "Spurs",
+   "fixture": "Spurs v Ipswich (H)",
+   "win_pct": 64,
+   "source": "Model",
+   "backup": "Liverpool v Man Utd (H) 55%",
+   "reason": "Spurs are rising and Ipswich have the second-worst defence in the model. Good use of a mid-table team."
+  },
+  {
+   "entry": "Entry 1",
+   "lms_week": "Week 3 (GW12)",
+   "dates": "27-29 Nov",
+   "pick": "Leeds",
+   "fixture": "Leeds v Coventry (H)",
+   "win_pct": 58,
+   "source": "Model",
+   "backup": "Aston Villa at Ipswich 51%",
+   "reason": "Disposable team at home to a weak side. Flag: Coventry are improving. Thin week."
+  },
+  {
+   "entry": "Entry 2",
+   "lms_week": "Week 3 (GW12)",
+   "dates": "27-29 Nov",
+   "pick": "Crystal Palace",
+   "fixture": "Crystal Palace v Hull (H)",
+   "win_pct": 60,
+   "source": "Model",
+   "backup": "Aston Villa at Ipswich 51%",
+   "reason": "Pure disposable pick at home to the weakest side. Flag: Hull draw a lot (5 in 9) and draws knock you out. Thin week."
+  },
+  {
+   "entry": "Entry 3",
+   "lms_week": "Week 3 (GW12)",
+   "dates": "27-29 Nov",
+   "pick": "Brighton",
+   "fixture": "Brighton v Newcastle (H)",
+   "win_pct": 69,
+   "source": "Model",
+   "backup": "Leeds v Coventry (H) 58% (clashes with Entry 1)",
+   "reason": "Best pick of a thin week. Newcastle have the leakiest defence outside the bottom four. Field likely to pile on."
+  }
+ ],
+ "field": [
+  {
+   "team": "Arsenal",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Man City",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Brighton",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Liverpool",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Chelsea",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Bournemouth",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Spurs",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Aston Villa",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Man Utd",
+   "share": 1.0,
+   "count": null
+  },
+  {
+   "team": "Newcastle",
+   "share": 1.0,
+   "count": null
+  }
+ ],
+ "fixtures": [
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Fri 6 Nov",
+   "fixture": "Everton v Coventry",
+   "favourite": "Everton",
+   "win_pct": 55,
+   "source": "FanDuel",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sat 7 Nov",
+   "fixture": "Leeds v Spurs",
+   "favourite": "Leeds",
+   "win_pct": 37,
+   "source": "FanDuel",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sat 7 Nov",
+   "fixture": "Arsenal v Hull",
+   "favourite": "Arsenal",
+   "win_pct": 82,
+   "source": "FanDuel",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sat 7 Nov",
+   "fixture": "Fulham v Newcastle",
+   "favourite": "Fulham",
+   "win_pct": 41,
+   "source": "Model",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sat 7 Nov",
+   "fixture": "Forest v Man City",
+   "favourite": "Man City",
+   "win_pct": 52,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sun 8 Nov",
+   "fixture": "Brighton v Brentford",
+   "favourite": "Brighton",
+   "win_pct": 52,
+   "source": "DraftKings / 888",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sun 8 Nov",
+   "fixture": "Crystal Palace v Liverpool",
+   "favourite": "Liverpool",
+   "win_pct": 57,
+   "source": "Best prices (Wincomparator)",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sun 8 Nov",
+   "fixture": "Ipswich v Bournemouth",
+   "favourite": "Bournemouth",
+   "win_pct": 41,
+   "source": "Best prices (Wincomparator)",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sun 8 Nov",
+   "fixture": "Sunderland v Chelsea",
+   "favourite": "Chelsea",
+   "win_pct": 51,
+   "source": "bet365",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 1",
+   "gw": "GW10",
+   "date": "Sun 8 Nov",
+   "fixture": "Man Utd v Aston Villa",
+   "favourite": "Man Utd",
+   "win_pct": 42,
+   "source": "FanDuel",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Man City v Fulham",
+   "favourite": "Man City",
+   "win_pct": 67,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Bournemouth v Forest",
+   "favourite": "Bournemouth",
+   "win_pct": 55,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Aston Villa v Sunderland",
+   "favourite": "Aston Villa",
+   "win_pct": 52,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Chelsea v Leeds",
+   "favourite": "Chelsea",
+   "win_pct": 57,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Coventry v Crystal Palace",
+   "favourite": "Crystal Palace",
+   "win_pct": 41,
+   "source": "Model",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Spurs v Ipswich",
+   "favourite": "Spurs",
+   "win_pct": 64,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sat 21 Nov",
+   "fixture": "Newcastle v Arsenal",
+   "favourite": "Arsenal",
+   "win_pct": 62,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sun 22 Nov",
+   "fixture": "Hull v Brighton",
+   "favourite": "Brighton",
+   "win_pct": 76,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Sun 22 Nov",
+   "fixture": "Liverpool v Man Utd",
+   "favourite": "Liverpool",
+   "win_pct": 55,
+   "source": "FanDuel",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "date": "Mon 23 Nov",
+   "fixture": "Brentford v Everton",
+   "favourite": "Brentford",
+   "win_pct": 50,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Fri 27 Nov",
+   "fixture": "Forest v Chelsea",
+   "favourite": "Chelsea",
+   "win_pct": 44,
+   "source": "Model",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sat 28 Nov",
+   "fixture": "Leeds v Coventry",
+   "favourite": "Leeds",
+   "win_pct": 58,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sat 28 Nov",
+   "fixture": "Man Utd v Brentford",
+   "favourite": "Man Utd",
+   "win_pct": 45,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sat 28 Nov",
+   "fixture": "Ipswich v Aston Villa",
+   "favourite": "Aston Villa",
+   "win_pct": 51,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sun 29 Nov",
+   "fixture": "Everton v Liverpool",
+   "favourite": "Liverpool",
+   "win_pct": 50,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sun 29 Nov",
+   "fixture": "Brighton v Newcastle",
+   "favourite": "Brighton",
+   "win_pct": 69,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sun 29 Nov",
+   "fixture": "Crystal Palace v Hull",
+   "favourite": "Crystal Palace",
+   "win_pct": 60,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sun 29 Nov",
+   "fixture": "Fulham v Bournemouth",
+   "favourite": "Bournemouth",
+   "win_pct": 49,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sun 29 Nov",
+   "fixture": "Sunderland v Spurs",
+   "favourite": "Spurs",
+   "win_pct": 43,
+   "source": "Model",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW12",
+   "date": "Sun 29 Nov",
+   "fixture": "Arsenal v Man City",
+   "favourite": "Arsenal",
+   "win_pct": 49,
+   "source": "Model",
+   "my_entries": "Yes (3 of 3)"
+  }
+ ],
+ "flags": [
+  "Week 3 is thin. Only Brighton at home to Newcastle is a clear pick, so two entries go on disposable teams (Leeds, Crystal Palace).",
+  "Everton v Coventry: Coventry's form is improving and Everton's is fading. Drop to Man City at Forest if Everton look shaky.",
+  "Entry 1 spends Man City in Week 2. Their best fixture is Hull at home on 19 December. Chelsea v Leeds is the swap to save City.",
+  "Hull draw a lot. Crystal Palace v Hull in Week 3 is a pick for the win %, not for comfort."
+ ],
+ "pileons": [
+  "Week 1: Arsenal v Hull. Expect most of the field on it, which is why only one entry is there.",
+  "Week 2: Brighton at Hull and Man City v Fulham will take most picks.",
+  "Week 3: Brighton v Newcastle for anyone who still has Brighton.",
+  "Prices for Weeks 2 and 3 are model figures until bookmakers open markets."
+ ],
+ "history": []
+}

@@ -42,7 +42,7 @@
 
   <section class="card" id="plan-card">
     <h2>Plan</h2>
-    <p class="note">No two entries on the same team in the same week. Win % is the bookmaker price with the margin removed where a price exists, otherwise a goals model built on StatsUltra team ratings.</p>
+    <p class="note">Entries are kept on different teams unless one team is a clear favourite (70%+ and 15 points ahead of the next option), when doubling up is worth it. Win % is the bookmaker price with the margin removed where a price exists, otherwise a goals model built on StatsUltra team ratings.</p>
     <div class="tablewrap"><table>
       <thead><tr><th>Week</th><th>Dates</th><th>Entry</th><th>Pick</th><th>Fixture</th><th class="num">Win %</th><th>Price source</th><th>Backup</th><th>Reason</th></tr></thead>
       <tbody id="plan"></tbody>
@@ -224,18 +224,22 @@ function toggleOdds(tr, fixture) {
     });
     // Hedge maths for the first planned week, and each entry's run through the plan
     const firstWeek = g.plan[0].lms_week;
-    const w1 = g.plan.filter((r) => r.lms_week === firstWeek).map((r) => Number(r.win_pct) / 100);
+    const w1rows = g.plan.filter((r) => r.lms_week === firstWeek);
+    const byTeam = {};
+    w1rows.forEach((r) => { byTeam[r.pick] = Number(r.win_pct) / 100; });
+    const teamPs = Object.values(byTeam);
     const items = [];
-    if (w1.length > 1) {
-      items.push([firstWeek + ': at least one entry through, split as planned', 1 - w1.reduce((a, p) => a * (1 - p), 1)]);
-      items.push([firstWeek + ': all entries on the favourite (one result decides all)', Math.max(...w1)]);
+    if (w1rows.length > 1) {
+      // Entries on the same team share one result, so count each team once
+      items.push([firstWeek + ': at least one entry through', 1 - teamPs.reduce((a, p) => a * (1 - p), 1)]);
+      items.push([firstWeek + ': expected entries through', w1rows.reduce((a, r) => a + Number(r.win_pct) / 100, 0), 'n']);
     }
     [...new Set(g.plan.map((r) => r.entry))].forEach((e) => items.push([e + ' through every planned week',
       g.plan.filter((r) => r.entry === e).reduce((a, r) => a * Number(r.win_pct) / 100, 1)]));
-    items.forEach(([label, v]) => {
+    items.forEach(([label, v, kind]) => {
       const d = document.createElement('div');
       const l = document.createElement('p'); l.className = 'sub'; l.textContent = label;
-      const b = document.createElement('p'); b.className = 'big'; b.textContent = pct(v);
+      const b = document.createElement('p'); b.className = 'big'; b.textContent = kind === 'n' ? v.toFixed(2) + ' of ' + w1rows.length : pct(v);
       d.append(l, b); $('hedge').append(d);
     });
   } else { $('plan-card').hidden = true; }

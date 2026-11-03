@@ -63,7 +63,7 @@
 
   <section class="card" id="fixtures-card">
     <h2>Fixtures</h2>
-    <p class="note">Favourite and implied win %. "My entries" shows how many of my live entries can still use the favourite, or that there is no clear favourite. Click a fixture for live bookmaker odds.</p>
+    <p class="note">Favourite and implied win %. "My entries" shows how many of my live entries can still use the favourite, or that there is no clear favourite. Tentative marks a fixture in the plan. Click a fixture for live bookmaker odds.</p>
     <div class="tabs" role="tablist" id="tabs"></div>
     <div class="tablewrap"><table>
       <thead><tr><th>Week</th><th>Date</th><th>Fixture</th><th>Favourite</th><th class="num">Win %</th><th>Price source</th><th>My entries</th></tr></thead>
@@ -269,6 +269,15 @@ function toggleOdds(tr, fixture) {
         const td = document.createElement('td'); const c = document.createElement('span');
         c.className = 'chip ' + (r.my_entries.startsWith('Yes') ? 'ok' : r.my_entries.startsWith('Used') ? 'bad' : 'warn');
         c.textContent = r.my_entries; td.append(c);
+        // Planned picks for this fixture (pick team plays in it, same LOS week) get a Tentative badge
+        const teams = r.fixture.split(/\s+v\s+/i).map(canon);
+        const multi = (g.entries || []).filter((x) => x.status === 'Alive').length > 1;
+        (g.plan || []).filter((p) => weekKey(p.lms_week) === weekKey(r.week) && teams.includes(canon(p.pick)))
+          .forEach((p) => {
+            const t = mk('span', 'tentative', 'Tentative' + (multi ? ': ' + p.entry : ''));
+            t.title = p.entry + ' plans to pick ' + p.pick + ' here. Not picked yet.';
+            td.append(t);
+          });
         const ev = findEvent(r.fixture);
         const fxCell = cell(r.fixture);
         if (ev && ev.bookmakers.length) fxCell.append(mk('span', 'oddstag', 'odds'));

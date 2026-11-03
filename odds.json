@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T10:25:30Z",
+ "updated": "2026-11-03T10:27:22Z",
  "source": "The Odds API (UK bookmakers)",
  "events": [
   {
@@ -953,8 +953,8 @@
     {
      "name": "Betfair",
      "home": 3.7,
-     "draw": 3.8,
-     "away": 2.12
+     "draw": 3.75,
+     "away": 2.14
     },
     {
      "name": "Betfair Sportsbook",

@@ -63,7 +63,7 @@
 
   <section class="card" id="fixtures-card">
     <h2>Fixtures</h2>
-    <p class="note">Favourite and implied win %. "My entries" shows how many of my live entries can still use the favourite, or that there is no clear favourite.</p>
+    <p class="note">Favourite and implied win %. "My entries" shows how many of my live entries can still use the favourite, or that there is no clear favourite. Click a fixture for live bookmaker odds.</p>
     <div class="tabs" role="tablist" id="tabs"></div>
     <div class="tablewrap"><table>
       <thead><tr><th>Week</th><th>Date</th><th>Fixture</th><th>Favourite</th><th class="num">Win %</th><th>Price source</th><th>My entries</th></tr></thead>
@@ -79,12 +79,88 @@ const $ = (id) => document.getElementById(id);
 const pct = (x) => Math.round(x * 100) + '%';
 const cell = (text, cls) => { const td = document.createElement('td'); td.textContent = text ?? ''; if (cls) td.className = cls; return td; };
 const li = (t) => { const l = document.createElement('li'); l.textContent = t; return l; };
+const mk = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+
+// Team name matching between the game file ("Spurs", "Man Utd") and the odds feed ("Tottenham Hotspur", "Manchester United")
+const ALIAS = {
+  'spurs': 'tottenham', 'tottenham': 'tottenham', 'tottenham hotspur': 'tottenham',
+  'man utd': 'manutd', 'man united': 'manutd', 'manchester united': 'manutd',
+  'man city': 'mancity', 'manchester city': 'mancity',
+  'forest': 'forest', 'nottm forest': 'forest', 'nottingham forest': 'forest',
+  'brighton': 'brighton', 'brighton and hove albion': 'brighton',
+  'wolves': 'wolves', 'wolverhampton': 'wolves', 'wolverhampton wanderers': 'wolves',
+  'palace': 'palace', 'crystal palace': 'palace',
+  'sheffield utd': 'sheffutd', 'sheffield united': 'sheffutd',
+  'west ham': 'westham', 'west ham united': 'westham',
+  'west brom': 'westbrom', 'west bromwich albion': 'westbrom',
+};
+const canon = (n) => {
+  const s = (n || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z ]/g, '').replace(/\b(afc|fc)\b/g, '').replace(/\s+/g, ' ').trim();
+  return ALIAS[s] || s.replace(/ (city|town|united|athletic|rovers|wanderers|albion|hotspur)$/, '');
+};
+const when = (iso) => new Date(iso).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/London' });
+
+let odds = null;
+
+function findEvent(fixture) {
+  if (!odds) return null;
+  const [h, a] = fixture.split(/\s+v\s+/i).map(canon);
+  return (odds.events || []).filter((e) => canon(e.home) === h && canon(e.away) === a)
+    .sort((x, y) => x.commence.localeCompare(y.commence))[0] || null;
+}
+
+function oddsPanel(fixture) {
+  const box = mk('div', 'oddsbox');
+  if (!odds) { box.append(mk('p', 'sub', 'Live odds are not available right now.')); return box; }
+  const ev = findEvent(fixture);
+  if (!ev || !ev.bookmakers.length) {
+    box.append(mk('p', 'sub', 'No bookmaker prices yet. Markets usually open about a week before kick-off.'));
+    return box;
+  }
+  const cols = [['home', ev.home], ['draw', 'Draw'], ['away', ev.away]];
+  const best = {};
+  cols.forEach(([k]) => { best[k] = Math.max(...ev.bookmakers.map((b) => b[k] || 0)); });
+
+  // Fair probabilities: remove each bookmaker's margin, then average
+  const fair = { home: 0, draw: 0, away: 0 }; let n = 0;
+  ev.bookmakers.forEach((b) => {
+    const s = 1 / b.home + 1 / b.draw + 1 / b.away;
+    cols.forEach(([k]) => { fair[k] += (1 / b[k]) / s; }); n++;
+  });
+  const f = mk('p', 'fair');
+  f.append(mk('span', 'muted', 'Market, margin removed: '));
+  f.append(mk('strong', null, cols.map(([k, l]) => l + ' ' + Math.round(fair[k] / n * 100) + '%').join(' · ')));
+  box.append(f);
+
+  const wrap = mk('div', 'tablewrap'); const t = mk('table');
+  const hr = mk('tr'); hr.append(mk('th', null, 'Bookmaker'));
+  cols.forEach(([, l]) => hr.append(mk('th', 'num', l)));
+  const th = mk('thead'); th.append(hr); t.append(th);
+  const tb = mk('tbody');
+  ev.bookmakers.forEach((b) => {
+    const tr = mk('tr'); tr.append(cell(b.name));
+    cols.forEach(([k]) => tr.append(cell(b[k].toFixed(2), 'num' + (b[k] === best[k] ? ' best' : ''))));
+    tb.append(tr);
+  });
+  t.append(tb); wrap.append(t); box.append(wrap);
+  box.append(mk('p', 'sub', 'Kick-off ' + when(ev.commence) + ' · best price in green · prices updated ' + when(odds.updated) + '. Re-check before the deadline.'));
+  return box;
+}
+
+function toggleOdds(tr, fixture) {
+  const open = tr.getAttribute('aria-expanded') === 'true';
+  if (open) { tr.nextElementSibling.remove(); tr.setAttribute('aria-expanded', 'false'); return; }
+  const row = mk('tr', 'oddsrow'); const td = mk('td'); td.colSpan = 7;
+  td.append(oddsPanel(fixture)); row.append(td);
+  tr.after(row); tr.setAttribute('aria-expanded', 'true');
+}
 
 (async () => {
   const slug = new URLSearchParams(location.search).get('g');
   let g;
   try { g = await (await fetch('games/' + encodeURIComponent(slug) + '.json?v=' + Date.now())).json(); }
   catch { $('name').textContent = 'Game not found'; return; }
+  try { const r = await fetch('odds.json?v=' + Date.now()); if (r.ok) odds = await r.json(); } catch {}
 
   document.title = g.name + ' · LMS';
   $('name').textContent = g.name;
@@ -178,10 +254,17 @@ const li = (t) => { const l = document.createElement('li'); l.textContent = t; r
       $('fixtures').replaceChildren();
       fx.filter((r) => tab === 'All' || r.week === tab).forEach((r) => {
         const tr = document.createElement('tr');
+        tr.className = 'fx'; tr.tabIndex = 0; tr.setAttribute('aria-expanded', 'false');
+        tr.title = 'Show bookmaker odds';
         const td = document.createElement('td'); const c = document.createElement('span');
         c.className = 'chip ' + (r.my_entries.startsWith('Yes') ? 'ok' : r.my_entries.startsWith('Used') ? 'bad' : 'warn');
         c.textContent = r.my_entries; td.append(c);
-        tr.append(cell(r.week), cell(r.date), cell(r.fixture), cell(r.favourite), cell(r.win_pct + '%', 'num'), cell(r.source), td);
+        const ev = findEvent(r.fixture);
+        const fxCell = cell(r.fixture);
+        if (ev && ev.bookmakers.length) fxCell.append(mk('span', 'oddstag', 'odds'));
+        tr.append(cell(r.week), cell(r.date), fxCell, cell(r.favourite), cell(r.win_pct + '%', 'num'), cell(r.source), td);
+        tr.addEventListener('click', () => toggleOdds(tr, r.fixture));
+        tr.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleOdds(tr, r.fixture); } });
         $('fixtures').append(tr);
       });
     };

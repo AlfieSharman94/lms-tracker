@@ -24,7 +24,7 @@
 
   <section class="card">
     <h2>My entries</h2>
-    <p class="note">Picks made each week, with results.</p>
+    <p class="note">Picks made each week, with results. Upcoming weeks show the planned pick, marked Tentative until it is made.</p>
     <div class="tablewrap"><table>
       <thead><tr id="entries-head"><th>Entry</th><th>Status</th></tr></thead>
       <tbody id="entries"></tbody>
@@ -99,6 +99,8 @@ const canon = (n) => {
   return ALIAS[s] || s.replace(/ (city|town|united|athletic|rovers|wanderers|albion|hotspur)$/, '');
 };
 const when = (iso) => new Date(iso).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/London' });
+// "Week 5 (GW10)" -> "Week 5", so plan rows line up with the My entries columns
+const weekKey = (w) => (w || '').replace(/\s*\(.*\)\s*$/, '').trim();
 
 let odds = null;
 
@@ -173,7 +175,8 @@ function toggleOdds(tr, fixture) {
   $('t-alive').textContent = s.my_alive + ' of ' + s.my_total; $('t-alive-d').textContent = s.my_alive_note || '';
   $('t-next').textContent = s.next_pick || '—'; $('t-next-pct').textContent = s.next_pick_pct ? s.next_pick_pct + '%' : ''; $('t-next-d').textContent = s.next_pick_note || '';
 
-  // Entries: one column per LOS week played or planned
+  // Entries: one column per LOS week played or planned.
+  // A made pick shows its team and result; for a live entry, an upcoming week shows the planned pick with a Tentative badge.
   const weeks = g.weeks || [];
   weeks.forEach((w) => { const th = document.createElement('th'); th.textContent = w; $('entries-head').append(th); });
   g.entries.forEach((e) => {
@@ -181,10 +184,17 @@ function toggleOdds(tr, fixture) {
     tr.append(cell(e.entry), cell(e.status, e.status === 'Alive' ? 'ok' : 'bad'));
     weeks.forEach((w) => {
       const p = (e.picks || []).find((x) => x.week === w);
+      const planned = e.status === 'Alive' && !p
+        ? (g.plan || []).find((r) => r.entry === e.entry && weekKey(r.lms_week) === weekKey(w)) : null;
       const td = document.createElement('td');
       if (p) {
         td.append(document.createTextNode(p.team + ' '));
         if (p.result) { const r = document.createElement('span'); r.className = 'res-' + p.result; r.textContent = p.result; td.append(r); }
+      } else if (planned) {
+        td.className = 'planned';
+        td.title = 'Planned: ' + planned.fixture + (planned.win_pct ? ', ' + planned.win_pct + '%' : '') + '. Not picked yet.';
+        td.append(document.createTextNode(planned.pick));
+        td.append(mk('span', 'tentative', 'Tentative'));
       } else { td.textContent = e.status === 'Alive' ? 'Not picked yet' : ''; td.className = 'muted'; }
       tr.append(td);
     });

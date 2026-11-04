@@ -1,0 +1,605 @@
+{
+ "slug": "cricketers-06-01",
+ "series": "Cricketers",
+ "season": "2025/26",
+ "name": "Cricketers LMS 06/01",
+ "competition": "Premier League",
+ "status": "finished",
+ "started": "GW21, Tue 6 Jan 2026",
+ "updated": "Wed 4 Nov 2026",
+ "next_week": "",
+ "deadline": "",
+ "headline": "",
+ "result": "No winner. Everyone was out by Week 2, so the pot rolled over. I went out in Week 1 (Man Utd).",
+ "summary": {
+  "entries_remaining": 0,
+  "entries_remaining_note": "No winner",
+  "knocked_out": 11,
+  "knocked_out_pct": "100%",
+  "knocked_out_note": "Week 2",
+  "my_alive": 0,
+  "my_total": 1,
+  "my_alive_note": "Out in Week 1 on Man Utd",
+  "next_pick": "",
+  "next_pick_pct": null,
+  "next_pick_note": "Game finished"
+ },
+ "weeks": [
+  "Week 1",
+  "Week 2"
+ ],
+ "entries": [
+  {
+   "entry": "Alfie Sharman",
+   "status": "Out",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  }
+ ],
+ "players": [
+  {
+   "name": "Paul P.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Spurs",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jess D.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Matt W.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Spurs",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Ellie B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Chris S.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Terri B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Mark T.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jack L.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Lee B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Dan H.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jamie S.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Charlie C.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Alan D.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jacob P.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Kenton B.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Alfie S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Paul T.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Anna T.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Harry S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jimmy W.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Dave D.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Tim S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jay W.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Harry D.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jason F.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Mark C.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Albie N.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Craig N.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Kevin B.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jovi F.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Bradley B.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Royston W.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ian M.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Paul H.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Joe S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Mike J.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Joel R.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Abbey N.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Dean A.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ray S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Luke S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Mark W.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Sarah L.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "D"
+    }
+   ]
+  }
+ ],
+ "history": [
+  {
+   "week": "Week 1",
+   "gw": "GW21",
+   "entries_start": 43,
+   "knocked_out": 32,
+   "note": "Picks: Everton 14, Man City 12, Newcastle 11, Man Utd 6. Three of the four teams picked drew: Everton 1-1 Wolves, City 1-1 Brighton, Man Utd 2-2 at promoted Burnley. Only Newcastle won (4-3 v Leeds)."
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW22",
+   "entries_start": 11,
+   "knocked_out": 11,
+   "note": "Picks: Liverpool 6, Spurs 2, Arsenal 2, Aston Villa 1. Liverpool drew with promoted Burnley, Arsenal drew at Forest, Spurs and Villa lost at home. Nobody left."
+  }
+ ],
+ "plan": [],
+ "field": [],
+ "fixtures": [],
+ "flags": [
+  "43 entries, 54 picks.",
+  "Week 1: 32 of 43 went out on three draws. Everton (14), City (12) and Man Utd (6) all failed to win.",
+  "Week 2: 6 of 11 on Liverpool at home to promoted Burnley. 1-1.",
+  "Only four teams were picked in Week 1, the narrowest spread of any Cricketers game.",
+  "Home picks: 46 of 54 (85%), won 11 (24%). Away picks won 0 of 8 (0%).",
+  "Picks against promoted sides (Burnley, Leeds, Sunderland): 23, won 11 (48%)."
+ ],
+ "pileons": [
+  "Week 1: Everton 14 and Man City 12 of 43. Everton drew, Man City drew.",
+  "Week 2: Liverpool 6 and Spurs 2 of 11. Liverpool drew, Spurs lost."
+ ]
+}

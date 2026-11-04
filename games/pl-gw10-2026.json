@@ -1,10 +1,10 @@
 {
  "slug": "pl-gw10-2026",
- "name": "Premier League LMS (from GW10)",
+ "name": "Cricketers LMS 06/11",
  "competition": "Premier League",
  "status": "active",
  "started": "GW10, Fri 6 Nov 2026",
- "updated": "Tue 3 Nov 2026",
+ "updated": "Wed 4 Nov 2026",
  "next_week": "Week 1 (GW10)",
  "deadline": "Fri 6 Nov, 20:00",
  "headline": "LOS Week 1 is PL gameweek 10 (6 to 8 November). Arsenal at home to Hull is a clear favourite, so two entries go on it and Entry 2 hedges on Liverpool. The hard week is Week 3.",
@@ -514,5 +514,6 @@
   "Week 3: Brighton v Newcastle for anyone who still has Brighton.",
   "Week 3 prices are model figures until bookmakers open markets."
  ],
- "history": []
+ "history": [],
+ "series": "Cricketers"
 }

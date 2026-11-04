@@ -1,0 +1,100 @@
+{
+ "slug": "cricketers-18-09",
+ "series": "Cricketers",
+ "name": "Cricketers LMS 18/09",
+ "competition": "Premier League",
+ "status": "finished",
+ "started": "GW5, Fri 18 Sep 2026",
+ "updated": "Wed 4 Nov 2026",
+ "next_week": "",
+ "deadline": "",
+ "headline": "",
+ "result": "No winner. Out in Week 1 (Forest). The last 3 drew with Villa in Week 5, so the pot rolled into Cricketers LMS 06/11.",
+ "summary": {
+  "entries_remaining": 0,
+  "entries_remaining_note": "Last 3 out in Week 5",
+  "knocked_out": 3,
+  "knocked_out_pct": "100%",
+  "knocked_out_note": "Week 5: Villa 0 from 3",
+  "my_alive": 0,
+  "my_total": 1,
+  "my_alive_note": "Out in Week 1 on Forest",
+  "next_pick": "",
+  "next_pick_pct": null,
+  "next_pick_note": "Game finished"
+ },
+ "weeks": [
+  "Week 1",
+  "Week 2",
+  "Week 3",
+  "Week 4",
+  "Week 5"
+ ],
+ "entries": [
+  {
+   "entry": "Alfie Sharman",
+   "status": "Out",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Forest",
+     "result": "L"
+    }
+   ]
+  }
+ ],
+ "history": [
+  {
+   "week": "Week 1",
+   "gw": "GW5",
+   "entries_start": 41,
+   "knocked_out": 20,
+   "note": "Picks: Man City 16, Forest 15, Leeds 3, Newcastle 3, Everton 1, Aston Villa 1, Hull 1, Spurs 1. Forest lost 0-1 at home to promoted Coventry, taking out 15. Leeds drew 0-0 with Palace, Hull and Spurs lost."
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW6",
+   "entries_start": 21,
+   "knocked_out": 7,
+   "note": "Picks: Arsenal 9, Newcastle 5, Chelsea 3, Aston Villa 1, Spurs 1, Brighton 1, Ipswich 1. Newcastle lost 4-1 at Coventry, taking out 5. Villa drew with Brentford, Spurs drew at Man Utd."
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW7",
+   "entries_start": 14,
+   "knocked_out": 1,
+   "note": "Picks: Brighton 5, Spurs 4, Man City 2, Bournemouth 1, Arsenal 1, Hull 1. Only Hull lost (0-1 at Fulham). Spurs, Brighton, City, Bournemouth and Arsenal all won."
+  },
+  {
+   "week": "Week 4",
+   "gw": "GW8",
+   "entries_start": 13,
+   "knocked_out": 10,
+   "note": "Picks: Chelsea 6, Arsenal 3, Brentford 2, Coventry 1, Man Utd 1. Chelsea lost 0-2 at home to Spurs, taking out 6. Brentford drew at Hull, Man Utd and Coventry lost. Only the 3 on Arsenal survived."
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW9",
+   "entries_start": 3,
+   "knocked_out": 3,
+   "note": "Picks: Aston Villa 3. All 3 on Villa at home to Fulham. Draw, so nobody won and the pot rolled over."
+  }
+ ],
+ "plan": [],
+ "field": [],
+ "fixtures": [],
+ "flags": [
+  "41 entries. Two pile-ons on teams playing promoted Coventry took out 20: Forest (15) in Week 1 and Newcastle away (5) in Week 2.",
+  "Home picks: 79 of 92 (86%). They won 48 of 79 (61%); away picks won 3 of 13.",
+  "Picks against promoted sides (Coventry, Ipswich, Hull): 32, won 10.",
+  "Big teams went early: 16 of 41 used Man City in Week 1 and 9 of 21 survivors used Arsenal in Week 2.",
+  "Two of the last three made identical picks all five weeks."
+ ],
+ "pileons": [
+  "Week 1: Man City 16 and Forest 15 of 41. City won, Forest lost.",
+  "Week 2: Arsenal 9 and Newcastle 5 of 21. Arsenal won, Newcastle lost.",
+  "Week 3: Brighton 5 and Spurs 4 of 14. Both won.",
+  "Week 4: Chelsea 6 of 13. Lost at home to Spurs.",
+  "Week 5: all 3 on Villa. Drew."
+ ]
+}

@@ -1,0 +1,1148 @@
+{
+ "slug": "cricketers-24-01",
+ "series": "Cricketers",
+ "season": "2025/26",
+ "name": "Cricketers LMS 24/01",
+ "competition": "Premier League",
+ "status": "finished",
+ "started": "GW23, Sat 24 Jan 2026",
+ "updated": "Wed 4 Nov 2026",
+ "next_week": "",
+ "deadline": "",
+ "headline": "",
+ "result": "Ray S. won in Week 8 with Man Utd. I went out in Week 3 on Brighton (0-1 v Palace).",
+ "summary": {
+  "entries_remaining": 1,
+  "entries_remaining_note": "Winner: Ray S.",
+  "knocked_out": 3,
+  "knocked_out_pct": "75%",
+  "knocked_out_note": "Week 8",
+  "my_alive": 0,
+  "my_total": 1,
+  "my_alive_note": "Out in Week 3 on Brighton",
+  "next_pick": "",
+  "next_pick_pct": null,
+  "next_pick_note": "Game finished"
+ },
+ "weeks": [
+  "Week 1",
+  "Week 2",
+  "Week 3",
+  "Week 4",
+  "Week 5",
+  "Week 6",
+  "Week 7",
+  "Week 8"
+ ],
+ "entries": [
+  {
+   "entry": "Alfie Sharman",
+   "status": "Out",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Brighton",
+     "result": "L"
+    }
+   ]
+  }
+ ],
+ "players": [
+  {
+   "name": "Ray S.",
+   "status": "Won",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 7",
+     "team": "Everton",
+     "result": "W"
+    },
+    {
+     "week": "Week 8",
+     "team": "Man Utd",
+     "result": "W"
+    }
+   ]
+  },
+  {
+   "name": "Jamie S.",
+   "status": "Out Week 8",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Crystal Palace",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 7",
+     "team": "Everton",
+     "result": "W"
+    },
+    {
+     "week": "Week 8",
+     "team": "Liverpool",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Sarah L.",
+   "status": "Out Week 8",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 7",
+     "team": "Everton",
+     "result": "W"
+    },
+    {
+     "week": "Week 8",
+     "team": "Brentford",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ant D.",
+   "status": "Out Week 8",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Crystal Palace",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 7",
+     "team": "Everton",
+     "result": "W"
+    },
+    {
+     "week": "Week 8",
+     "team": "Bournemouth",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Dave D.",
+   "status": "Out Week 6",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Crystal Palace",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Newcastle",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Joe S.",
+   "status": "Out Week 6",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Bournemouth",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Dean A.",
+   "status": "Out Week 6",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "West Ham",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jimmy W.",
+   "status": "Out Week 5",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Sunderland",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jason F.",
+   "status": "Out Week 5",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Sunderland",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Terri B.",
+   "status": "Out Week 5",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Alan D.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Craig N.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Mike J.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Kenton B.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Forest",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Charlie C.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Sunderland",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Paul T.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Sunderland",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Anna T.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jess D.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Mark C.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Lee B.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Albie N.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man Utd",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ian M.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Sunderland",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "West Ham",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Joel R.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Crystal Palace",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Harry S.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Dan H.",
+   "status": "Out Week 4",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Man Utd",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Alfie S.",
+   "status": "Out Week 3",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Brighton",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Abbey N.",
+   "status": "Out Week 3",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Newcastle",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Matt W.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ellie B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "West Ham",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Mark T.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Chris S.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Tim S.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jay W.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Luke S.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Liverpool",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Paul H.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jovi F.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Kevin B.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Bradley B.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Paul P.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jack L.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Newcastle",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Royston W.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Harry D.",
+   "status": "Out Week 1",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brentford",
+     "result": "L"
+    }
+   ]
+  }
+ ],
+ "history": [
+  {
+   "week": "Week 1",
+   "gw": "GW23",
+   "entries_start": 42,
+   "knocked_out": 10,
+   "note": "Picks: Man City 27, Brentford 7, Chelsea 4, Liverpool 1, West Ham 1, Arsenal 1, Newcastle 1. Brentford lost 0-2 at home to Forest, taking out 7. Liverpool, Arsenal and Newcastle also lost. Man City beat Wolves 2-0."
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW24",
+   "entries_start": 32,
+   "knocked_out": 5,
+   "note": "Picks: Chelsea 9, Arsenal 6, Man Utd 5, Sunderland 5, Aston Villa 4, Bournemouth 2, Man City 1. Villa lost 0-1 at home to Brentford, taking out 4. City drew 2-2 at Spurs."
+  },
+  {
+   "week": "Week 3",
+   "gw": "GW25",
+   "entries_start": 27,
+   "knocked_out": 2,
+   "note": "Picks: Arsenal 12, Chelsea 10, West Ham 2, Brighton 1, Man Utd 1, Newcastle 1. Brighton lost at home to Palace and Newcastle at home to Brentford. Arsenal and Chelsea both won."
+  },
+  {
+   "week": "Week 4",
+   "gw": "GW26",
+   "entries_start": 25,
+   "knocked_out": 15,
+   "note": "Picks: Crystal Palace 10, Aston Villa 6, Liverpool 3, Chelsea 2, Man Utd 2, Man City 1, Forest 1. Palace lost 2-3 at home to promoted Burnley, taking out 10. Chelsea drew with Leeds, Man Utd drew at West Ham, Forest drew with Wolves."
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW27",
+   "entries_start": 10,
+   "knocked_out": 3,
+   "note": "Picks: Liverpool 4, Crystal Palace 3, Aston Villa 1, Chelsea 1, Brentford 1. Villa drew with Leeds, Chelsea drew with Burnley, Brentford lost to Brighton. Palace and Liverpool won."
+  },
+  {
+   "week": "Week 6",
+   "gw": "GW28",
+   "entries_start": 7,
+   "knocked_out": 3,
+   "note": "Picks: Man Utd 3, Newcastle 1, Bournemouth 1, Aston Villa 1, Brentford 1. Newcastle lost to Everton, Bournemouth drew with Sunderland, Villa lost at Wolves. Man Utd and Brentford won."
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW29",
+   "entries_start": 4,
+   "knocked_out": 0,
+   "note": "Picks: Everton 4. All 4 on Everton at home to Burnley. Won 2-0."
+  },
+  {
+   "week": "Week 8",
+   "gw": "GW30",
+   "entries_start": 4,
+   "knocked_out": 3,
+   "note": "Picks: Liverpool 1, Brentford 1, Bournemouth 1, Man Utd 1. Liverpool drew with Spurs, Brentford drew with Wolves, Bournemouth drew at Burnley. Ray S. alone on Man Utd (3-1 v Villa) and won."
+  }
+ ],
+ "plan": [],
+ "field": [],
+ "fixtures": [],
+ "flags": [
+  "42 entries, 151 picks.",
+  "Week 1: 27 of 42 (64%) on Man City at home to Wolves. Only 10 went out, 7 of them on Brentford.",
+  "Week 4: 10 of 25 on Palace at home to promoted Burnley. They lost 2-3.",
+  "Ray S. won by going against the crowd in Week 8: Man Utd at home to Villa while the other 3 all drew.",
+  "Home picks: 113 of 151 (75%), won 78 (69%). Away picks won 32 of 38 (84%).",
+  "Picks against promoted sides (Burnley, Leeds, Sunderland): 50, won 34 (68%)."
+ ],
+ "pileons": [
+  "Week 1: Man City 27 and Brentford 7 of 42. Man City won, Brentford lost.",
+  "Week 2: Chelsea 9 and Arsenal 6 of 32. Chelsea won, Arsenal won.",
+  "Week 3: Arsenal 12 and Chelsea 10 of 27. Arsenal won, Chelsea won.",
+  "Week 4: Crystal Palace 10 and Aston Villa 6 of 25. Crystal Palace lost, Aston Villa won.",
+  "Week 5: Liverpool 4 and Crystal Palace 3 of 10. Liverpool won, Crystal Palace won.",
+  "Week 6: Man Utd 3 of 7. Man Utd won.",
+  "Week 7: Everton 4 of 4. Everton won.",
+  "Week 8: Liverpool 1 of 4. Liverpool drew."
+ ]
+}

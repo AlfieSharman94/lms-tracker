@@ -10,13 +10,13 @@
  "next_week": "",
  "deadline": "",
  "headline": "",
- "result": "No winner. Jovi F. and Dan H. both got through Week 8 with Liverpool and the sheet stops there. I went out in Week 3 (Bournemouth).",
+ "result": "No winner. The last 2, Jovi F. and Dan H., both went out in Week 9 on Man Utd (1-1 v Wolves). I went out in Week 3 (Bournemouth).",
  "summary": {
-  "entries_remaining": 2,
-  "entries_remaining_note": "Through Week 8: Jovi F., Dan H.",
-  "knocked_out": 0,
-  "knocked_out_pct": "0%",
-  "knocked_out_note": "Week 8",
+  "entries_remaining": 0,
+  "entries_remaining_note": "No winner",
+  "knocked_out": 2,
+  "knocked_out_pct": "100%",
+  "knocked_out_note": "Week 9",
   "my_alive": 0,
   "my_total": 1,
   "my_alive_note": "Out in Week 3 on Bournemouth",
@@ -32,7 +32,8 @@
   "Week 5",
   "Week 6",
   "Week 7",
-  "Week 8"
+  "Week 8",
+  "Week 9"
  ],
  "entries": [
   {
@@ -60,7 +61,7 @@
  "players": [
   {
    "name": "Jovi F.",
-   "status": "Through Week 8",
+   "status": "Out Week 9",
    "picks": [
     {
      "week": "Week 1",
@@ -101,12 +102,17 @@
      "week": "Week 8",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 9",
+     "team": "Man Utd",
+     "result": "D"
     }
    ]
   },
   {
    "name": "Dan H.",
-   "status": "Through Week 8",
+   "status": "Out Week 9",
    "picks": [
     {
      "week": "Week 1",
@@ -147,6 +153,11 @@
      "week": "Week 8",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 9",
+     "team": "Man Utd",
+     "result": "D"
     }
    ]
   },
@@ -1124,19 +1135,26 @@
    "gw": "GW18",
    "entries_start": 2,
    "knocked_out": 0,
-   "note": "Picks: Liverpool 2. Jovi F. and Dan H. both on Liverpool (2-1 v Wolves). Both through; the sheet ends here."
+   "note": "Picks: Liverpool 2. Jovi F. and Dan H. both on Liverpool (2-1 v Wolves). Both through."
+  },
+  {
+   "week": "Week 9",
+   "gw": "GW19",
+   "entries_start": 2,
+   "knocked_out": 2,
+   "note": "Picks: Man Utd 2. Both on Man Utd at home to Wolves. 1-1, so nobody won and the pot rolled over."
   }
  ],
  "plan": [],
  "field": [],
  "fixtures": [],
  "flags": [
-  "45 entries, 148 picks.",
+  "45 entries, 150 picks.",
   "Week 2: 14 of 41 on Liverpool at home to Forest. They lost 0-3.",
   "Week 7: 5 of 7 on Bournemouth at home to promoted Burnley. 1-1.",
-  "Jovi F. and Dan H. made identical picks every week from Week 2 on.",
+  "Jovi F. and Dan H. made identical picks every week from Week 2 on, and went out together on the same draw.",
   "2 entries went out for not making a pick.",
-  "Home picks: 117 of 148 (79%), won 84 (72%). Away picks won 21 of 29 (72%).",
+  "Home picks: 119 of 150 (79%), won 84 (71%). Away picks won 21 of 29 (72%).",
   "Picks against promoted sides (Burnley, Leeds, Sunderland): 57, won 43 (75%)."
  ],
  "pileons": [
@@ -1147,6 +1165,7 @@
   "Week 5: Newcastle 10 of 10. Newcastle won.",
   "Week 6: Arsenal 5 and Brentford 2 of 10. Arsenal won, Brentford drew.",
   "Week 7: Bournemouth 5 and Man City 2 of 7. Bournemouth drew, Man City won.",
-  "Week 8: Liverpool 2 of 2. Liverpool won."
+  "Week 8: Liverpool 2 of 2. Liverpool won.",
+  "Week 9: Man Utd 2 of 2. Man Utd drew."
  ]
 }

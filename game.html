@@ -31,6 +31,15 @@
     </table></div>
   </section>
 
+  <section class="card" id="players-card" hidden>
+    <h2>All players</h2>
+    <p class="note">Every entry's picks, longest run first. Names are first name and surname initial.</p>
+    <div class="tablewrap"><table>
+      <thead><tr id="players-head"><th>Player</th><th>Result</th></tr></thead>
+      <tbody id="players"></tbody>
+    </table></div>
+  </section>
+
   <section class="card" id="history-card" hidden>
     <h2>Game so far</h2>
     <p class="note">How the field has shrunk week by week.</p>
@@ -52,7 +61,7 @@
 
   <section class="grid2" id="notes">
     <div class="card"><h2>Flags</h2><ul id="flags"></ul></div>
-    <div class="card"><h2>Where the field will go</h2><ul id="pileons"></ul></div>
+    <div class="card"><h2 id="pileons-title">Where the field will go</h2><ul id="pileons"></ul></div>
   </section>
 
   <section class="card" id="field-card">
@@ -200,6 +209,27 @@ function toggleOdds(tr, fixture) {
     });
     $('entries').append(tr);
   });
+
+  // All players (optional): name, result, then one column per LOS week
+  if ((g.players || []).length) {
+    $('players-card').hidden = false;
+    weeks.forEach((w) => { const th = document.createElement('th'); th.textContent = w; $('players-head').append(th); });
+    g.players.forEach((p) => {
+      const tr = document.createElement('tr');
+      tr.append(cell(p.name), cell(p.status, p.status === 'Won' ? 'ok' : p.status === 'Alive' ? 'ok' : 'muted'));
+      weeks.forEach((w) => {
+        const k = (p.picks || []).find((x) => x.week === w);
+        const td = document.createElement('td');
+        if (k) {
+          td.append(document.createTextNode(k.team + ' '));
+          if (k.result) td.append(mk('span', 'res-' + k.result, k.result));
+        }
+        tr.append(td);
+      });
+      $('players').append(tr);
+    });
+  }
+  if (g.status === 'finished') $('pileons-title').textContent = 'Where the field went';
 
   if ((g.history || []).length) {
     $('history-card').hidden = false;

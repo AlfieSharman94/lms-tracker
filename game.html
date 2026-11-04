@@ -64,6 +64,17 @@
     <div class="card"><h2 id="pileons-title">Where the field will go</h2><ul id="pileons"></ul></div>
   </section>
 
+  <section class="card" id="forecast-card" hidden>
+    <h2>Field forecast</h2>
+    <p class="note" id="fc-note"></p>
+    <div class="tabs" role="tablist" id="fc-tabs"></div>
+    <p class="sub" id="fc-alive"></p>
+    <div class="bars fcbars" id="fc-bars"></div>
+    <h3>What the past games say</h3>
+    <ul id="fc-insights"></ul>
+    <p class="sub" id="fc-method"></p>
+  </section>
+
   <section class="card" id="field-card">
     <h2>The field: entries that can still use each main team</h2>
     <p class="note">Share of remaining entries that have not used the team.</p>
@@ -277,6 +288,37 @@ function toggleOdds(tr, fixture) {
   (g.flags || []).forEach((t) => $('flags').append(li(t)));
   (g.pileons || []).forEach((t) => $('pileons').append(li(t)));
   if (!(g.flags || []).length && !(g.pileons || []).length) $('notes').hidden = true;
+
+  // Field forecast (optional): expected share of the field on each team, per week
+  const fc = g.forecast;
+  if (fc && (fc.weeks || []).length) {
+    $('forecast-card').hidden = false;
+    $('fc-note').textContent = fc.note || '';
+    $('fc-method').textContent = fc.method || '';
+    (fc.insights || []).forEach((t) => $('fc-insights').append(li(t)));
+    const show = (wk) => {
+      $('fc-alive').textContent = 'Expected entries at the start: ' + Math.round(wk.alive_start) + ' · after this week: ' + Math.round(wk.alive_end);
+      $('fc-bars').replaceChildren();
+      wk.teams.filter((t) => t.share >= 0.02).forEach((t) => {
+        const row = mk('div', 'bar');
+        row.title = t.fixture + ' · win ' + t.win_pct + '% (' + (t.price === 'market' ? 'bookmakers' : 'model') + ') · most-picked team in ' + t.most_picked_pct + '% of simulations';
+        const track = mk('div', 'track'); const fill = mk('div', 'fill'); fill.style.width = Math.min(100, t.share * 100) + '%'; track.append(fill);
+        row.append(mk('div', 'name', t.team), track, mk('div', 'val', pct(t.share) + ' · ' + Math.round(t.count)));
+        $('fc-bars').append(row);
+      });
+    };
+    fc.weeks.forEach((wk, i) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', String(i === 0));
+      b.textContent = wk.week + ' (' + wk.gw + ')';
+      b.addEventListener('click', () => {
+        $('fc-tabs').querySelectorAll('button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+        show(wk);
+      });
+      $('fc-tabs').append(b);
+    });
+    show(fc.weeks[0]);
+  }
 
   if ((g.field || []).length) {
     g.field.forEach((r) => {

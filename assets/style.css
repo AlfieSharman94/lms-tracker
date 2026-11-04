@@ -83,3 +83,9 @@ tr.oddsrow > td { background: var(--chip); padding: 4px 10px 16px; }
 .oddsbox .fair { margin: 0; font-size: 0.85rem; }
 .oddsbox table { width: auto; min-width: min(100%, 460px); background: var(--panel); border-radius: 6px; }
 .oddsbox td.best { color: var(--ok); font-weight: 600; }
+
+/* Field forecast */
+.card h3 { font-size: 0.95rem; font-weight: 600; margin: 18px 0 8px; }
+.fcbars .bar { grid-template-columns: 7.5rem 1fr 5rem; }
+#fc-alive { margin-bottom: 10px; }
+#fc-method { margin-top: 12px; }

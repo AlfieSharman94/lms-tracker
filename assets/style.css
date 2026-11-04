@@ -89,3 +89,4 @@ tr.oddsrow > td { background: var(--chip); padding: 4px 10px 16px; }
 .fcbars .bar { grid-template-columns: 7.5rem 1fr 5rem; }
 #fc-alive { margin-bottom: 10px; }
 #fc-method { margin-top: 12px; }
+#plan td:nth-child(3), #entries td:first-child { white-space: nowrap; }

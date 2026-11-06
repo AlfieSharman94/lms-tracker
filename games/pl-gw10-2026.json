@@ -4,10 +4,10 @@
  "competition": "Premier League",
  "status": "active",
  "started": "GW10, Fri 6 Nov 2026",
- "updated": "Thu 5 Nov 2026",
+ "updated": "Fri 6 Nov 2026",
  "next_week": "Week 1 (GW10)",
  "deadline": "Fri 6 Nov, 20:00",
- "headline": "LOS Week 1 is PL gameweek 10 (6 to 8 November). Picks to send: Alfie S. Arsenal, Ray S. Liverpool, Joe S. Arsenal. Arsenal at home to Hull is a clear favourite, so two entries go on it and Ray S. hedges on Liverpool. The hard week is Week 3.",
+ "headline": "LOS Week 1 is PL gameweek 10 (6 to 8 November). Picks to send: Alfie S. Arsenal, Ray S. Liverpool, Joe S. Arsenal. Arsenal at home to Hull is the clear favourite (82%, even without Saka), so two entries go on it and Ray S. hedges on Liverpool. The hard week is Week 3.",
  "result": "",
  "summary": {
   "entries_remaining": "TBC",
@@ -20,7 +20,7 @@
   "my_alive_note": "All entries live for Week 1",
   "next_pick": "Arsenal x2",
   "next_pick_pct": 82,
-  "next_pick_note": "Alfie S. and Joe S. v Hull (H), Sat 7 Nov 15:00. Ray S. on Liverpool"
+  "next_pick_note": "Alfie S. and Joe S. v Hull (H), Sat 7 Nov 15:00. Ray S. on Liverpool at Palace, Sun 8 Nov 14:00"
  },
  "weeks": [
   "Week 1",
@@ -52,9 +52,9 @@
    "pick": "Arsenal",
    "fixture": "Arsenal v Hull (H)",
    "win_pct": 82,
-   "source": "The Odds API (UK books)",
-   "backup": "Liverpool at Palace 58%",
-   "reason": "Clear favourite: 82%, 24 points ahead of the next option. Best fixture of the week and one of Arsenal's best all season. Doubled up with Joe S."
+   "source": "The Odds API (UK books), Fri 6 Nov",
+   "backup": "Liverpool at Palace 60%",
+   "reason": "Clear favourite: 82%, 22 points ahead of the next option. Saka is out but the price already allows for it. Doubled up with Joe S."
   },
   {
    "entry": "Ray S.",
@@ -62,10 +62,10 @@
    "dates": "6-8 Nov",
    "pick": "Liverpool",
    "fixture": "Crystal Palace v Liverpool (A)",
-   "win_pct": 58,
-   "source": "The Odds API (UK books)",
-   "backup": "Everton v Coventry (H) 55%",
-   "reason": "The hedge: keeps one entry off Arsenal so a Hull upset can't take out all three. Palace have lost three of their last four."
+   "win_pct": 60,
+   "source": "The Odds API (UK books), Fri 6 Nov",
+   "backup": "Everton v Coventry (H) 56%",
+   "reason": "The hedge: keeps one entry off Arsenal so a Hull upset can't take out all three. Palace have lost three of their last four; Frimpong is out and Gravenberch a doubt for Liverpool."
   },
   {
    "entry": "Joe S.",
@@ -74,8 +74,8 @@
    "pick": "Arsenal",
    "fixture": "Arsenal v Hull (H)",
    "win_pct": 82,
-   "source": "The Odds API (UK books)",
-   "backup": "Everton v Coventry (H) 55%",
+   "source": "The Odds API (UK books), Fri 6 Nov",
+   "backup": "Everton v Coventry (H) 56%",
    "reason": "Doubles up on the clear favourite instead of Everton (55%). Arsenal isn't needed by Joe S. later in this plan, and Everton stays available."
   },
   {
@@ -84,7 +84,7 @@
    "dates": "21-23 Nov",
    "pick": "Man City",
    "fixture": "Man City v Fulham (H)",
-   "win_pct": 65,
+   "win_pct": 66,
    "source": "The Odds API (UK books)",
    "backup": "Chelsea v Leeds (H) 57%",
    "reason": "Strongest price of the week. Spends City before their best spot (Hull at home on 19 Dec) to buy survival in a week with no clear favourite."
@@ -95,10 +95,10 @@
    "dates": "21-23 Nov",
    "pick": "Brighton",
    "fixture": "Hull v Brighton (A)",
-   "win_pct": 63,
+   "win_pct": 62,
    "source": "The Odds API (UK books)",
    "backup": "Bournemouth v Forest (H) 52%",
-   "reason": "Second-best price of the week. Live odds have it at 63%, well below the 76% model figure, so City v Fulham is now slightly the stronger pick."
+   "reason": "Joint second-best price of the week (62%, level with Spurs). Hull are the weakest side in the model."
   },
   {
    "entry": "Joe S.",
@@ -106,10 +106,10 @@
    "dates": "21-23 Nov",
    "pick": "Spurs",
    "fixture": "Spurs v Ipswich (H)",
-   "win_pct": 59,
+   "win_pct": 62,
    "source": "The Odds API (UK books)",
    "backup": "Liverpool v Man Utd (H) 52%",
-   "reason": "Spurs are rising and Ipswich have the second-worst defence in the model. Good use of a mid-table team."
+   "reason": "Spurs are rising and Ipswich have the second-worst defence in the model. Expect about 18% of the field here too."
   },
   {
    "entry": "Alfie S.",
@@ -117,7 +117,7 @@
    "dates": "27-29 Nov",
    "pick": "Leeds",
    "fixture": "Leeds v Coventry (H)",
-   "win_pct": 58,
+   "win_pct": 62,
    "source": "Model",
    "backup": "Aston Villa at Ipswich 51%",
    "reason": "Disposable team at home to a weak side. Flag: Coventry are improving. Thin week."
@@ -128,7 +128,7 @@
    "dates": "27-29 Nov",
    "pick": "Crystal Palace",
    "fixture": "Crystal Palace v Hull (H)",
-   "win_pct": 60,
+   "win_pct": 50,
    "source": "Model",
    "backup": "Aston Villa at Ipswich 51%",
    "reason": "Pure disposable pick at home to the weakest side. Flag: Hull draw a lot (5 in 9) and draws knock you out. Thin week."
@@ -139,7 +139,7 @@
    "dates": "27-29 Nov",
    "pick": "Brighton",
    "fixture": "Brighton v Newcastle (H)",
-   "win_pct": 69,
+   "win_pct": 60,
    "source": "Model",
    "backup": "Leeds v Coventry (H) 58% (clashes with Alfie S.)",
    "reason": "Best pick of a thin week. Newcastle have the leakiest defence outside the bottom four. Field likely to pile on."
@@ -204,7 +204,7 @@
    "date": "Fri 6 Nov",
    "fixture": "Everton v Coventry",
    "favourite": "Everton",
-   "win_pct": 55,
+   "win_pct": 56,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -214,7 +214,7 @@
    "date": "Sat 7 Nov",
    "fixture": "Leeds v Spurs",
    "favourite": "Leeds",
-   "win_pct": 37,
+   "win_pct": 35,
    "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
@@ -244,7 +244,7 @@
    "date": "Sat 7 Nov",
    "fixture": "Forest v Man City",
    "favourite": "Man City",
-   "win_pct": 55,
+   "win_pct": 56,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -264,7 +264,7 @@
    "date": "Sun 8 Nov",
    "fixture": "Crystal Palace v Liverpool",
    "favourite": "Liverpool",
-   "win_pct": 58,
+   "win_pct": 60,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -284,7 +284,7 @@
    "date": "Sun 8 Nov",
    "fixture": "Sunderland v Chelsea",
    "favourite": "Chelsea",
-   "win_pct": 47,
+   "win_pct": 48,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -294,7 +294,7 @@
    "date": "Sun 8 Nov",
    "fixture": "Man Utd v Aston Villa",
    "favourite": "Man Utd",
-   "win_pct": 42,
+   "win_pct": 44,
    "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
@@ -304,7 +304,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Man City v Fulham",
    "favourite": "Man City",
-   "win_pct": 65,
+   "win_pct": 66,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -314,7 +314,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Bournemouth v Forest",
    "favourite": "Bournemouth",
-   "win_pct": 52,
+   "win_pct": 47,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -324,7 +324,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Aston Villa v Sunderland",
    "favourite": "Aston Villa",
-   "win_pct": 49,
+   "win_pct": 54,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -334,7 +334,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Chelsea v Leeds",
    "favourite": "Chelsea",
-   "win_pct": 53,
+   "win_pct": 52,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -344,7 +344,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Coventry v Crystal Palace",
    "favourite": "Coventry",
-   "win_pct": 42,
+   "win_pct": 41,
    "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
@@ -354,7 +354,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Spurs v Ipswich",
    "favourite": "Spurs",
-   "win_pct": 59,
+   "win_pct": 62,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -374,7 +374,7 @@
    "date": "Sun 22 Nov",
    "fixture": "Hull v Brighton",
    "favourite": "Brighton",
-   "win_pct": 63,
+   "win_pct": 62,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -384,7 +384,7 @@
    "date": "Sun 22 Nov",
    "fixture": "Liverpool v Man Utd",
    "favourite": "Liverpool",
-   "win_pct": 52,
+   "win_pct": 53,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -394,7 +394,7 @@
    "date": "Mon 23 Nov",
    "fixture": "Brentford v Everton",
    "favourite": "Brentford",
-   "win_pct": 52,
+   "win_pct": 50,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -500,19 +500,20 @@
   }
  ],
  "flags": [
-  "Week 1 double-up on Arsenal. At least one entry through: 92% (Arsenal x2 + Liverpool) v 97% (three different teams) v 82% (all three on Arsenal). Expected entries through: 2.22 v 1.95 v 2.46. Two on Arsenal trades a little safety for more entries alive.",
-  "Field forecast: about 49% of the other 38 entries on Arsenal in Week 1, Liverpool next at 12%. If Arsenal slip, around 19 go out together, which is what Ray S. on Liverpool covers.",
+  "Week 1 double-up on Arsenal. At least one entry through: 93% (Arsenal x2 + Liverpool) v 97% (three different teams) v 82% (all three on Arsenal). Expected entries through: 2.24 v 1.99 v 2.47. Over three weeks the double-up keeps at least one entry alive 60% of the time v 57% split and 61% all-in.",
+  "Field forecast: about 48% of the other 38 entries on Arsenal in Week 1, Liverpool next at 12%. If Arsenal slip, around 18 go out together, which is what Ray S. on Liverpool covers.",
+  "Team news (Thu 5 Nov): Saka out for Arsenal, Saliba back in training. Liverpool without Frimpong, Gravenberch 75%. Semenyo out for City. Prices this morning already reflect it.",
   "Rule from now on: two or more entries on one team only when it's 70%+ and at least 15 points ahead of the next option. Weeks 2 and 3 don't have one, so entries stay split.",
-  "Week 2 prices are now live and lower than the model: Brighton at Hull 63% (was 76%), Spurs v Ipswich 59% (was 64%).",
+  "Week 2 prices: Man City v Fulham 66%, Brighton at Hull 62%, Spurs v Ipswich 62%. No team clears the 70% bar, so entries stay split.",
   "Week 3 is thin. Only Brighton at home to Newcastle is a decent pick, so two entries go on disposable teams (Leeds, Crystal Palace).",
   "Alfie S. spends Man City in Week 2. Their best fixture is Hull at home on 19 December. Chelsea v Leeds (53%) is the swap to save City.",
   "Hull draw a lot. Crystal Palace v Hull in Week 3 is a pick for the win %, not for comfort.",
   "Kick-off times aren't a danger sign. Across 5,294 matches since 2011, favourites won as often as expected in every slot, including Friday nights, Saturday 12:30s, the first game after an international break and the game after a Champions League tie. So Alfie S.'s Man City v Fulham (Sat 21 Nov, 12:30, first game after the break) is fine on that count.",
-  "Re-check prices before Friday's deadline."
+  "Re-check prices before the Friday 20:00 deadline (Everton v Coventry kicks off then)."
  ],
  "pileons": [
-  "Week 1: Arsenal v Hull. The forecast has about 49% of the field on it, so a Hull upset would clear out around half the game; Ray S. on Liverpool covers that.",
-  "Week 2: Man City v Fulham and Brighton at Hull will take most picks.",
+  "Week 1: Arsenal v Hull. The forecast has about 48% of the field on it, so a Hull upset would clear out around half the game; Ray S. on Liverpool covers that.",
+  "Week 2: Man City v Fulham (21%), Spurs v Ipswich (18%) and Brighton at Hull (17%) will take most picks.",
   "Week 3: Brighton v Newcastle for anyone who still has Brighton.",
   "Week 3 prices are model figures until bookmakers open markets."
  ],
@@ -534,37 +535,37 @@
       "ha": "H",
       "win_pct": 82,
       "price": "market",
-      "share": 0.489,
-      "count": 18.6,
-      "most_picked_pct": 73
+      "share": 0.476,
+      "count": 18.1,
+      "most_picked_pct": 71
      },
      {
       "team": "Liverpool",
       "fixture": "Crystal Palace v Liverpool",
       "ha": "A",
-      "win_pct": 59,
+      "win_pct": 60,
       "price": "market",
-      "share": 0.116,
-      "count": 4.4,
-      "most_picked_pct": 9
+      "share": 0.119,
+      "count": 4.5,
+      "most_picked_pct": 10
      },
      {
       "team": "Everton",
       "fixture": "Everton v Coventry",
       "ha": "H",
-      "win_pct": 55,
+      "win_pct": 56,
       "price": "market",
-      "share": 0.084,
-      "count": 3.2,
-      "most_picked_pct": 5
+      "share": 0.09,
+      "count": 3.4,
+      "most_picked_pct": 6
      },
      {
       "team": "Man City",
       "fixture": "Forest v Man City",
       "ha": "A",
-      "win_pct": 55,
+      "win_pct": 56,
       "price": "market",
-      "share": 0.084,
+      "share": 0.083,
       "count": 3.2,
       "most_picked_pct": 5
      },
@@ -584,19 +585,19 @@
       "ha": "A",
       "win_pct": 49,
       "price": "market",
-      "share": 0.046,
-      "count": 1.8,
+      "share": 0.045,
+      "count": 1.7,
       "most_picked_pct": 2
      },
      {
       "team": "Chelsea",
       "fixture": "Sunderland v Chelsea",
       "ha": "A",
-      "win_pct": 47,
+      "win_pct": 48,
       "price": "market",
-      "share": 0.036,
-      "count": 1.4,
-      "most_picked_pct": 1
+      "share": 0.041,
+      "count": 1.6,
+      "most_picked_pct": 2
      },
      {
       "team": "Fulham",
@@ -612,19 +613,19 @@
       "team": "Man Utd",
       "fixture": "Man Utd v Aston Villa",
       "ha": "H",
-      "win_pct": 42,
+      "win_pct": 44,
       "price": "market",
-      "share": 0.023,
+      "share": 0.025,
       "count": 0.9,
-      "most_picked_pct": 0
+      "most_picked_pct": 1
      },
      {
-      "team": "Leeds",
+      "team": "Spurs",
       "fixture": "Leeds v Spurs",
-      "ha": "H",
+      "ha": "A",
       "win_pct": 37,
       "price": "market",
-      "share": 0.011,
+      "share": 0.012,
       "count": 0.4,
       "most_picked_pct": 0
      }
@@ -634,17 +635,27 @@
     "week": "Week 2",
     "gw": "GW11",
     "alive_start": 25.2,
-    "alive_end": 14.3,
+    "alive_end": 14.5,
     "teams": [
      {
       "team": "Man City",
       "fixture": "Man City v Fulham",
       "ha": "H",
-      "win_pct": 65,
+      "win_pct": 66,
       "price": "market",
-      "share": 0.212,
+      "share": 0.21,
       "count": 5.3,
       "most_picked_pct": 26
+     },
+     {
+      "team": "Spurs",
+      "fixture": "Spurs v Ipswich",
+      "ha": "H",
+      "win_pct": 62,
+      "price": "market",
+      "share": 0.18,
+      "count": 4.5,
+      "most_picked_pct": 19
      },
      {
       "team": "Brighton",
@@ -652,29 +663,19 @@
       "ha": "A",
       "win_pct": 62,
       "price": "market",
-      "share": 0.188,
-      "count": 4.7,
-      "most_picked_pct": 24
+      "share": 0.168,
+      "count": 4.2,
+      "most_picked_pct": 20
      },
      {
-      "team": "Spurs",
-      "fixture": "Spurs v Ipswich",
+      "team": "Aston Villa",
+      "fixture": "Aston Villa v Sunderland",
       "ha": "H",
-      "win_pct": 59,
+      "win_pct": 54,
       "price": "market",
-      "share": 0.144,
-      "count": 3.6,
-      "most_picked_pct": 14
-     },
-     {
-      "team": "Chelsea",
-      "fixture": "Chelsea v Leeds",
-      "ha": "H",
-      "win_pct": 52,
-      "price": "market",
-      "share": 0.079,
-      "count": 2.0,
-      "most_picked_pct": 6
+      "share": 0.089,
+      "count": 2.3,
+      "most_picked_pct": 9
      },
      {
       "team": "Liverpool",
@@ -682,29 +683,29 @@
       "ha": "H",
       "win_pct": 53,
       "price": "market",
-      "share": 0.077,
-      "count": 1.9,
+      "share": 0.073,
+      "count": 1.8,
+      "most_picked_pct": 6
+     },
+     {
+      "team": "Chelsea",
+      "fixture": "Chelsea v Leeds",
+      "ha": "H",
+      "win_pct": 52,
+      "price": "market",
+      "share": 0.071,
+      "count": 1.8,
       "most_picked_pct": 5
      },
      {
       "team": "Brentford",
       "fixture": "Brentford v Everton",
       "ha": "H",
-      "win_pct": 51,
+      "win_pct": 50,
       "price": "market",
-      "share": 0.072,
-      "count": 1.8,
-      "most_picked_pct": 6
-     },
-     {
-      "team": "Bournemouth",
-      "fixture": "Bournemouth v Forest",
-      "ha": "H",
-      "win_pct": 51,
-      "price": "market",
-      "share": 0.069,
-      "count": 1.7,
-      "most_picked_pct": 6
+      "share": 0.061,
+      "count": 1.5,
+      "most_picked_pct": 4
      },
      {
       "team": "Arsenal",
@@ -714,17 +715,17 @@
       "price": "market",
       "share": 0.056,
       "count": 1.4,
-      "most_picked_pct": 7
+      "most_picked_pct": 6
      },
      {
-      "team": "Aston Villa",
-      "fixture": "Aston Villa v Sunderland",
+      "team": "Bournemouth",
+      "fixture": "Bournemouth v Forest",
       "ha": "H",
-      "win_pct": 48,
+      "win_pct": 47,
       "price": "market",
-      "share": 0.056,
-      "count": 1.4,
-      "most_picked_pct": 4
+      "share": 0.046,
+      "count": 1.2,
+      "most_picked_pct": 3
      },
      {
       "team": "Coventry",
@@ -732,8 +733,8 @@
       "ha": "H",
       "win_pct": 41,
       "price": "market",
-      "share": 0.026,
-      "count": 0.7,
+      "share": 0.024,
+      "count": 0.6,
       "most_picked_pct": 1
      }
     ]
@@ -741,7 +742,7 @@
    {
     "week": "Week 3",
     "gw": "GW12",
-    "alive_start": 14.3,
+    "alive_start": 14.5,
     "alive_end": 7.5,
     "teams": [
      {
@@ -750,8 +751,8 @@
       "ha": "H",
       "win_pct": 62,
       "price": "model",
-      "share": 0.267,
-      "count": 3.8,
+      "share": 0.269,
+      "count": 3.9,
       "most_picked_pct": 32
      },
      {
@@ -760,18 +761,18 @@
       "ha": "H",
       "win_pct": 60,
       "price": "model",
-      "share": 0.171,
-      "count": 2.4,
-      "most_picked_pct": 21
+      "share": 0.177,
+      "count": 2.6,
+      "most_picked_pct": 22
      },
      {
       "team": "Aston Villa",
       "fixture": "Ipswich v Aston Villa",
       "ha": "A",
-      "win_pct": 54,
+      "win_pct": 55,
       "price": "model",
-      "share": 0.145,
-      "count": 2.1,
+      "share": 0.139,
+      "count": 2.0,
       "most_picked_pct": 18
      },
      {
@@ -790,9 +791,9 @@
       "ha": "A",
       "win_pct": 45,
       "price": "model",
-      "share": 0.054,
+      "share": 0.055,
       "count": 0.8,
-      "most_picked_pct": 4
+      "most_picked_pct": 5
      },
      {
       "team": "Chelsea",
@@ -800,7 +801,7 @@
       "ha": "A",
       "win_pct": 42,
       "price": "model",
-      "share": 0.041,
+      "share": 0.04,
       "count": 0.6,
       "most_picked_pct": 2
      },
@@ -825,39 +826,38 @@
       "most_picked_pct": 1
      },
      {
-      "team": "Spurs",
-      "fixture": "Sunderland v Spurs",
-      "ha": "A",
-      "win_pct": 39,
-      "price": "model",
-      "share": 0.027,
-      "count": 0.4,
-      "most_picked_pct": 1
-     },
-     {
       "team": "Arsenal",
       "fixture": "Arsenal v Man City",
       "ha": "H",
       "win_pct": 47,
       "price": "model",
-      "share": 0.026,
+      "share": 0.027,
       "count": 0.4,
       "most_picked_pct": 3
+     },
+     {
+      "team": "Spurs",
+      "fixture": "Sunderland v Spurs",
+      "ha": "A",
+      "win_pct": 39,
+      "price": "model",
+      "share": 0.025,
+      "count": 0.4,
+      "most_picked_pct": 1
      }
     ]
    }
   ],
   "insights": [
-   "Week 1: about half the field (49%, roughly 19 of 38) is expected on Arsenal. If Arsenal slip, around 19 go out at once.",
-   "Liverpool is the second choice at about 12%, so Ray S.'s hedge sits away from the crowd without being alone.",
-   "On Week 1 alone, Liverpool, Everton, City and Arsenal are close in value once you allow for how many others survive with you: Arsenal's 82% is shared with about 29 others.",
-   "Week 2 spreads out: Man City 21%, Brighton 19%, Spurs 14%. Week 3 leans to Leeds 27%, Brighton 17%, Aston Villa 14%.",
-   "Expected field: 25 left after Week 1, 14 after Week 2, 8 after Week 3. About a 11% chance all of them are out by then.",
+   "Week 1: about 48% of the field (roughly 18 of 38) on Arsenal. If Arsenal slip, around 18 go out at once.",
+   "Liverpool is the second choice at about 12%, then Everton 9% and Man City 8%. Arsenal is the most-picked team in 71% of simulations.",
+   "Week 2 spreads out: Man City 21%, Spurs 18%, Brighton 17%. Week 3 leans to Leeds 27%, Brighton 18%, Aston Villa 14%.",
+   "Expected field: 25 left after Week 1, 14 after Week 2, 8 after Week 3. About a 10% chance all of them are out by then.",
+   "Our plan against the simulated field: at least one of our entries alive after Week 3 60%, and we'd hold about 12% of everyone still standing (we're 3 of 41 entries, about 7%).",
    "Group habit across six games (648 picks): win chance drives picks more than anything else, and 69% of picks were one of the player's three best options left. Draws cause 45% of exits.",
    "Most likely to go off the obvious picks: Jay W., Dave D., Ian M. and Matt W. Most by-the-book: Jess D., Paul T., Charlie C. and Bradley B.",
-   "Deepest runners on average: Joel R. and Ant D. (4 weeks), Albie N. (3.7), Paul T. (3.5).",
    "Pairs who pick together: Matt W. and Chris S.; Jovi F. and Dan H. if they enter."
   ],
-  "method": "Model fitted on all six past Cricketers games. Tested on each game in turn: the actual pick was its first choice 41% of the time and in its top three 69%; the week's most-picked team matched its top team in 14 of 26 past weeks. Win chances are bookmaker prices for Weeks 1 and 2 and a rating model for Week 3. New players are assumed to pick like the group. 20,000 simulations."
+  "method": "Model fitted on all six past Cricketers games. Tested on each game in turn: the actual pick was its first choice 41% of the time and in its top three 69%; the week's most-picked team matched its top team in 14 of 26 past weeks. Refreshed Fri 6 Nov with that morning's prices. Win chances are bookmaker prices for Weeks 1 and 2 and a rating model for Week 3. New players are assumed to pick like the group. 20,000 simulations."
  }
 }

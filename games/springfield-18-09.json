@@ -4,23 +4,23 @@
  "competition": "Premier League",
  "status": "active",
  "started": "18 Sep 2026 (TBC)",
- "updated": "Tue 3 Nov 2026",
+ "updated": "Fri 6 Nov 2026",
  "next_week": "Week 5 (GW10)",
- "deadline": "TBC",
- "headline": "Sharman2 is through Week 4 with Spurs and is my last entry alive. 44 entries remain. Week 5 is PL gameweek 10 (6 to 8 November): Liverpool at Palace, then Bournemouth or Villa in Week 6 and Chelsea at Forest in Week 7.",
+ "deadline": "Picks in for Week 5",
+ "headline": "Week 5 picks are in: 44 entries on 7 teams. Everton is the big pile-on (16), and Alfie S. 2 is on Liverpool at Palace (60%) with 7 others. New plan after that: Chelsea v Leeds in Week 6, then Leeds v Coventry in Week 7.",
  "result": "",
  "summary": {
   "entries_remaining": 44,
-  "entries_remaining_note": "After Week 4 (75 down to 44)",
+  "entries_remaining_note": "Going into Week 5 (GW10)",
   "knocked_out": 31,
   "knocked_out_pct": "41%",
   "knocked_out_note": "Week 4 (75 down to 44)",
   "my_alive": 1,
   "my_total": 2,
-  "my_alive_note": "Sharman2 through Week 4 (Spurs 2-0). Sharman1 out in Week 3",
+  "my_alive_note": "Alfie S. 2 through Week 4 (Spurs 2-0). Alfie S. 1 out in Week 3",
   "next_pick": "Liverpool",
-  "next_pick_pct": 57,
-  "next_pick_note": "Sharman2 at Crystal Palace (A), Sun 8 Nov"
+  "next_pick_pct": 60,
+  "next_pick_note": "Alfie S. 2 at Crystal Palace (A), Sun 8 Nov 14:00"
  },
  "weeks": [
   "Week 1",
@@ -33,7 +33,7 @@
  ],
  "entries": [
   {
-   "entry": "Alfie Sharman1",
+   "entry": "Alfie S. 1",
    "status": "Out",
    "picks": [
     {
@@ -54,7 +54,7 @@
    ]
   },
   {
-   "entry": "Alfie Sharman2",
+   "entry": "Alfie S. 2",
    "status": "Alive",
    "picks": [
     {
@@ -76,6 +76,11 @@
      "week": "Week 4",
      "team": "Spurs",
      "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
     }
    ]
   }
@@ -93,59 +98,69 @@
    "gw": "GW8",
    "entries_start": 240,
    "knocked_out": 165,
-   "note": "Survivors had Arsenal 60, Liverpool 9, Newcastle 3, Fulham 2, Bournemouth 1. Sharman1 out on Brentford at Hull."
+   "note": "Survivors had Arsenal 60, Liverpool 9, Newcastle 3, Fulham 2, Bournemouth 1. Alfie S. 1 out on Brentford at Hull."
   },
   {
    "week": "Week 4",
    "gw": "GW9",
    "entries_start": 75,
    "knocked_out": 31,
-   "note": "Survivors had Spurs 27, Brentford 10, Chelsea 5, Bournemouth 2. Sharman2 through with Spurs 2-0 v Palace."
+   "note": "Survivors had Spurs 27, Brentford 10, Chelsea 5, Bournemouth 2. Alfie S. 2 through with Spurs 2-0 v Palace."
   }
  ],
  "plan": [
   {
-   "entry": "Alfie Sharman2",
+   "entry": "Alfie S. 2",
    "lms_week": "Week 5 (GW10)",
    "dates": "6-8 Nov",
    "pick": "Liverpool",
    "fixture": "Crystal Palace v Liverpool (A)",
-   "win_pct": 57,
-   "source": "Best prices via Wincomparator",
-   "backup": "Everton v Coventry (H) 55%",
-   "reason": "Best price Sharman2 can use. Palace have lost six of nine. Arsenal, Man City and Brighton are already used."
+   "win_pct": 60,
+   "source": "The Odds API (UK books), Fri 6 Nov",
+   "backup": "Picks are in",
+   "reason": "Submitted. Best price Alfie S. 2 could use. 8 of 44 on Liverpool; Everton (16) is the big group."
   },
   {
-   "entry": "Alfie Sharman2",
+   "entry": "Alfie S. 2",
    "lms_week": "Week 6 (GW11)",
    "dates": "21-23 Nov",
-   "pick": "Bournemouth",
-   "fixture": "Bournemouth v Forest (H)",
-   "win_pct": 55,
-   "source": "Model",
-   "backup": "Aston Villa v Sunderland (H) 52%",
-   "reason": "Your call between Bournemouth and Villa. Bournemouth edges it: slightly better price, and Villa stay saved for December. Chelsea moves to Week 7."
+   "pick": "Chelsea",
+   "fixture": "Chelsea v Leeds (H)",
+   "win_pct": 52,
+   "source": "The Odds API (UK books)",
+   "backup": "Aston Villa v Sunderland (H) 54%",
+   "reason": "Changed from Bournemouth, now only 47% on live prices. Only 8 of 44 can still use Chelsea, so few will be with you, and Villa stays saved for December."
   },
   {
-   "entry": "Alfie Sharman2",
+   "entry": "Alfie S. 2",
    "lms_week": "Week 7 (GW12)",
    "dates": "27-29 Nov",
-   "pick": "Chelsea",
-   "fixture": "Forest v Chelsea (A)",
-   "win_pct": 44,
+   "pick": "Leeds",
+   "fixture": "Leeds v Coventry (H)",
+   "win_pct": 62,
    "source": "Model",
-   "backup": "Crystal Palace v Hull (H) 60%",
-   "reason": "Your plan. Away at Forest on the Friday night, and the model has it under 45%, so this is the riskiest week of the three. Palace v Hull is the stronger backup."
+   "backup": "Crystal Palace v Hull (H) 50%",
+   "reason": "Changed from Chelsea at Forest (now 42% in the model). Best price of the week and nobody has used Leeds, so expect about a third of the field here too."
   }
  ],
  "field": [
   {
-   "team": "Man Utd",
+   "team": "Leeds",
    "share": 1.0,
    "count": 44
   },
   {
+   "team": "Man Utd",
+   "share": 0.977,
+   "count": 43
+  },
+  {
    "team": "Aston Villa",
+   "share": 0.977,
+   "count": 43
+  },
+  {
+   "team": "Crystal Palace",
    "share": 0.977,
    "count": 43
   },
@@ -156,11 +171,6 @@
   },
   {
    "team": "Bournemouth",
-   "share": 0.932,
-   "count": 41
-  },
-  {
-   "team": "Liverpool",
    "share": 0.886,
    "count": 39
   },
@@ -170,14 +180,19 @@
    "count": 34
   },
   {
-   "team": "Brighton",
-   "share": 0.75,
-   "count": 33
+   "team": "Liverpool",
+   "share": 0.705,
+   "count": 31
   },
   {
-   "team": "Chelsea",
-   "share": 0.341,
-   "count": 15
+   "team": "Everton",
+   "share": 0.636,
+   "count": 28
+  },
+  {
+   "team": "Brighton",
+   "share": 0.568,
+   "count": 25
   },
   {
    "team": "Spurs",
@@ -185,9 +200,14 @@
    "count": 15
   },
   {
-   "team": "Man City",
+   "team": "Chelsea",
    "share": 0.182,
    "count": 8
+  },
+  {
+   "team": "Man City",
+   "share": 0.136,
+   "count": 6
   },
   {
    "team": "Arsenal",
@@ -202,8 +222,8 @@
    "date": "Fri 6 Nov",
    "fixture": "Everton v Coventry",
    "favourite": "Everton",
-   "win_pct": 55,
-   "source": "FanDuel",
+   "win_pct": 56,
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -212,8 +232,8 @@
    "date": "Sat 7 Nov",
    "fixture": "Leeds v Spurs",
    "favourite": "Leeds",
-   "win_pct": 37,
-   "source": "FanDuel",
+   "win_pct": 35,
+   "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
   {
@@ -223,7 +243,7 @@
    "fixture": "Arsenal v Hull",
    "favourite": "Arsenal",
    "win_pct": 82,
-   "source": "FanDuel",
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -232,9 +252,9 @@
    "date": "Sat 7 Nov",
    "fixture": "Fulham v Newcastle",
    "favourite": "Fulham",
-   "win_pct": 41,
-   "source": "Model",
-   "my_entries": "No clear favourite"
+   "win_pct": 46,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Yes (1 of 1)"
   },
   {
    "week": "Week 5",
@@ -242,8 +262,8 @@
    "date": "Sat 7 Nov",
    "fixture": "Forest v Man City",
    "favourite": "Man City",
-   "win_pct": 52,
-   "source": "Model",
+   "win_pct": 56,
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -252,8 +272,8 @@
    "date": "Sun 8 Nov",
    "fixture": "Brighton v Brentford",
    "favourite": "Brighton",
-   "win_pct": 52,
-   "source": "DraftKings / 888",
+   "win_pct": 49,
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -262,8 +282,8 @@
    "date": "Sun 8 Nov",
    "fixture": "Crystal Palace v Liverpool",
    "favourite": "Liverpool",
-   "win_pct": 57,
-   "source": "Best prices (Wincomparator)",
+   "win_pct": 60,
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -272,9 +292,9 @@
    "date": "Sun 8 Nov",
    "fixture": "Ipswich v Bournemouth",
    "favourite": "Bournemouth",
-   "win_pct": 41,
-   "source": "Best prices (Wincomparator)",
-   "my_entries": "No clear favourite"
+   "win_pct": 49,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Yes (1 of 1)"
   },
   {
    "week": "Week 5",
@@ -282,8 +302,8 @@
    "date": "Sun 8 Nov",
    "fixture": "Sunderland v Chelsea",
    "favourite": "Chelsea",
-   "win_pct": 51,
-   "source": "bet365",
+   "win_pct": 48,
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -292,8 +312,8 @@
    "date": "Sun 8 Nov",
    "fixture": "Man Utd v Aston Villa",
    "favourite": "Man Utd",
-   "win_pct": 42,
-   "source": "FanDuel",
+   "win_pct": 44,
+   "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
   {
@@ -302,8 +322,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Man City v Fulham",
    "favourite": "Man City",
-   "win_pct": 67,
-   "source": "Model",
+   "win_pct": 66,
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -312,8 +332,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Bournemouth v Forest",
    "favourite": "Bournemouth",
-   "win_pct": 55,
-   "source": "Model",
+   "win_pct": 47,
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -322,8 +342,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Aston Villa v Sunderland",
    "favourite": "Aston Villa",
-   "win_pct": 52,
-   "source": "Model",
+   "win_pct": 54,
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -332,8 +352,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Chelsea v Leeds",
    "favourite": "Chelsea",
-   "win_pct": 57,
-   "source": "Model",
+   "win_pct": 52,
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -342,8 +362,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Coventry v Crystal Palace",
    "favourite": "Crystal Palace",
-   "win_pct": 41,
-   "source": "Model",
+   "win_pct": 32,
+   "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
   {
@@ -352,8 +372,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Spurs v Ipswich",
    "favourite": "Spurs",
-   "win_pct": 64,
-   "source": "Model",
+   "win_pct": 62,
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -362,8 +382,8 @@
    "date": "Sat 21 Nov",
    "fixture": "Newcastle v Arsenal",
    "favourite": "Arsenal",
-   "win_pct": 62,
-   "source": "Model",
+   "win_pct": 59,
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -372,8 +392,8 @@
    "date": "Sun 22 Nov",
    "fixture": "Hull v Brighton",
    "favourite": "Brighton",
-   "win_pct": 76,
-   "source": "Model",
+   "win_pct": 62,
+   "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
   {
@@ -382,9 +402,9 @@
    "date": "Sun 22 Nov",
    "fixture": "Liverpool v Man Utd",
    "favourite": "Liverpool",
-   "win_pct": 55,
-   "source": "FanDuel",
-   "my_entries": "Yes (1 of 1)"
+   "win_pct": 53,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Used"
   },
   {
    "week": "Week 6",
@@ -393,7 +413,7 @@
    "fixture": "Brentford v Everton",
    "favourite": "Brentford",
    "win_pct": 50,
-   "source": "Model",
+   "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
   {
@@ -402,7 +422,7 @@
    "date": "Fri 27 Nov",
    "fixture": "Forest v Chelsea",
    "favourite": "Chelsea",
-   "win_pct": 44,
+   "win_pct": 42,
    "source": "Model",
    "my_entries": "No clear favourite"
   },
@@ -412,7 +432,7 @@
    "date": "Sat 28 Nov",
    "fixture": "Leeds v Coventry",
    "favourite": "Leeds",
-   "win_pct": 58,
+   "win_pct": 62,
    "source": "Model",
    "my_entries": "Yes (1 of 1)"
   },
@@ -422,9 +442,9 @@
    "date": "Sat 28 Nov",
    "fixture": "Man Utd v Brentford",
    "favourite": "Man Utd",
-   "win_pct": 45,
+   "win_pct": 39,
    "source": "Model",
-   "my_entries": "Yes (1 of 1)"
+   "my_entries": "No clear favourite"
   },
   {
    "week": "Week 7",
@@ -432,7 +452,7 @@
    "date": "Sat 28 Nov",
    "fixture": "Ipswich v Aston Villa",
    "favourite": "Aston Villa",
-   "win_pct": 51,
+   "win_pct": 55,
    "source": "Model",
    "my_entries": "Yes (1 of 1)"
   },
@@ -442,9 +462,9 @@
    "date": "Sun 29 Nov",
    "fixture": "Everton v Liverpool",
    "favourite": "Liverpool",
-   "win_pct": 50,
+   "win_pct": 41,
    "source": "Model",
-   "my_entries": "Yes (1 of 1)"
+   "my_entries": "No clear favourite"
   },
   {
    "week": "Week 7",
@@ -452,7 +472,7 @@
    "date": "Sun 29 Nov",
    "fixture": "Brighton v Newcastle",
    "favourite": "Brighton",
-   "win_pct": 69,
+   "win_pct": 60,
    "source": "Model",
    "my_entries": "Used"
   },
@@ -462,7 +482,7 @@
    "date": "Sun 29 Nov",
    "fixture": "Crystal Palace v Hull",
    "favourite": "Crystal Palace",
-   "win_pct": 60,
+   "win_pct": 50,
    "source": "Model",
    "my_entries": "Yes (1 of 1)"
   },
@@ -472,7 +492,7 @@
    "date": "Sun 29 Nov",
    "fixture": "Fulham v Bournemouth",
    "favourite": "Bournemouth",
-   "win_pct": 49,
+   "win_pct": 45,
    "source": "Model",
    "my_entries": "Yes (1 of 1)"
   },
@@ -482,7 +502,7 @@
    "date": "Sun 29 Nov",
    "fixture": "Sunderland v Spurs",
    "favourite": "Spurs",
-   "win_pct": 43,
+   "win_pct": 39,
    "source": "Model",
    "my_entries": "No clear favourite"
   },
@@ -492,22 +512,1389 @@
    "date": "Sun 29 Nov",
    "fixture": "Arsenal v Man City",
    "favourite": "Arsenal",
-   "win_pct": 49,
+   "win_pct": 47,
    "source": "Model",
    "my_entries": "Used"
   }
  ],
  "flags": [
-  "Nobody left can use Arsenal, and only 8 can use Man City. Field counts are from the sheet after Week 4 (44 entries).",
-  "Week 7: Chelsea at Forest is 44% in the model, below the 45% line. Crystal Palace v Hull (60%) is the safer option if prices don't move.",
-  "Week 6: Bournemouth (55%) or Villa (52%). Picking Villa here spends a team being saved for December.",
-  "Sharman2 has used Man City, Brighton, Spurs and Arsenal, the four best fixtures across Weeks 6 and 7.",
-  "Week 5 deadline not known yet. Re-check prices before each deadline; Weeks 6 and 7 are model figures until markets open."
+  "Week 5 picks: Everton 16, Brighton 8, Liverpool 8, Chelsea 7, Bournemouth 2, Man City 2, Man Utd 1. On today's prices about 23 of 44 get through.",
+  "Everton v Coventry kicks off tonight at 20:00 with 16 entries on it (56%). A slip there takes out over a third of the field before Alfie S. 2 plays.",
+  "Plan change: Chelsea in Week 6 and Leeds in Week 7, replacing Bournemouth and Chelsea at Forest. Chance Alfie S. 2 is still alive after Week 7: 19% v 12% on the old plan.",
+  "Villa then Leeds is just as safe (20%) but leaves Alfie S. 2 with more company: about a fifth of the field is expected on Villa in Week 6, against only 8 who can use Chelsea.",
+  "Nobody can use Arsenal, only 6 can use Man City and 8 Chelsea. Leeds, Villa, Palace and Man Utd are open to almost everyone.",
+  "Week 7 prices are model figures until markets open. Re-check prices before each deadline."
  ],
  "pileons": [
-  "Week 5: 39 of the 44 can still use Liverpool and nobody has Arsenal, so expect most of the field on Liverpool at Palace. Sharman2 goes with the crowd; a Liverpool slip would take out most of the field too.",
-  "Week 6: Bournemouth (41 can use) and Villa (43) are both widely available, so Sharman2 will have company either way. Only 8 can use Man City v Fulham.",
-  "Week 7: only 15 entries can still use Chelsea, so Chelsea at Forest is a contrarian pick. If Chelsea win and a bigger group falls elsewhere, Sharman2 gains ground.",
-  "Week 7: Brighton v Newcastle for the 33 who still have Brighton; Palace v Hull is open to 43."
+  "Week 5: Everton v Coventry, 16 of 44. Brighton and Liverpool 8 each.",
+  "Week 6 forecast: Brighton at Hull and Villa v Sunderland about 19% each, Liverpool v Man Utd 13%. Chelsea is open to only 8.",
+  "Week 7 forecast: Leeds v Coventry about 34%, Villa at Ipswich 15%, Palace v Hull 13%.",
+  "Expected field: about 23 left after Week 5, 12 after Week 6, 6 after Week 7 (forecast from the Cricketers pick model)."
+ ],
+ "players": [
+  {
+   "name": "Adrian J.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Andrew B.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Crystal Palace",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Anthony M.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Fulham",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Ciara C.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Dan R.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Dawn F.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Jenny A.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Joe M.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Kevin B.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Kevin F.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Mark S.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Ipswich",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Neil P.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Pete K.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Shaun T.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Steven A.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Terry O.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Everton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Gill F.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Karen T.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Katie P.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Kevin W.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Lucas W.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Scott L.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Stuart V.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Theo A.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Brighton",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Aaron B.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Alfie S. 2",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Brendan F.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "David W.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Newcastle",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Faris A.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Glen M.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Samuel S.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Tom O.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Liverpool",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Ally C.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Chloe S.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Darren L.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Jacob D.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Ipswich",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Kevin G.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Ipswich",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Fulham",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Lee C.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Michelle G.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Chelsea",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Ayden D.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Bournemouth",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Steven S.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Bournemouth",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Joanne S.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Man City",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Stacey S.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Brighton",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Spurs",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Man City",
+     "result": ""
+    }
+   ]
+  },
+  {
+   "name": "Tony B.",
+   "status": "Alive",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Chelsea",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "W"
+    },
+    {
+     "week": "Week 3",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 4",
+     "team": "Brentford",
+     "result": "W"
+    },
+    {
+     "week": "Week 5",
+     "team": "Man Utd",
+     "result": ""
+    }
+   ]
+  }
  ]
 }

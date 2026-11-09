@@ -4,7 +4,7 @@
  "competition": "Premier League",
  "status": "active",
  "started": "18 Sep 2026 (TBC)",
- "updated": "Sun 8 Nov 2026",
+ "updated": "Mon 9 Nov 2026",
  "next_week": "Week 6 (GW11)",
  "deadline": "Fri 20 Nov, 10:00",
  "headline": "Alfie S. 2 is through Week 5 with Liverpool (3-1 at Palace). 34 entries left. New plan: Aston Villa v Sunderland in Week 6, Leeds v Coventry in Week 7, then Chelsea at home to Palace in Week 8.",
@@ -14,7 +14,7 @@
   "entries_remaining_note": "After Week 5 (44 down to 34)",
   "knocked_out": 10,
   "knocked_out_pct": "23%",
-  "knocked_out_note": "Week 5: Chelsea 7, Man City 2, Man Utd 1",
+  "knocked_out_note": "Week 5: Chelsea 7, Man City 2, Man Utd 1 (4-4 v Villa)",
   "my_alive": 1,
   "my_total": 2,
   "my_alive_note": "Alfie S. 2 through Week 5 (Liverpool 3-1 at Palace). Alfie S. 1 out in Week 3",
@@ -113,7 +113,7 @@
    "gw": "GW10",
    "entries_start": 44,
    "knocked_out": 10,
-   "note": "Out: Chelsea 7 (0-1 at Sunderland), Man City 2 (1-3 at Forest), Man Utd 1 (v Villa). Survivors had Everton 16, Brighton 8, Liverpool 8, Bournemouth 2. Alfie S. 2 through with Liverpool 3-1 at Palace."
+   "note": "Out: Chelsea 7 (0-1 at Sunderland), Man City 2 (1-3 at Forest), Man Utd 1 (4-4 v Villa). Survivors had Everton 16, Brighton 8, Liverpool 8, Bournemouth 2. Alfie S. 2 through with Liverpool 3-1 at Palace."
   }
  ],
  "plan": [
@@ -537,7 +537,7 @@
  ],
  "flags": [
   "Plan change: Villa, Leeds, Chelsea replaces Chelsea, Leeds. Chance Alfie S. 2 is alive after Week 8: 20% v 16% with Chelsea first, because Chelsea at home to Palace (58%) beats Chelsea v Leeds (52%).",
-  "Week 8 assumed to be GW13, the midweek round on 1 to 2 December. Confirm with the organiser; if it's skipped, Week 8 becomes GW14.",
+  "Week 8 is the midweek round (GW13, 1 to 2 December), confirmed by the organiser. Exact kick-off days and times to follow.",
   "Week 6 is thin: the five best fixtures include Man City, Brighton, Spurs, Arsenal and Liverpool, all used. Villa (54%) is the best left.",
   "Deadline is 10:00 on Friday 20 November, before any Week 6 game. Re-check prices that morning; Weeks 7 and 8 are model figures until markets open.",
   "Nobody can use Arsenal, only 4 can use Man City and 7 Chelsea. Villa, Leeds, Man Utd and Sunderland are open to all 34."
@@ -1910,7 +1910,7 @@
     {
      "week": "Week 5",
      "team": "Man Utd",
-     "result": ""
+     "result": "D"
     }
    ]
   }

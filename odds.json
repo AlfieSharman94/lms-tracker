@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T18:52:17Z",
+ "updated": "2026-11-16T06:31:18Z",
  "source": "The Odds API (UK bookmakers)",
  "events": [
   {
@@ -17,23 +17,23 @@
      "name": "Bet Victor",
      "home": 1.33,
      "draw": 5.0,
-     "away": 6.0
+     "away": 5.75
     },
     {
      "name": "Betano (UK)",
      "home": 1.33,
      "draw": 5.0,
-     "away": 6.0
+     "away": 5.75
     },
     {
      "name": "Betfair",
-     "home": 1.44,
-     "draw": 5.5,
-     "away": 7.8
+     "home": 1.41,
+     "draw": 5.6,
+     "away": 8.0
     },
     {
      "name": "Betfair Sportsbook",
-     "home": 1.4,
+     "home": 1.36,
      "draw": 5.0,
      "away": 7.0
     },
@@ -45,9 +45,9 @@
     },
     {
      "name": "Betway",
-     "home": 1.38,
+     "home": 1.36,
      "draw": 5.0,
-     "away": 6.0
+     "away": 6.5
     },
     {
      "name": "BoyleSports",
@@ -81,8 +81,8 @@
     },
     {
      "name": "LeoVegas",
-     "home": 1.35,
-     "draw": 5.2,
+     "home": 1.36,
+     "draw": 5.0,
      "away": 6.75
     },
     {
@@ -93,32 +93,32 @@
     },
     {
      "name": "Matchbook",
-     "home": 1.44,
-     "draw": 5.5,
-     "away": 7.8
+     "home": 1.42,
+     "draw": 5.6,
+     "away": 8.0
     },
     {
      "name": "Paddy Power",
-     "home": 1.4,
+     "home": 1.36,
      "draw": 5.0,
      "away": 7.0
     },
     {
      "name": "Sky Bet",
-     "home": 1.4,
-     "draw": 4.8,
-     "away": 6.5
+     "home": 1.36,
+     "draw": 5.0,
+     "away": 7.0
     },
     {
      "name": "Smarkets",
-     "home": 1.42,
-     "draw": 5.4,
-     "away": 7.6
+     "home": 1.4,
+     "draw": 5.5,
+     "away": 7.8
     },
     {
      "name": "Unibet (UK)",
-     "home": 1.37,
-     "draw": 5.25,
+     "home": 1.4,
+     "draw": 5.0,
      "away": 7.0
     },
     {
@@ -162,7 +162,7 @@
      "name": "Betfair",
      "home": 1.87,
      "draw": 3.9,
-     "away": 4.6
+     "away": 4.7
     },
     {
      "name": "Betfair Sportsbook",
@@ -172,15 +172,15 @@
     },
     {
      "name": "Betfred (UK)",
-     "home": 1.73,
+     "home": 1.8,
      "draw": 3.75,
-     "away": 4.6
+     "away": 4.33
     },
     {
      "name": "Betway",
-     "home": 1.73,
-     "draw": 3.75,
-     "away": 4.2
+     "home": 1.75,
+     "draw": 3.6,
+     "away": 4.0
     },
     {
      "name": "BoyleSports",
@@ -214,7 +214,7 @@
     },
     {
      "name": "LeoVegas",
-     "home": 1.77,
+     "home": 1.75,
      "draw": 3.65,
      "away": 4.2
     },
@@ -227,7 +227,7 @@
     {
      "name": "Matchbook",
      "home": 1.87,
-     "draw": 3.9,
+     "draw": 3.85,
      "away": 4.7
     },
     {
@@ -245,8 +245,8 @@
     {
      "name": "Smarkets",
      "home": 1.86,
-     "draw": 3.85,
-     "away": 4.5
+     "draw": 3.8,
+     "away": 4.6
     },
     {
      "name": "Unibet (UK)",
@@ -281,26 +281,26 @@
     },
     {
      "name": "Bet Victor",
-     "home": 1.9,
+     "home": 1.87,
      "draw": 3.5,
-     "away": 3.12
+     "away": 3.2
     },
     {
      "name": "Betano (UK)",
-     "home": 1.9,
+     "home": 1.87,
      "draw": 3.5,
-     "away": 3.12
+     "away": 3.2
     },
     {
      "name": "Betfair",
      "home": 2.06,
-     "draw": 3.65,
-     "away": 3.9
+     "draw": 3.7,
+     "away": 3.95
     },
     {
      "name": "Betfair Sportsbook",
      "home": 2.0,
-     "draw": 3.6,
+     "draw": 3.5,
      "away": 3.6
     },
     {
@@ -325,7 +325,7 @@
      "name": "Casumo",
      "home": 1.95,
      "draw": 3.4,
-     "away": 3.4
+     "away": 3.5
     },
     {
      "name": "Coral",
@@ -335,9 +335,9 @@
     },
     {
      "name": "Grosvenor",
-     "home": 1.94,
-     "draw": 3.55,
-     "away": 3.7
+     "home": 1.97,
+     "draw": 3.5,
+     "away": 3.6
     },
     {
      "name": "Ladbrokes",
@@ -347,26 +347,26 @@
     },
     {
      "name": "LeoVegas",
-     "home": 2.02,
+     "home": 2.0,
      "draw": 3.45,
-     "away": 3.4
+     "away": 3.45
     },
     {
      "name": "LiveScore Bet",
-     "home": 1.93,
-     "draw": 3.5,
-     "away": 3.65
+     "home": 1.97,
+     "draw": 3.45,
+     "away": 3.55
     },
     {
      "name": "Matchbook",
      "home": 2.06,
-     "draw": 3.65,
-     "away": 3.9
+     "draw": 3.7,
+     "away": 4.0
     },
     {
      "name": "Paddy Power",
      "home": 2.0,
-     "draw": 3.6,
+     "draw": 3.5,
      "away": 3.6
     },
     {
@@ -378,20 +378,20 @@
     {
      "name": "Smarkets",
      "home": 2.04,
-     "draw": 3.6,
-     "away": 3.85
+     "draw": 3.65,
+     "away": 3.9
     },
     {
      "name": "Unibet (UK)",
      "home": 2.05,
      "draw": 3.5,
-     "away": 3.5
+     "away": 3.6
     },
     {
      "name": "Virgin Bet",
-     "home": 1.93,
-     "draw": 3.5,
-     "away": 3.65
+     "home": 1.97,
+     "draw": 3.45,
+     "away": 3.55
     },
     {
      "name": "William Hill",
@@ -427,7 +427,7 @@
     {
      "name": "Betfair",
      "home": 1.96,
-     "draw": 3.85,
+     "draw": 3.9,
      "away": 4.2
     },
     {
@@ -511,7 +511,7 @@
     {
      "name": "Smarkets",
      "home": 1.95,
-     "draw": 3.8,
+     "draw": 3.85,
      "away": 4.1
     },
     {
@@ -547,15 +547,15 @@
     },
     {
      "name": "Bet Victor",
-     "home": 2.15,
-     "draw": 3.6,
-     "away": 2.55
+     "home": 2.2,
+     "draw": 3.5,
+     "away": 2.5
     },
     {
      "name": "Betano (UK)",
-     "home": 2.15,
-     "draw": 3.6,
-     "away": 2.55
+     "home": 2.2,
+     "draw": 3.5,
+     "away": 2.5
     },
     {
      "name": "Betfair",
@@ -565,9 +565,9 @@
     },
     {
      "name": "Betfair Sportsbook",
-     "home": 2.4,
-     "draw": 3.4,
-     "away": 2.8
+     "home": 2.38,
+     "draw": 3.6,
+     "away": 2.75
     },
     {
      "name": "Betfred (UK)",
@@ -579,7 +579,7 @@
      "name": "Betway",
      "home": 2.3,
      "draw": 3.5,
-     "away": 2.75
+     "away": 2.7
     },
     {
      "name": "BoyleSports",
@@ -590,8 +590,8 @@
     {
      "name": "Casumo",
      "home": 2.3,
-     "draw": 3.4,
-     "away": 2.75
+     "draw": 3.5,
+     "away": 2.7
     },
     {
      "name": "Coral",
@@ -609,7 +609,7 @@
      "name": "Ladbrokes",
      "home": 2.37,
      "draw": 3.6,
-     "away": 2.75
+     "away": 2.8
     },
     {
      "name": "LeoVegas",
@@ -627,31 +627,31 @@
      "name": "Matchbook",
      "home": 2.56,
      "draw": 3.65,
-     "away": 2.94
+     "away": 2.96
     },
     {
      "name": "Paddy Power",
-     "home": 2.4,
-     "draw": 3.4,
-     "away": 2.8
+     "home": 2.38,
+     "draw": 3.6,
+     "away": 2.75
     },
     {
      "name": "Sky Bet",
-     "home": 2.4,
-     "draw": 3.4,
+     "home": 2.38,
+     "draw": 3.5,
      "away": 2.75
     },
     {
      "name": "Smarkets",
      "home": 2.54,
      "draw": 3.6,
-     "away": 2.9
+     "away": 2.88
     },
     {
      "name": "Unibet (UK)",
-     "home": 2.35,
+     "home": 2.38,
      "draw": 3.6,
-     "away": 2.85
+     "away": 2.8
     },
     {
      "name": "Virgin Bet",
@@ -813,26 +813,26 @@
     },
     {
      "name": "Bet Victor",
-     "home": 4.6,
-     "draw": 4.1,
+     "home": 4.75,
+     "draw": 4.0,
      "away": 1.5
     },
     {
      "name": "Betano (UK)",
-     "home": 4.6,
-     "draw": 4.1,
+     "home": 4.75,
+     "draw": 4.0,
      "away": 1.5
     },
     {
      "name": "Betfair",
      "home": 6.0,
-     "draw": 4.4,
+     "draw": 4.3,
      "away": 1.63
     },
     {
      "name": "Betfair Sportsbook",
-     "home": 5.0,
-     "draw": 4.2,
+     "home": 5.5,
+     "draw": 4.0,
      "away": 1.57
     },
     {
@@ -855,9 +855,9 @@
     },
     {
      "name": "Casumo",
-     "home": 5.0,
+     "home": 5.25,
      "draw": 4.0,
-     "away": 1.55
+     "away": 1.5
     },
     {
      "name": "Coral",
@@ -879,31 +879,31 @@
     },
     {
      "name": "LeoVegas",
-     "home": 5.0,
+     "home": 5.2,
      "draw": 4.1,
-     "away": 1.57
+     "away": 1.55
     },
     {
      "name": "LiveScore Bet",
      "home": 5.4,
      "draw": 4.0,
-     "away": 1.54
+     "away": 1.53
     },
     {
      "name": "Matchbook",
      "home": 6.0,
-     "draw": 4.4,
+     "draw": 4.3,
      "away": 1.62
     },
     {
      "name": "Paddy Power",
-     "home": 5.0,
-     "draw": 4.2,
+     "home": 5.5,
+     "draw": 4.0,
      "away": 1.57
     },
     {
      "name": "Sky Bet",
-     "home": 5.25,
+     "home": 5.5,
      "draw": 4.0,
      "away": 1.57
     },
@@ -911,11 +911,11 @@
      "name": "Smarkets",
      "home": 5.9,
      "draw": 4.4,
-     "away": 1.62
+     "away": 1.6
     },
     {
      "name": "Unibet (UK)",
-     "home": 5.25,
+     "home": 5.5,
      "draw": 4.25,
      "away": 1.58
     },
@@ -923,13 +923,13 @@
      "name": "Virgin Bet",
      "home": 5.4,
      "draw": 4.0,
-     "away": 1.54
+     "away": 1.53
     },
     {
      "name": "William Hill",
      "home": 5.0,
      "draw": 4.0,
-     "away": 1.6
+     "away": 1.57
     }
    ]
   },
@@ -988,9 +988,9 @@
     },
     {
      "name": "Casumo",
-     "home": 5.25,
-     "draw": 4.2,
-     "away": 1.48
+     "home": 5.5,
+     "draw": 4.33,
+     "away": 1.44
     },
     {
      "name": "Coral",
@@ -1018,15 +1018,15 @@
     },
     {
      "name": "LiveScore Bet",
-     "home": 5.8,
+     "home": 5.75,
      "draw": 4.25,
-     "away": 1.48
+     "away": 1.49
     },
     {
      "name": "Matchbook",
      "home": 6.6,
      "draw": 4.5,
-     "away": 1.54
+     "away": 1.55
     },
     {
      "name": "Paddy Power",
@@ -1054,9 +1054,9 @@
     },
     {
      "name": "Virgin Bet",
-     "home": 5.8,
+     "home": 5.75,
      "draw": 4.25,
-     "away": 1.48
+     "away": 1.49
     },
     {
      "name": "William Hill",
@@ -1091,7 +1091,7 @@
     },
     {
      "name": "Betfair",
-     "home": 1.83,
+     "home": 1.82,
      "draw": 4.3,
      "away": 4.4
     },
@@ -1147,7 +1147,7 @@
      "name": "LeoVegas",
      "home": 1.73,
      "draw": 4.0,
-     "away": 3.95
+     "away": 3.9
     },
     {
      "name": "LiveScore Bet",
@@ -1157,7 +1157,7 @@
     },
     {
      "name": "Matchbook",
-     "home": 1.83,
+     "home": 1.82,
      "draw": 4.3,
      "away": 4.4
     },
@@ -1177,7 +1177,7 @@
      "name": "Smarkets",
      "home": 1.81,
      "draw": 4.2,
-     "away": 4.3
+     "away": 4.4
     },
     {
      "name": "Unibet (UK)",
@@ -1208,7 +1208,7 @@
      "name": "888sport",
      "home": 2.0,
      "draw": 3.5,
-     "away": 3.5
+     "away": 3.3
     },
     {
      "name": "Bet Victor",
@@ -1226,7 +1226,7 @@
      "name": "Betfair",
      "home": 2.2,
      "draw": 3.75,
-     "away": 3.45
+     "away": 3.5
     },
     {
      "name": "Betfred (UK)",
@@ -1248,9 +1248,9 @@
     },
     {
      "name": "Casumo",
-     "home": 1.95,
+     "home": 2.0,
      "draw": 3.5,
-     "away": 3.3
+     "away": 3.2
     },
     {
      "name": "Coral",
@@ -1272,9 +1272,9 @@
     },
     {
      "name": "LeoVegas",
-     "home": 2.02,
-     "draw": 3.5,
-     "away": 3.25
+     "home": 2.05,
+     "draw": 3.45,
+     "away": 3.2
     },
     {
      "name": "LiveScore Bet",
@@ -1302,8 +1302,8 @@
     },
     {
      "name": "Unibet (UK)",
-     "home": 2.05,
-     "draw": 3.6,
+     "home": 2.1,
+     "draw": 3.5,
      "away": 3.4
     },
     {
@@ -1314,9 +1314,9 @@
     },
     {
      "name": "William Hill",
-     "home": 2.0,
-     "draw": 3.5,
-     "away": 3.5
+     "home": 2.05,
+     "draw": 3.6,
+     "away": 3.3
     }
    ]
   },
@@ -1327,75 +1327,75 @@
    "bookmakers": [
     {
      "name": "Bet Victor",
-     "home": 2.4,
+     "home": 2.55,
      "draw": 3.5,
-     "away": 2.3
+     "away": 2.2
     },
     {
      "name": "Betano (UK)",
-     "home": 2.4,
+     "home": 2.55,
      "draw": 3.5,
-     "away": 2.3
+     "away": 2.2
     },
     {
      "name": "Betfair",
-     "home": 2.76,
-     "draw": 3.6,
-     "away": 2.54
+     "home": 3.05,
+     "draw": 3.4,
+     "away": 2.48
     },
     {
      "name": "Betfred (UK)",
-     "home": 2.62,
+     "home": 2.8,
      "draw": 3.4,
-     "away": 2.6
+     "away": 2.5
     },
     {
      "name": "Betway",
-     "home": 2.6,
-     "draw": 3.5,
-     "away": 2.4
+     "home": 2.7,
+     "draw": 3.4,
+     "away": 2.3
     },
     {
      "name": "BoyleSports",
-     "home": 2.6,
-     "draw": 3.6,
-     "away": 2.4
+     "home": 2.7,
+     "draw": 3.5,
+     "away": 2.38
     },
     {
      "name": "Casumo",
-     "home": 2.6,
+     "home": 2.75,
      "draw": 3.4,
-     "away": 2.4
+     "away": 2.3
     },
     {
      "name": "LeoVegas",
-     "home": 2.6,
+     "home": 2.8,
      "draw": 3.4,
-     "away": 2.45
+     "away": 2.3
     },
     {
      "name": "Paddy Power",
-     "home": 2.62,
+     "home": 2.8,
      "draw": 3.5,
-     "away": 2.5
+     "away": 2.38
     },
     {
      "name": "Sky Bet",
-     "home": 2.63,
+     "home": 2.75,
      "draw": 3.5,
-     "away": 2.5
+     "away": 2.38
     },
     {
      "name": "Smarkets",
-     "home": 2.74,
-     "draw": 3.55,
-     "away": 2.52
+     "home": 3.0,
+     "draw": 3.25,
+     "away": 2.46
     },
     {
      "name": "Unibet (UK)",
-     "home": 2.65,
+     "home": 2.85,
      "draw": 3.4,
-     "away": 2.5
+     "away": 2.35
     }
    ]
   },
@@ -1469,7 +1469,7 @@
      "name": "Betway",
      "home": 1.53,
      "draw": 4.2,
-     "away": 5.25
+     "away": 5.0
     },
     {
      "name": "BoyleSports",
@@ -1736,9 +1736,9 @@
    "bookmakers": [
     {
      "name": "Betfair",
-     "home": 1.12,
-     "draw": 1.1,
-     "away": 1.1
+     "home": 1.87,
+     "draw": 3.85,
+     "away": 4.0
     },
     {
      "name": "Betfred (UK)",
@@ -1749,7 +1749,7 @@
     {
      "name": "Betway",
      "home": 1.83,
-     "draw": 3.75,
+     "draw": 3.8,
      "away": 3.75
     },
     {
@@ -1784,9 +1784,9 @@
     },
     {
      "name": "Smarkets",
-     "home": 1.73,
-     "draw": 3.3,
-     "away": 3.5
+     "home": 1.86,
+     "draw": 3.8,
+     "away": 3.95
     },
     {
      "name": "Unibet (UK)",
@@ -1801,6 +1801,12 @@
    "away": "Tottenham Hotspur",
    "commence": "2026-11-29T14:05:00Z",
    "bookmakers": [
+    {
+     "name": "Betfair",
+     "home": 1.1,
+     "draw": 1.1,
+     "away": 1.1
+    },
     {
      "name": "Betfred (UK)",
      "home": 3.2,
@@ -1827,19 +1833,31 @@
     },
     {
      "name": "LeoVegas",
-     "home": 3.1,
+     "home": 3.05,
      "draw": 3.3,
-     "away": 2.15
+     "away": 2.18
+    },
+    {
+     "name": "Paddy Power",
+     "home": 3.2,
+     "draw": 3.3,
+     "away": 2.2
+    },
+    {
+     "name": "Sky Bet",
+     "home": 3.2,
+     "draw": 3.3,
+     "away": 2.2
     },
     {
      "name": "Smarkets",
-     "home": 2.92,
+     "home": 2.9,
      "draw": 3.0,
-     "away": 2.04
+     "away": 2.06
     },
     {
      "name": "Unibet (UK)",
-     "home": 3.25,
+     "home": 3.1,
      "draw": 3.25,
      "away": 2.2
     }

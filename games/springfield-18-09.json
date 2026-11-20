@@ -4,14 +4,14 @@
  "competition": "Premier League",
  "status": "active",
  "started": "18 Sep 2026 (TBC)",
- "updated": "Mon 9 Nov 2026",
+ "updated": "Fri 20 Nov 2026",
  "next_week": "Week 6 (GW11)",
- "deadline": "Fri 20 Nov, 10:00",
- "headline": "Alfie S. 2 is through Week 5 with Liverpool (3-1 at Palace). 34 entries left. New plan: Aston Villa v Sunderland in Week 6, Leeds v Coventry in Week 7, then Chelsea at home to Palace in Week 8.",
+ "deadline": "Picks in for Week 6",
+ "headline": "Week 6 picks are in: 16 of 34 on Aston Villa, including Alfie S. 2. Then Leeds v Coventry in Week 7 and Chelsea at home to Palace in Week 8.",
  "result": "",
  "summary": {
   "entries_remaining": 34,
-  "entries_remaining_note": "After Week 5 (44 down to 34)",
+  "entries_remaining_note": "Going into Week 6 (GW11)",
   "knocked_out": 10,
   "knocked_out_pct": "23%",
   "knocked_out_note": "Week 5: Chelsea 7, Man City 2, Man Utd 1 (4-4 v Villa)",
@@ -20,7 +20,7 @@
   "my_alive_note": "Alfie S. 2 through Week 5 (Liverpool 3-1 at Palace). Alfie S. 1 out in Week 3",
   "next_pick": "Aston Villa",
   "next_pick_pct": 54,
-  "next_pick_note": "Alfie S. 2 v Sunderland (H), Sat 21 Nov, 15:00"
+  "next_pick_note": "Alfie S. 2 v Sunderland (H), Sat 21 Nov, 15:00. Submitted"
  },
  "weeks": [
   "Week 1",
@@ -82,6 +82,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   }
@@ -125,8 +130,8 @@
    "fixture": "Aston Villa v Sunderland (H)",
    "win_pct": 54,
    "source": "The Odds API (UK books)",
-   "backup": "Brentford v Everton (H) 48%",
-   "reason": "Best price Alfie S. 2 can use this week. Villa's December fixtures are no better (49% v Everton in Week 8), so spend them now. Keeps Chelsea for Palace at home in Week 8."
+   "backup": "Picks are in",
+   "reason": "Submitted. 16 of 34 are on Villa with you, so this one result decides almost half the field."
   },
   {
    "entry": "Alfie S. 2",
@@ -134,10 +139,10 @@
    "dates": "27-29 Nov",
    "pick": "Leeds",
    "fixture": "Leeds v Coventry (H)",
-   "win_pct": 66,
-   "source": "Model",
-   "backup": "Crystal Palace v Hull (H) 50%",
-   "reason": "Best price of the week and open to the whole field, so expect over a third of it here too."
+   "win_pct": 60,
+   "source": "The Odds API (UK books)",
+   "backup": "Crystal Palace v Hull (H) 51%",
+   "reason": "Best price Alfie S. 2 can use (Brighton 60% is used). Nobody has used Leeds, so if Villa win, expect a big Leeds pile-on."
   },
   {
    "entry": "Alfie S. 2",
@@ -152,11 +157,6 @@
   }
  ],
  "field": [
-  {
-   "team": "Aston Villa",
-   "share": 1.0,
-   "count": 34
-  },
   {
    "team": "Man Utd",
    "share": 1.0,
@@ -188,24 +188,29 @@
    "count": 32
   },
   {
-   "team": "Bournemouth",
-   "share": 0.853,
-   "count": 29
-  },
-  {
    "team": "Brentford",
    "share": 0.853,
    "count": 29
   },
   {
+   "team": "Bournemouth",
+   "share": 0.706,
+   "count": 24
+  },
+  {
    "team": "Liverpool",
-   "share": 0.676,
-   "count": 23
+   "share": 0.559,
+   "count": 19
+  },
+  {
+   "team": "Aston Villa",
+   "share": 0.529,
+   "count": 18
   },
   {
    "team": "Brighton",
-   "share": 0.588,
-   "count": 20
+   "share": 0.529,
+   "count": 18
   },
   {
    "team": "Everton",
@@ -214,18 +219,18 @@
   },
   {
    "team": "Spurs",
-   "share": 0.324,
-   "count": 11
-  },
-  {
-   "team": "Chelsea",
    "share": 0.206,
    "count": 7
   },
   {
+   "team": "Chelsea",
+   "share": 0.176,
+   "count": 6
+  },
+  {
    "team": "Man City",
-   "share": 0.118,
-   "count": 4
+   "share": 0.059,
+   "count": 2
   },
   {
    "team": "Arsenal",
@@ -240,7 +245,7 @@
    "date": "Sat 21 Nov, 12:30",
    "fixture": "Man City v Fulham",
    "favourite": "Man City",
-   "win_pct": 65,
+   "win_pct": 69,
    "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
@@ -250,7 +255,7 @@
    "date": "Sat 21 Nov, 15:00",
    "fixture": "Spurs v Ipswich",
    "favourite": "Spurs",
-   "win_pct": 61,
+   "win_pct": 62,
    "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
@@ -270,7 +275,7 @@
    "date": "Sat 21 Nov, 15:00",
    "fixture": "Chelsea v Leeds",
    "favourite": "Chelsea",
-   "win_pct": 52,
+   "win_pct": 50,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
@@ -280,7 +285,7 @@
    "date": "Sat 21 Nov, 15:00",
    "fixture": "Bournemouth v Forest",
    "favourite": "Bournemouth",
-   "win_pct": 47,
+   "win_pct": 49,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
   },
@@ -300,7 +305,7 @@
    "date": "Sat 21 Nov, 17:30",
    "fixture": "Newcastle v Arsenal",
    "favourite": "Arsenal",
-   "win_pct": 59,
+   "win_pct": 60,
    "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
@@ -310,7 +315,7 @@
    "date": "Sun 22 Nov, 14:00",
    "fixture": "Hull v Brighton",
    "favourite": "Brighton",
-   "win_pct": 62,
+   "win_pct": 63,
    "source": "The Odds API (UK books)",
    "my_entries": "Used"
   },
@@ -330,6 +335,36 @@
    "date": "Mon 23 Nov, 20:00",
    "fixture": "Brentford v Everton",
    "favourite": "Brentford",
+   "win_pct": 44,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Yes (1 of 1)"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Fri 27 Nov, 20:00",
+   "fixture": "Forest v Chelsea",
+   "favourite": "Chelsea",
+   "win_pct": 39,
+   "source": "The Odds API (UK books)",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Sat 28 Nov, 15:00",
+   "fixture": "Leeds v Coventry",
+   "favourite": "Leeds",
+   "win_pct": 60,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Yes (1 of 1)"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Sat 28 Nov, 15:00",
+   "fixture": "Man Utd v Brentford",
+   "favourite": "Man Utd",
    "win_pct": 48,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 1)"
@@ -337,102 +372,72 @@
   {
    "week": "Week 7",
    "gw": "GW12",
-   "date": "Fri 27 Nov",
-   "fixture": "Forest v Chelsea",
-   "favourite": "Forest",
-   "win_pct": 39,
-   "source": "Model",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sat 28 Nov",
-   "fixture": "Leeds v Coventry",
-   "favourite": "Leeds",
-   "win_pct": 66,
-   "source": "Model",
-   "my_entries": "Yes (1 of 1)"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sat 28 Nov, 17:30",
    "fixture": "Ipswich v Aston Villa",
    "favourite": "Aston Villa",
-   "win_pct": 57,
-   "source": "Model",
-   "my_entries": "Yes (1 of 1)"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sat 28 Nov",
-   "fixture": "Man Utd v Brentford",
-   "favourite": "Man Utd",
-   "win_pct": 42,
-   "source": "Model",
-   "my_entries": "No clear favourite"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Brighton v Newcastle",
-   "favourite": "Brighton",
-   "win_pct": 63,
-   "source": "Model",
-   "my_entries": "Used"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Arsenal v Man City",
-   "favourite": "Arsenal",
-   "win_pct": 52,
-   "source": "Model",
-   "my_entries": "Used"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Crystal Palace v Hull",
-   "favourite": "Crystal Palace",
-   "win_pct": 50,
-   "source": "Model",
-   "my_entries": "Yes (1 of 1)"
-  },
-  {
-   "week": "Week 7",
-   "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Fulham v Bournemouth",
-   "favourite": "Bournemouth",
    "win_pct": 47,
-   "source": "Model",
-   "my_entries": "Yes (1 of 1)"
+   "source": "The Odds API (UK books)",
+   "my_entries": "Used"
   },
   {
    "week": "Week 7",
    "gw": "GW12",
-   "date": "Sun 29 Nov",
+   "date": "Sun 29 Nov, 12:00",
    "fixture": "Everton v Liverpool",
    "favourite": "Liverpool",
+   "win_pct": 46,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Used"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Sun 29 Nov, 14:05",
+   "fixture": "Brighton v Newcastle",
+   "favourite": "Brighton",
+   "win_pct": 60,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Used"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Sun 29 Nov, 14:05",
+   "fixture": "Crystal Palace v Hull",
+   "favourite": "Crystal Palace",
+   "win_pct": 51,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Yes (1 of 1)"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Sun 29 Nov, 14:05",
+   "fixture": "Sunderland v Spurs",
+   "favourite": "Spurs",
    "win_pct": 42,
-   "source": "Model",
+   "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
   },
   {
    "week": "Week 7",
    "gw": "GW12",
-   "date": "Sun 29 Nov",
-   "fixture": "Sunderland v Spurs",
-   "favourite": "Sunderland",
-   "win_pct": 40,
-   "source": "Model",
+   "date": "Sun 29 Nov, 14:05",
+   "fixture": "Fulham v Bournemouth",
+   "favourite": "Bournemouth",
+   "win_pct": 37,
+   "source": "The Odds API (UK books)",
    "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 7",
+   "gw": "GW12",
+   "date": "Sun 29 Nov, 16:30",
+   "fixture": "Arsenal v Man City",
+   "favourite": "Arsenal",
+   "win_pct": 46,
+   "source": "The Odds API (UK books)",
+   "my_entries": "Used"
   },
   {
    "week": "Week 8",
@@ -482,7 +487,7 @@
    "favourite": "Aston Villa",
    "win_pct": 49,
    "source": "Model",
-   "my_entries": "Yes (1 of 1)"
+   "my_entries": "Used"
   },
   {
    "week": "Week 8",
@@ -536,18 +541,16 @@
   }
  ],
  "flags": [
-  "Plan change: Villa, Leeds, Chelsea replaces Chelsea, Leeds. Chance Alfie S. 2 is alive after Week 8: 20% v 16% with Chelsea first, because Chelsea at home to Palace (58%) beats Chelsea v Leeds (52%).",
-  "Week 8 is the midweek round (GW13, 1 to 2 December), confirmed by the organiser. Exact kick-off days and times to follow.",
-  "Week 6 is thin: the five best fixtures include Man City, Brighton, Spurs, Arsenal and Liverpool, all used. Villa (54%) is the best left.",
-  "Deadline is 10:00 on Friday 20 November, before any Week 6 game. Re-check prices that morning; Weeks 7 and 8 are model figures until markets open.",
-  "Nobody can use Arsenal, only 4 can use Man City and 7 Chelsea. Villa, Leeds, Man Utd and Sunderland are open to all 34."
+  "Week 6 picks: Aston Villa 16, Bournemouth 5, Liverpool 4, Spurs 4, Brighton 2, Man City 2, Chelsea 1. On today's prices about 19 of 34 get through.",
+  "Villa v Sunderland (Sat 15:00, 54%) carries 16 entries. If Villa slip, Alfie S. 2 goes out with almost half the field.",
+  "Week 7 markets are open: Leeds v Coventry 60% (the model had 66%), Palace v Hull 51%. Leeds is still the pick.",
+  "Week 8 is the midweek round (GW13, 1 to 2 December). Chelsea v Palace is a model figure until markets open.",
+  "Re-check Week 7 prices before that deadline."
  ],
  "pileons": [
-  "Week 5: Everton 16 of 44, Brighton and Liverpool 8 each. All won; the 7 on Chelsea went out.",
-  "Week 6 forecast: Aston Villa 20%, Brighton 20%, Liverpool 14%. Alfie S. 2 sits with the Villa group, about 7 entries.",
-  "Week 7 forecast: Leeds 37%, Aston Villa 15%, Crystal Palace 10%. Leeds is open to everyone, so it's the likely pile-on.",
-  "Week 8 forecast: Liverpool 23%, Forest 15%, Aston Villa 11%. Few can use Chelsea, so it's a contrarian pick.",
-  "Expected field: about 18 left after Week 6, 10 after Week 7, 5 after Week 8. 16% chance everyone else is out by then."
+  "Week 6: Aston Villa 16 of 34, Bournemouth 5, Liverpool and Spurs 4 each. Ciara C. is alone on Chelsea.",
+  "Week 7: nobody has used Leeds, so if Villa win, most of the Villa group will likely be on Leeds with Alfie S. 2.",
+  "Week 8: after Week 6, only 6 of 34 can still use Chelsea, so Alfie S. 2 should be close to alone there."
  ],
  "players": [
   {
@@ -578,6 +581,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -609,6 +617,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Brighton",
+     "result": ""
     }
    ]
   },
@@ -640,6 +653,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Bournemouth",
+     "result": ""
     }
    ]
   },
@@ -671,6 +689,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Chelsea",
+     "result": ""
     }
    ]
   },
@@ -702,6 +725,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Spurs",
+     "result": ""
     }
    ]
   },
@@ -733,6 +761,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -764,6 +797,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Man City",
+     "result": ""
     }
    ]
   },
@@ -795,6 +833,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Bournemouth",
+     "result": ""
     }
    ]
   },
@@ -826,6 +869,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -857,6 +905,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Liverpool",
+     "result": ""
     }
    ]
   },
@@ -888,6 +941,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Man City",
+     "result": ""
     }
    ]
   },
@@ -919,6 +977,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Liverpool",
+     "result": ""
     }
    ]
   },
@@ -950,6 +1013,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -981,6 +1049,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1012,6 +1085,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1043,6 +1121,11 @@
      "week": "Week 5",
      "team": "Everton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1074,6 +1157,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Spurs",
+     "result": ""
     }
    ]
   },
@@ -1105,6 +1193,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Bournemouth",
+     "result": ""
     }
    ]
   },
@@ -1136,6 +1229,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Spurs",
+     "result": ""
     }
    ]
   },
@@ -1167,6 +1265,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1198,6 +1301,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1229,6 +1337,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Liverpool",
+     "result": ""
     }
    ]
   },
@@ -1260,6 +1373,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Bournemouth",
+     "result": ""
     }
    ]
   },
@@ -1291,6 +1409,11 @@
      "week": "Week 5",
      "team": "Brighton",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1322,6 +1445,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Spurs",
+     "result": ""
     }
    ]
   },
@@ -1353,6 +1481,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1384,6 +1517,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1415,6 +1553,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1446,6 +1589,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Brighton",
+     "result": ""
     }
    ]
   },
@@ -1477,6 +1625,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1508,6 +1661,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1539,6 +1697,11 @@
      "week": "Week 5",
      "team": "Liverpool",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Bournemouth",
+     "result": ""
     }
    ]
   },
@@ -1570,6 +1733,11 @@
      "week": "Week 5",
      "team": "Bournemouth",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Aston Villa",
+     "result": ""
     }
    ]
   },
@@ -1601,6 +1769,11 @@
      "week": "Week 5",
      "team": "Bournemouth",
      "result": "W"
+    },
+    {
+     "week": "Week 6",
+     "team": "Liverpool",
+     "result": ""
     }
    ]
   },

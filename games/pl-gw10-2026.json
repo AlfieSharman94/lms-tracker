@@ -4,7 +4,7 @@
  "competition": "Premier League",
  "status": "active",
  "started": "GW10, Fri 6 Nov 2026",
- "updated": "Sun 8 Nov 2026",
+ "updated": "Fri 20 Nov 2026",
  "next_week": "Week 2 (GW11)",
  "deadline": "Sat 21 Nov, 12:30 (first kick-off)",
  "headline": "All three of our entries are through Week 1. 11 of 47 went out on Chelsea, Man City, Man Utd and Newcastle, leaving 36. Week 2 (after the international break): Alfie S. Man City, Ray S. Brighton, Joe S. Spurs.",
@@ -19,7 +19,7 @@
   "my_total": 3,
   "my_alive_note": "All three through Week 1 (Arsenal 1-0, Arsenal 1-0, Liverpool 3-1)",
   "next_pick": "Man City",
-  "next_pick_pct": 65,
+  "next_pick_pct": 69,
   "next_pick_note": "Alfie S. v Fulham (H), Sat 21 Nov 12:30. Ray S. Brighton, Joe S. Spurs"
  },
  "weeks": [
@@ -70,8 +70,8 @@
    "dates": "21-23 Nov",
    "pick": "Man City",
    "fixture": "Man City v Fulham (H)",
-   "win_pct": 65,
-   "source": "The Odds API (UK books)",
+   "win_pct": 69,
+   "source": "The Odds API (UK books), Fri 20 Nov",
    "backup": "Aston Villa v Sunderland 54%",
    "reason": "Best price of the week at home to Fulham, straight after the international break (no slot effect in 5,294 past games). About 22% of the field expected here."
   },
@@ -81,9 +81,9 @@
    "dates": "21-23 Nov",
    "pick": "Brighton",
    "fixture": "Hull v Brighton (A)",
-   "win_pct": 62,
-   "source": "The Odds API (UK books)",
-   "backup": "Newcastle v Arsenal 59%",
+   "win_pct": 63,
+   "source": "The Odds API (UK books), Fri 20 Nov",
+   "backup": "Newcastle v Arsenal 60%",
    "reason": "Hull are the weakest side in the model. Arsenal at Newcastle (59%) scores the same overall and only 11 entries can still use Arsenal, so it's kept for later."
   },
   {
@@ -93,7 +93,7 @@
    "pick": "Spurs",
    "fixture": "Spurs v Ipswich (H)",
    "win_pct": 62,
-   "source": "The Odds API (UK books)",
+   "source": "The Odds API (UK books), Fri 20 Nov",
    "backup": "Aston Villa v Sunderland 54%",
    "reason": "Spurs at home to Ipswich, who have the second-worst defence in the model. Keeps Joe S. off City and Brighton, so the three entries hold three different results."
   },
@@ -233,7 +233,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Chelsea v Leeds",
    "favourite": "Chelsea",
-   "win_pct": 52,
+   "win_pct": 50,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -243,7 +243,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Man City v Fulham",
    "favourite": "Man City",
-   "win_pct": 65,
+   "win_pct": 69,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -263,7 +263,7 @@
    "date": "Sun 22 Nov",
    "fixture": "Liverpool v Man Utd",
    "favourite": "Liverpool",
-   "win_pct": 52,
+   "win_pct": 54,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (2 of 3)"
   },
@@ -273,7 +273,7 @@
    "date": "Sun 22 Nov",
    "fixture": "Hull v Brighton",
    "favourite": "Brighton",
-   "win_pct": 62,
+   "win_pct": 63,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -283,7 +283,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Bournemouth v Forest",
    "favourite": "Bournemouth",
-   "win_pct": 47,
+   "win_pct": 49,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -303,7 +303,7 @@
    "date": "Mon 23 Nov",
    "fixture": "Brentford v Everton",
    "favourite": "Brentford",
-   "win_pct": 51,
+   "win_pct": 44,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (3 of 3)"
   },
@@ -323,7 +323,7 @@
    "date": "Sat 21 Nov",
    "fixture": "Newcastle v Arsenal",
    "favourite": "Arsenal",
-   "win_pct": 59,
+   "win_pct": 60,
    "source": "The Odds API (UK books)",
    "my_entries": "Yes (1 of 3)"
   },
@@ -530,8 +530,9 @@
  ],
  "flags": [
   "Week 1 done: all three through. 11 of 47 out (Chelsea 7, Man City 2, Man Utd 1, Newcastle 1).",
+  "Team news (Fri 20 Nov): City without Semenyo (and Rodri per reports), Brighton without Mitoma and Ferguson but Struijk and Azeez back, Spurs missing Simons and Odobert with Tel a doubt. Hull have several doubts. None of it changes the plan; prices held or firmed.",
   "No team clears the 70% bar in Weeks 2 to 4, so the three entries stay on different teams each week.",
-  "Week 2 is the split: Man City 65%, Brighton 62%, Spurs 62%. Chance at least one of ours gets through: about 95%.",
+  "Week 2 is the split: Man City 69%, Brighton 63%, Spurs 62% (Fri 20 Nov prices). Chance at least one of ours gets through: about 96%.",
   "Ray S. alternative for Week 2: Arsenal at Newcastle (59%) scores the same overall. Taking Brighton keeps Arsenal, which only 11 entries can still use, for a later week.",
   "Week 3 is thin: Leeds 66%, Brighton 63%, Villa 57% in the model, one entry on each.",
   "Week 4 is midweek GW13 (around Wed 2 Dec; exact kick-offs not out yet). Liverpool v Sunderland, Man City v Leeds and Chelsea v Palace are the three best; check the organiser's deadline for a midweek round.",

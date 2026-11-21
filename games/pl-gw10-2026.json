@@ -7,31 +7,32 @@
  "updated": "Sat 21 Nov 2026",
  "next_week": "Week 2 (GW11)",
  "deadline": "Picks in for Week 2",
- "headline": "Week 2 picks are in: 36 entries. Villa v Sunderland is the big group (11), then Man City (9) and Spurs (7). Ours: Alfie S. Man City, Ray S. Brighton, Joe S. Spurs. None of us is on Villa.",
+ "headline": "Saturday knocked out 22 of 36: Villa drew 0-0 (11), Man City drew 1-1 with Fulham (9, including Alfie S.) and Chelsea lost 1-4 to Leeds (2). Joe S. is through on Spurs. Ray S. is one of 3 on Brighton at Hull on Sunday. 14 left, 11 already through.",
  "result": "",
  "summary": {
-  "entries_remaining": 36,
-  "entries_remaining_note": "After Week 1 (47 down to 36)",
-  "knocked_out": 11,
-  "knocked_out_pct": "23%",
-  "knocked_out_note": "Week 1: Chelsea 7, Man City 2, Man Utd 1, Newcastle 1",
-  "my_alive": 3,
+  "entries_remaining": 14,
+  "entries_remaining_note": "11 through Week 2, 3 on Brighton (Sun)",
+  "knocked_out": 22,
+  "knocked_out_pct": "61%",
+  "knocked_out_note": "Week 2 so far: Villa 11, Man City 9, Chelsea 2",
+  "my_alive": 2,
   "my_total": 3,
-  "my_alive_note": "All three through Week 1 (Arsenal 1-0, Arsenal 1-0, Liverpool 3-1)",
-  "next_pick": "Man City",
-  "next_pick_pct": 69,
-  "next_pick_note": "Alfie S. v Fulham today 12:30. Joe S. Spurs 15:00, Ray S. at Hull Sun 14:00"
+  "my_alive_note": "Joe S. through (Spurs 2-0). Ray S. on Brighton Sun. Alfie S. out (Man City 1-1)",
+  "next_pick": "Brighton",
+  "next_pick_pct": 63,
+  "next_pick_note": "Ray S. at Hull, Sun 22 Nov 14:00"
  },
  "weeks": [
   "Week 1",
   "Week 2",
   "Week 3",
-  "Week 4"
+  "Week 4",
+  "Week 5"
  ],
  "entries": [
   {
    "entry": "Alfie S.",
-   "status": "Alive",
+   "status": "Out",
    "picks": [
     {
      "week": "Week 1",
@@ -41,7 +42,7 @@
     {
      "week": "Week 2",
      "team": "Man City",
-     "result": ""
+     "result": "D"
     }
    ]
   },
@@ -73,7 +74,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   }
@@ -87,8 +88,8 @@
    "fixture": "Man City v Fulham (H)",
    "win_pct": 69,
    "source": "The Odds API (UK books), Sat 21 Nov",
-   "backup": "Picks are in",
-   "reason": "Best price of the week at home to Fulham, straight after the international break (no slot effect in 5,294 past games). Submitted; 8 others on Man City."
+   "backup": "Out: drew",
+   "reason": "Man City drew 1-1 with Fulham. Alfie S. is out."
   },
   {
    "entry": "Ray S.",
@@ -109,11 +110,11 @@
    "fixture": "Spurs v Ipswich (H)",
    "win_pct": 62,
    "source": "The Odds API (UK books), Sat 21 Nov",
-   "backup": "Picks are in",
-   "reason": "Spurs at home to Ipswich, who have the second-worst defence in the model. Keeps Joe S. off City and Brighton, so the three entries hold three different results. Submitted; 6 others on Spurs."
+   "backup": "Through",
+   "reason": "Spurs won 2-0. Through."
   },
   {
-   "entry": "Alfie S.",
+   "entry": "Ray S.",
    "lms_week": "Week 3 (GW12)",
    "dates": "27-29 Nov",
    "pick": "Leeds",
@@ -121,18 +122,7 @@
    "win_pct": 60,
    "source": "The Odds API (UK books)",
    "backup": "Crystal Palace v Hull 51%",
-   "reason": "Best price of the week (now on bookmaker prices). About a quarter of the field forecast here."
-  },
-  {
-   "entry": "Ray S.",
-   "lms_week": "Week 3 (GW12)",
-   "dates": "27-29 Nov",
-   "pick": "Crystal Palace",
-   "fixture": "Crystal Palace v Hull (H)",
-   "win_pct": 51,
-   "source": "The Odds API (UK books)",
-   "backup": "Man Utd v Brentford 48%",
-   "reason": "Changed from Villa: bookmakers have Villa at Ipswich at only 47%. Palace at home to Hull is the third-best price of a thin week. Hull draw a lot, so this is the weakest link."
+   "reason": "Best price of a thin week (bookmakers). With Alfie S. out, Leeds is free for Ray S."
   },
   {
    "entry": "Joe S.",
@@ -143,102 +133,113 @@
    "win_pct": 58,
    "source": "The Odds API (UK books)",
    "backup": "Crystal Palace v Hull 51%",
-   "reason": "Second-best price of the week. Joe S. hasn't used Brighton; Ray S. will have in Week 2."
+   "reason": "Second-best price. Joe S. hasn't used Brighton."
   },
   {
-   "entry": "Alfie S.",
+   "entry": "Ray S.",
+   "lms_week": "Week 4 (GW13)",
+   "dates": "Around 2 Dec",
+   "pick": "Chelsea",
+   "fixture": "Chelsea v Crystal Palace (H)",
+   "win_pct": 57,
+   "source": "Model",
+   "backup": "Brentford v Arsenal 52%",
+   "reason": "Chelsea at home to Palace. Arsenal at Brentford stays as the backup and a card for later."
+  },
+  {
+   "entry": "Joe S.",
    "lms_week": "Week 4 (GW13)",
    "dates": "Around 2 Dec",
    "pick": "Liverpool",
    "fixture": "Liverpool v Sunderland (H)",
    "win_pct": 63,
    "source": "Model",
-   "backup": "Aston Villa v Everton 48%",
-   "reason": "Best price in midweek GW13; Ray S. can't use Liverpool, so Alfie S. takes it."
+   "backup": "Man City v Leeds 59%",
+   "reason": "Best price in midweek GW13, and Ray S. can't use Liverpool."
   },
   {
    "entry": "Ray S.",
-   "lms_week": "Week 4 (GW13)",
-   "dates": "Around 2 Dec",
-   "pick": "Arsenal",
-   "fixture": "Brentford v Arsenal (A)",
-   "win_pct": 52,
+   "lms_week": "Week 5 (GW14)",
+   "dates": "5-7 Dec",
+   "pick": "Bournemouth",
+   "fixture": "Bournemouth v Hull (H)",
+   "win_pct": 70,
    "source": "Model",
-   "backup": "Hull v Forest 47%",
-   "reason": "Ray S. is one of only 11 left who can use Arsenal. Model price until markets open."
+   "backup": "Aston Villa v Crystal Palace 61%",
+   "reason": "Bournemouth at home to Hull, the best model price of GW14 (Sat 5 Dec)."
   },
   {
    "entry": "Joe S.",
-   "lms_week": "Week 4 (GW13)",
-   "dates": "Around 2 Dec",
-   "pick": "Man City",
-   "fixture": "Man City v Leeds (H)",
-   "win_pct": 59,
+   "lms_week": "Week 5 (GW14)",
+   "dates": "5-7 Dec",
+   "pick": "Man Utd",
+   "fixture": "Man Utd v Coventry (H)",
+   "win_pct": 66,
    "source": "Model",
-   "backup": "Chelsea v Crystal Palace 57%",
-   "reason": "Joe S. hasn't used City. Chelsea v Palace (57%) is close behind as the backup."
+   "backup": "Leeds v Ipswich 63%",
+   "reason": "Man Utd at home to Coventry. Model price until markets open."
   }
  ],
  "field": [
   {
+   "team": "Man City",
+   "share": 1.0,
+   "count": 14
+  },
+  {
+   "team": "Chelsea",
+   "share": 1.0,
+   "count": 14
+  },
+  {
+   "team": "Aston Villa",
+   "share": 1.0,
+   "count": 14
+  },
+  {
    "team": "Leeds",
    "share": 1.0,
-   "count": 36
+   "count": 14
   },
   {
    "team": "Crystal Palace",
    "share": 1.0,
-   "count": 36
+   "count": 14
   },
   {
    "team": "Man Utd",
    "share": 1.0,
-   "count": 36
+   "count": 14
   },
   {
-   "team": "Chelsea",
-   "share": 0.944,
-   "count": 34
-  },
-  {
-   "team": "Brighton",
-   "share": 0.917,
-   "count": 33
+   "team": "Newcastle",
+   "share": 1.0,
+   "count": 14
   },
   {
    "team": "Liverpool",
-   "share": 0.889,
-   "count": 32
+   "share": 0.786,
+   "count": 11
   },
   {
-   "team": "Everton",
-   "share": 0.889,
-   "count": 32
+   "team": "Brighton",
+   "share": 0.786,
+   "count": 11
   },
   {
    "team": "Bournemouth",
-   "share": 0.833,
-   "count": 30
+   "share": 0.786,
+   "count": 11
   },
   {
    "team": "Spurs",
-   "share": 0.806,
-   "count": 29
-  },
-  {
-   "team": "Man City",
-   "share": 0.75,
-   "count": 27
-  },
-  {
-   "team": "Aston Villa",
-   "share": 0.694,
-   "count": 25
+   "share": 0.5,
+   "count": 7
   },
   {
    "team": "Arsenal",
-   "share": 0.306,
-   "count": 11
+   "share": 0.429,
+   "count": 6
   }
  ],
  "fixtures": [
@@ -350,7 +351,7 @@
    "favourite": "Leeds",
    "win_pct": 60,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 3",
@@ -360,17 +361,17 @@
    "favourite": "Aston Villa",
    "win_pct": 47,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sun 29 Nov",
    "fixture": "Arsenal v Man City",
    "favourite": "Arsenal",
    "win_pct": 45,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (1 of 3)"
+   "my_entries": "Yes (1 of 2)"
   },
   {
    "week": "Week 3",
@@ -380,22 +381,22 @@
    "favourite": "Man Utd",
    "win_pct": 48,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sun 29 Nov",
    "fixture": "Everton v Liverpool",
    "favourite": "Liverpool",
    "win_pct": 45,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (2 of 3)"
+   "my_entries": "Yes (1 of 2)"
   },
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sun 29 Nov",
    "fixture": "Fulham v Bournemouth",
    "favourite": "Bournemouth",
    "win_pct": 37,
@@ -405,7 +406,7 @@
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Fri 27 Nov",
    "fixture": "Forest v Chelsea",
    "favourite": "Chelsea",
    "win_pct": 39,
@@ -415,17 +416,17 @@
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sun 29 Nov",
    "fixture": "Brighton v Newcastle",
    "favourite": "Brighton",
    "win_pct": 58,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (2 of 3)"
+   "my_entries": "Yes (1 of 2)"
   },
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sun 29 Nov",
    "fixture": "Sunderland v Spurs",
    "favourite": "Spurs",
    "win_pct": 41,
@@ -435,12 +436,12 @@
   {
    "week": "Week 3",
    "gw": "GW12",
-   "date": "Sat 28 Nov",
+   "date": "Sun 29 Nov",
    "fixture": "Crystal Palace v Hull",
    "favourite": "Crystal Palace",
    "win_pct": 51,
    "source": "The Odds API (UK books)",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 4",
@@ -460,7 +461,7 @@
    "favourite": "Liverpool",
    "win_pct": 63,
    "source": "Model",
-   "my_entries": "Yes (2 of 3)"
+   "my_entries": "Yes (1 of 2)"
   },
   {
    "week": "Week 4",
@@ -470,7 +471,7 @@
    "favourite": "Forest",
    "win_pct": 47,
    "source": "Model",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 4",
@@ -480,7 +481,7 @@
    "favourite": "Chelsea",
    "win_pct": 57,
    "source": "Model",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 4",
@@ -490,7 +491,7 @@
    "favourite": "Aston Villa",
    "win_pct": 48,
    "source": "Model",
-   "my_entries": "Yes (3 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 4",
@@ -500,7 +501,7 @@
    "favourite": "Arsenal",
    "win_pct": 52,
    "source": "Model",
-   "my_entries": "Yes (1 of 3)"
+   "my_entries": "Yes (1 of 2)"
   },
   {
    "week": "Week 4",
@@ -520,7 +521,7 @@
    "favourite": "Man City",
    "win_pct": 59,
    "source": "Model",
-   "my_entries": "Yes (2 of 3)"
+   "my_entries": "Yes (2 of 2)"
   },
   {
    "week": "Week 4",
@@ -541,22 +542,121 @@
    "win_pct": 39,
    "source": "Model",
    "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Spurs v Arsenal",
+   "favourite": "Arsenal",
+   "win_pct": 62,
+   "source": "Model",
+   "my_entries": "Yes (1 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Man Utd v Coventry",
+   "favourite": "Man Utd",
+   "win_pct": 66,
+   "source": "Model",
+   "my_entries": "Yes (2 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Leeds v Ipswich",
+   "favourite": "Leeds",
+   "win_pct": 63,
+   "source": "Model",
+   "my_entries": "Yes (2 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Newcastle v Sunderland",
+   "favourite": "Newcastle",
+   "win_pct": 48,
+   "source": "Model",
+   "my_entries": "Yes (2 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Chelsea v Liverpool",
+   "favourite": "Liverpool",
+   "win_pct": 41,
+   "source": "Model",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Brentford v Man City",
+   "favourite": "Man City",
+   "win_pct": 44,
+   "source": "Model",
+   "my_entries": "No clear favourite"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Bournemouth v Hull",
+   "favourite": "Bournemouth",
+   "win_pct": 70,
+   "source": "Model",
+   "my_entries": "Yes (2 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Aston Villa v Crystal Palace",
+   "favourite": "Aston Villa",
+   "win_pct": 61,
+   "source": "Model",
+   "my_entries": "Yes (2 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Forest v Brighton",
+   "favourite": "Brighton",
+   "win_pct": 49,
+   "source": "Model",
+   "my_entries": "Yes (1 of 2)"
+  },
+  {
+   "week": "Week 5",
+   "gw": "GW14",
+   "date": "Sat 5 Dec",
+   "fixture": "Everton v Fulham",
+   "favourite": "Everton",
+   "win_pct": 49,
+   "source": "Model",
+   "my_entries": "Yes (2 of 2)"
   }
  ],
  "flags": [
-  "Week 1 done: all three through. 11 of 47 out (Chelsea 7, Man City 2, Man Utd 1, Newcastle 1).",
-  "Week 2 is in: Man City 69%, Brighton 63%, Spurs 62%. Chance at least one of ours gets through: about 96%. Expected through: 1.94 of 3.",
-  "The field's biggest Week 2 bet is Villa (11 entries, 54%). We have no one on it, so a Villa slip is pure gain for us.",
-  "Plan change: Ray S. Week 3 moves from Villa to Palace v Hull. Bookmakers now price Villa at Ipswich at 47% (the model had 57%). Ray S. then takes Arsenal in Week 4 and Joe S. Man City.",
+  "Week 1: all three through. 11 of 47 out.",
+  "Week 2 so far: Alfie S. out (Man City 1-1 Fulham). Joe S. through (Spurs 2-0). Ray S. on Brighton at Hull, Sun 14:00 (63%).",
+  "22 of 36 went out on Saturday. Only 11 are through so far, plus 3 on Brighton.",
+  "Plan change: with Alfie S. out, Leeds moves to Ray S. in Week 3 and Liverpool to Joe S. in Week 4. Palace v Hull is now the backup rather than a pick.",
   "Week 3 is thin on bookmaker prices: Leeds 60%, Brighton 58%, Palace 51%, then nothing above 48%.",
-  "No team clears the 70% bar in Weeks 3 or 4, so the entries stay split.",
-  "Week 4 is midweek GW13 (around Wed 2 Dec). Model prices until markets open; check the organiser's deadline for a midweek round."
+  "Weeks 4 and 5 are model prices until markets open. Week 4 is midweek (around Wed 2 Dec); check the organiser's deadline."
  ],
  "pileons": [
   "Week 1 (actual): Arsenal 25 of 47, all through. Chelsea 7, all out.",
-  "Week 2 (actual): Villa 11, Man City 9, Spurs 7, Bournemouth 3, Brighton 3, Chelsea 2, Coventry 1.",
-  "Week 3 forecast: Leeds v Coventry (25%) and Brighton v Newcastle (20%).",
-  "Week 4 forecast: Liverpool v Sunderland (25%), Chelsea v Palace (18%), Man City v Leeds (15%)."
+  "Week 2 (actual): Villa 11 and Man City 9, both drew; Chelsea 2 lost. Spurs 7, Bournemouth 3, Coventry 1 through. Brighton 3 on Sunday.",
+  "Week 3 forecast: Leeds v Coventry (25%) and Brighton v Newcastle (19%).",
+  "Week 4 forecast: Liverpool (21%), Man City (21%), Chelsea (18%). Week 5: Man Utd (22%), Bournemouth (21%)."
  ],
  "history": [
   {
@@ -565,56 +665,43 @@
    "entries_start": 47,
    "knocked_out": 11,
    "note": "Picks: Arsenal 25, Chelsea 7, Liverpool 4, Everton 4, Bournemouth 3, Man City 2, Man Utd 1, Newcastle 1. Sunderland beat Chelsea 1-0 (7 out), Forest beat Man City 3-1, Fulham 1-1 Newcastle, Man Utd failed to beat Villa. Arsenal 1-0 Hull, Liverpool 3-1 at Palace, Everton 3-1 Coventry and Bournemouth 2-1 at Ipswich all won."
+  },
+  {
+   "week": "Week 2",
+   "gw": "GW11",
+   "entries_start": 36,
+   "knocked_out": 22,
+   "note": "Picks: Aston Villa 11, Man City 9, Spurs 7, Bournemouth 3, Brighton 3, Chelsea 2, Coventry 1. Villa 0-0 Sunderland (11 out), Man City 1-1 Fulham (9 out, including Alfie S.), Chelsea 1-4 Leeds (2 out). Spurs 2-0 Ipswich, Bournemouth 2-0 Forest and Coventry 3-2 Palace won. Brighton (3) at Hull on Sunday still to come."
   }
  ],
  "series": "Cricketers",
  "forecast": {
-  "note": "Week 2 is the real sheet (the other 33 entries' picks). Weeks 3 and 4 are simulated from those picks and each player's used teams. Hover a bar for the fixture and win chance.",
-  "field_size": 33,
+  "note": "The other 12 entries still in after Saturday (2 of them on Brighton on Sunday), simulated through Weeks 3 to 5 from what each has used. Hover a bar for the fixture and win chance.",
+  "field_size": 12,
   "weeks": [
    {
     "week": "Week 2",
     "gw": "GW11",
-    "alive_start": 33.0,
-    "alive_end": 19.3,
+    "alive_start": 12.0,
+    "alive_end": 11.3,
     "teams": [
-     {
-      "team": "Aston Villa",
-      "fixture": "Aston Villa v Sunderland",
-      "ha": "H",
-      "win_pct": 54,
-      "price": "market",
-      "share": 0.333,
-      "count": 11.0,
-      "most_picked_pct": 100
-     },
-     {
-      "team": "Man City",
-      "fixture": "Man City v Fulham",
-      "ha": "H",
-      "win_pct": 69,
-      "price": "market",
-      "share": 0.242,
-      "count": 8.0,
-      "most_picked_pct": 0
-     },
      {
       "team": "Spurs",
       "fixture": "Spurs v Ipswich",
       "ha": "H",
-      "win_pct": 62,
-      "price": "market",
-      "share": 0.182,
+      "win_pct": 100,
+      "price": "result",
+      "share": 0.5,
       "count": 6.0,
-      "most_picked_pct": 0
+      "most_picked_pct": 100
      },
      {
       "team": "Bournemouth",
       "fixture": "Bournemouth v Forest",
       "ha": "H",
-      "win_pct": 49,
-      "price": "market",
-      "share": 0.091,
+      "win_pct": 100,
+      "price": "result",
+      "share": 0.25,
       "count": 3.0,
       "most_picked_pct": 0
      },
@@ -624,17 +711,7 @@
       "ha": "A",
       "win_pct": 63,
       "price": "market",
-      "share": 0.061,
-      "count": 2.0,
-      "most_picked_pct": 0
-     },
-     {
-      "team": "Chelsea",
-      "fixture": "Chelsea v Leeds",
-      "ha": "H",
-      "win_pct": 48,
-      "price": "market",
-      "share": 0.061,
+      "share": 0.167,
       "count": 2.0,
       "most_picked_pct": 0
      },
@@ -642,9 +719,9 @@
       "team": "Coventry",
       "fixture": "Coventry v Crystal Palace",
       "ha": "H",
-      "win_pct": 38,
-      "price": "market",
-      "share": 0.03,
+      "win_pct": 100,
+      "price": "result",
+      "share": 0.083,
       "count": 1.0,
       "most_picked_pct": 0
      },
@@ -659,10 +736,30 @@
       "most_picked_pct": 0
      },
      {
-      "team": "Crystal Palace",
-      "fixture": "Coventry v Crystal Palace",
+      "team": "Aston Villa",
+      "fixture": "Aston Villa v Sunderland",
+      "ha": "H",
+      "win_pct": 0,
+      "price": "result",
+      "share": 0.0,
+      "count": 0.0,
+      "most_picked_pct": 0
+     },
+     {
+      "team": "Chelsea",
+      "fixture": "Chelsea v Leeds",
+      "ha": "H",
+      "win_pct": 0,
+      "price": "result",
+      "share": 0.0,
+      "count": 0.0,
+      "most_picked_pct": 0
+     },
+     {
+      "team": "Arsenal",
+      "fixture": "Newcastle v Arsenal",
       "ha": "A",
-      "win_pct": 34,
+      "win_pct": 61,
       "price": "market",
       "share": 0.0,
       "count": 0.0,
@@ -677,14 +774,24 @@
       "share": 0.0,
       "count": 0.0,
       "most_picked_pct": 0
+     },
+     {
+      "team": "Forest",
+      "fixture": "Bournemouth v Forest",
+      "ha": "A",
+      "win_pct": 0,
+      "price": "result",
+      "share": 0.0,
+      "count": 0.0,
+      "most_picked_pct": 0
      }
     ]
    },
    {
     "week": "Week 3",
     "gw": "GW12",
-    "alive_start": 19.3,
-    "alive_end": 9.8,
+    "alive_start": 11.3,
+    "alive_end": 5.7,
     "teams": [
      {
       "team": "Leeds",
@@ -692,9 +799,9 @@
       "ha": "H",
       "win_pct": 60,
       "price": "market",
-      "share": 0.25,
-      "count": 4.8,
-      "most_picked_pct": 34
+      "share": 0.249,
+      "count": 2.8,
+      "most_picked_pct": 32
      },
      {
       "team": "Brighton",
@@ -702,9 +809,9 @@
       "ha": "H",
       "win_pct": 58,
       "price": "market",
-      "share": 0.202,
-      "count": 3.9,
-      "most_picked_pct": 28
+      "share": 0.191,
+      "count": 2.1,
+      "most_picked_pct": 27
      },
      {
       "team": "Crystal Palace",
@@ -712,9 +819,9 @@
       "ha": "H",
       "win_pct": 51,
       "price": "market",
-      "share": 0.123,
-      "count": 2.4,
-      "most_picked_pct": 13
+      "share": 0.126,
+      "count": 1.4,
+      "most_picked_pct": 14
      },
      {
       "team": "Man Utd",
@@ -722,19 +829,9 @@
       "ha": "H",
       "win_pct": 48,
       "price": "market",
-      "share": 0.094,
-      "count": 1.8,
-      "most_picked_pct": 8
-     },
-     {
-      "team": "Liverpool",
-      "fixture": "Everton v Liverpool",
-      "ha": "A",
-      "win_pct": 45,
-      "price": "market",
-      "share": 0.064,
-      "count": 1.2,
-      "most_picked_pct": 4
+      "share": 0.092,
+      "count": 1.0,
+      "most_picked_pct": 7
      },
      {
       "team": "Aston Villa",
@@ -742,19 +839,19 @@
       "ha": "A",
       "win_pct": 47,
       "price": "market",
-      "share": 0.057,
-      "count": 1.1,
-      "most_picked_pct": 6
+      "share": 0.083,
+      "count": 0.9,
+      "most_picked_pct": 9
      },
      {
-      "team": "Spurs",
-      "fixture": "Sunderland v Spurs",
+      "team": "Liverpool",
+      "fixture": "Everton v Liverpool",
       "ha": "A",
-      "win_pct": 41,
+      "win_pct": 45,
       "price": "market",
-      "share": 0.036,
-      "count": 0.7,
-      "most_picked_pct": 1
+      "share": 0.058,
+      "count": 0.6,
+      "most_picked_pct": 3
      },
      {
       "team": "Chelsea",
@@ -762,9 +859,19 @@
       "ha": "A",
       "win_pct": 39,
       "price": "market",
-      "share": 0.033,
-      "count": 0.6,
+      "share": 0.034,
+      "count": 0.4,
       "most_picked_pct": 2
+     },
+     {
+      "team": "Arsenal",
+      "fixture": "Arsenal v Man City",
+      "ha": "H",
+      "win_pct": 45,
+      "price": "market",
+      "share": 0.028,
+      "count": 0.3,
+      "most_picked_pct": 1
      },
      {
       "team": "Fulham",
@@ -772,27 +879,27 @@
       "ha": "H",
       "win_pct": 36,
       "price": "market",
-      "share": 0.026,
-      "count": 0.5,
+      "share": 0.025,
+      "count": 0.3,
       "most_picked_pct": 1
      },
      {
-      "team": "Bournemouth",
-      "fixture": "Fulham v Bournemouth",
+      "team": "Spurs",
+      "fixture": "Sunderland v Spurs",
       "ha": "A",
-      "win_pct": 37,
+      "win_pct": 41,
       "price": "market",
-      "share": 0.023,
-      "count": 0.4,
-      "most_picked_pct": 1
+      "share": 0.021,
+      "count": 0.2,
+      "most_picked_pct": 0
      }
     ]
    },
    {
     "week": "Week 4",
     "gw": "GW13",
-    "alive_start": 9.8,
-    "alive_end": 5.1,
+    "alive_start": 5.7,
+    "alive_end": 3.0,
     "teams": [
      {
       "team": "Liverpool",
@@ -800,19 +907,9 @@
       "ha": "H",
       "win_pct": 63,
       "price": "model",
-      "share": 0.254,
-      "count": 2.5,
-      "most_picked_pct": 30
-     },
-     {
-      "team": "Chelsea",
-      "fixture": "Chelsea v Crystal Palace",
-      "ha": "H",
-      "win_pct": 57,
-      "price": "model",
-      "share": 0.178,
-      "count": 1.8,
-      "most_picked_pct": 23
+      "share": 0.212,
+      "count": 1.2,
+      "most_picked_pct": 22
      },
      {
       "team": "Man City",
@@ -820,19 +917,19 @@
       "ha": "H",
       "win_pct": 59,
       "price": "model",
-      "share": 0.148,
-      "count": 1.5,
-      "most_picked_pct": 13
+      "share": 0.206,
+      "count": 1.2,
+      "most_picked_pct": 19
      },
      {
-      "team": "Forest",
-      "fixture": "Hull v Forest",
-      "ha": "A",
-      "win_pct": 47,
+      "team": "Chelsea",
+      "fixture": "Chelsea v Crystal Palace",
+      "ha": "H",
+      "win_pct": 57,
       "price": "model",
-      "share": 0.079,
-      "count": 0.8,
-      "most_picked_pct": 7
+      "share": 0.176,
+      "count": 1.0,
+      "most_picked_pct": 22
      },
      {
       "team": "Aston Villa",
@@ -840,29 +937,19 @@
       "ha": "H",
       "win_pct": 48,
       "price": "model",
-      "share": 0.058,
-      "count": 0.6,
-      "most_picked_pct": 7
+      "share": 0.078,
+      "count": 0.4,
+      "most_picked_pct": 10
      },
      {
-      "team": "Coventry",
-      "fixture": "Coventry v Ipswich",
-      "ha": "H",
-      "win_pct": 41,
+      "team": "Forest",
+      "fixture": "Hull v Forest",
+      "ha": "A",
+      "win_pct": 47,
       "price": "model",
-      "share": 0.041,
+      "share": 0.074,
       "count": 0.4,
-      "most_picked_pct": 3
-     },
-     {
-      "team": "Spurs",
-      "fixture": "Spurs v Fulham",
-      "ha": "H",
-      "win_pct": 43,
-      "price": "model",
-      "share": 0.039,
-      "count": 0.4,
-      "most_picked_pct": 2
+      "most_picked_pct": 6
      },
      {
       "team": "Arsenal",
@@ -870,8 +957,18 @@
       "ha": "A",
       "win_pct": 52,
       "price": "model",
-      "share": 0.036,
+      "share": 0.046,
       "count": 0.3,
+      "most_picked_pct": 5
+     },
+     {
+      "team": "Coventry",
+      "fixture": "Coventry v Ipswich",
+      "ha": "H",
+      "win_pct": 41,
+      "price": "model",
+      "share": 0.035,
+      "count": 0.2,
       "most_picked_pct": 3
      },
      {
@@ -880,8 +977,18 @@
       "ha": "A",
       "win_pct": 39,
       "price": "model",
-      "share": 0.029,
-      "count": 0.3,
+      "share": 0.027,
+      "count": 0.2,
+      "most_picked_pct": 1
+     },
+     {
+      "team": "Newcastle",
+      "fixture": "Newcastle v Man Utd",
+      "ha": "H",
+      "win_pct": 37,
+      "price": "model",
+      "share": 0.025,
+      "count": 0.1,
       "most_picked_pct": 1
      },
      {
@@ -890,346 +997,134 @@
       "ha": "H",
       "win_pct": 39,
       "price": "model",
-      "share": 0.029,
-      "count": 0.3,
+      "share": 0.023,
+      "count": 0.1,
       "most_picked_pct": 2
+     }
+    ]
+   },
+   {
+    "week": "Week 5",
+    "gw": "GW14",
+    "alive_start": 3.0,
+    "alive_end": 1.8,
+    "teams": [
+     {
+      "team": "Man Utd",
+      "fixture": "Man Utd v Coventry",
+      "ha": "H",
+      "win_pct": 66,
+      "price": "model",
+      "share": 0.223,
+      "count": 0.7,
+      "most_picked_pct": 16
+     },
+     {
+      "team": "Bournemouth",
+      "fixture": "Bournemouth v Hull",
+      "ha": "H",
+      "win_pct": 70,
+      "price": "model",
+      "share": 0.211,
+      "count": 0.6,
+      "most_picked_pct": 21
+     },
+     {
+      "team": "Aston Villa",
+      "fixture": "Aston Villa v Crystal Palace",
+      "ha": "H",
+      "win_pct": 61,
+      "price": "model",
+      "share": 0.148,
+      "count": 0.4,
+      "most_picked_pct": 16
+     },
+     {
+      "team": "Leeds",
+      "fixture": "Leeds v Ipswich",
+      "ha": "H",
+      "win_pct": 63,
+      "price": "model",
+      "share": 0.138,
+      "count": 0.4,
+      "most_picked_pct": 11
+     },
+     {
+      "team": "Arsenal",
+      "fixture": "Spurs v Arsenal",
+      "ha": "A",
+      "win_pct": 62,
+      "price": "model",
+      "share": 0.056,
+      "count": 0.2,
+      "most_picked_pct": 7
+     },
+     {
+      "team": "Newcastle",
+      "fixture": "Newcastle v Sunderland",
+      "ha": "H",
+      "win_pct": 48,
+      "price": "model",
+      "share": 0.054,
+      "count": 0.2,
+      "most_picked_pct": 2
+     },
+     {
+      "team": "Everton",
+      "fixture": "Everton v Fulham",
+      "ha": "H",
+      "win_pct": 49,
+      "price": "model",
+      "share": 0.047,
+      "count": 0.1,
+      "most_picked_pct": 3
+     },
+     {
+      "team": "Brighton",
+      "fixture": "Forest v Brighton",
+      "ha": "A",
+      "win_pct": 49,
+      "price": "model",
+      "share": 0.042,
+      "count": 0.1,
+      "most_picked_pct": 3
+     },
+     {
+      "team": "Man City",
+      "fixture": "Brentford v Man City",
+      "ha": "A",
+      "win_pct": 44,
+      "price": "model",
+      "share": 0.029,
+      "count": 0.1,
+      "most_picked_pct": 1
+     },
+     {
+      "team": "Liverpool",
+      "fixture": "Chelsea v Liverpool",
+      "ha": "A",
+      "win_pct": 41,
+      "price": "model",
+      "share": 0.014,
+      "count": 0.0,
+      "most_picked_pct": 0
      }
     ]
    }
   ],
   "insights": [
-   "Week 2 actual (others): Villa 11, Man City 8, Spurs 6, Bournemouth 3, Brighton 2, Chelsea 2, Coventry 1. The model had Villa at 9%; it came in at 33%, its second big miss after Chelsea in Week 1. City and Spurs landed close to forecast.",
-   "On today's prices about 19 of the other 33 get through Week 2. A Villa slip (46% chance) takes out 11 of them and none of ours.",
-   "Week 3 forecast: Leeds 25%, Brighton 20%, Crystal Palace 12%. Week 4: Liverpool 25%, Chelsea 18%, Man City 15%.",
-   "Expected field: 10 of the others left after Week 3, 5 after Week 4. About a 14% chance all of them are out by then.",
-   "Our plan: at least one of ours alive after Week 4 52%, holding about 13% of everyone still standing (we're 3 of 36, 8%).",
-   "Pattern so far: the group's surprise pile-ons are on mid-priced home sides the model ranks fourth or fifth (Chelsea, then Villa), not on outsiders.",
+   "Saturday was brutal: 22 of 36 out. Villa (11) and City (9) both drew, Chelsea (2) lost. The field's two biggest bets both failed.",
+   "Left: 14 entries (11 through, 3 on Brighton Sunday). Our 2 are 14% of them.",
+   "Week 3 forecast: Leeds 25%, Brighton 19%, Crystal Palace 13%. Week 4: Liverpool 21%, Man City 21%, Chelsea 18%.",
+   "Expected others left: 6 after Week 3, 3 after Week 4, 2 after Week 5. About a 32% chance all of them are out by then.",
+   "Our plan: at least one of Ray S. and Joe S. alive after Week 5 35%, holding about 15% of everyone still standing.",
+   "Pattern so far: the group's surprise pile-ons are on mid-priced home sides the model ranks fourth or fifth (Chelsea, then Villa), and both have failed.",
    "Group habit across six games (648 picks): win chance drives picks more than anything else, and 69% of picks were one of the player's three best options left. Draws cause 45% of exits.",
    "Matt W. and Chris S. picked the same team again (Spurs): 7 weeks running across two games."
   ],
-  "method": "Model fitted on all six past Cricketers games and checked against 06/11 Week 1. Week 2 from the organiser's sheet; Weeks 3 and 4 simulated 20,000 times from the alive players and the teams they've used. Win chances are bookmaker prices for Weeks 2 and 3 and a rating model (updated with GW10 results) for Week 4. Our plan chosen to maximise our share of everyone still standing after Week 4, with our entries on different teams each week."
+  "method": "Model fitted on all six past Cricketers games. Saturday's results are fixed; Brighton v Hull and Weeks 3 to 5 are simulated 20,000 times from the alive players and the teams they've used. Win chances are bookmaker prices where markets are open (Weeks 2 and 3) and a rating model for Weeks 4 and 5. Our plan chosen to maximise our share of everyone still standing after Week 5, with our two entries on different teams each week."
  },
  "players": [
-  {
-   "name": "Anna T.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Alan D.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Elsie L.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Kevin B.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Joel R.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Tim S.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Royston W.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Ian M.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Paul T.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Everton",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Tom N.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Bournemouth",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Bradley B.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Bournemouth",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Aston Villa",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Jimmy W.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Mike J.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Alfie S.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Lee B.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Abbey N.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Jack L.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Ant D.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Jay W.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Liverpool",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Paul H.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Bournemouth",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Man City",
-     "result": ""
-    }
-   ]
-  },
   {
    "name": "Craig N.",
    "status": "Alive",
@@ -1242,7 +1137,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1258,7 +1153,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1274,7 +1169,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1290,7 +1185,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1306,7 +1201,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1322,7 +1217,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1338,7 +1233,7 @@
     {
      "week": "Week 2",
      "team": "Spurs",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1354,7 +1249,7 @@
     {
      "week": "Week 2",
      "team": "Bournemouth",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1370,7 +1265,7 @@
     {
      "week": "Week 2",
      "team": "Bournemouth",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1386,7 +1281,7 @@
     {
      "week": "Week 2",
      "team": "Bournemouth",
-     "result": ""
+     "result": "W"
     }
    ]
   },
@@ -1439,38 +1334,6 @@
    ]
   },
   {
-   "name": "Albie N.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Chelsea",
-     "result": ""
-    }
-   ]
-  },
-  {
-   "name": "Jenny D.",
-   "status": "Alive",
-   "picks": [
-    {
-     "week": "Week 1",
-     "team": "Arsenal",
-     "result": "W"
-    },
-    {
-     "week": "Week 2",
-     "team": "Chelsea",
-     "result": ""
-    }
-   ]
-  },
-  {
    "name": "Terri B.",
    "status": "Alive",
    "picks": [
@@ -1482,7 +1345,359 @@
     {
      "week": "Week 2",
      "team": "Coventry",
-     "result": ""
+     "result": "W"
+    }
+   ]
+  },
+  {
+   "name": "Anna T.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Alan D.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Elsie L.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Kevin B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Joel R.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Tim S.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Royston W.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ian M.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Paul T.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Everton",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Tom N.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Bradley B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Aston Villa",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jimmy W.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Mike J.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Alfie S.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Lee B.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Abbey N.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jack L.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Ant D.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Jay W.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Liverpool",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Paul H.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Bournemouth",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Man City",
+     "result": "D"
+    }
+   ]
+  },
+  {
+   "name": "Albie N.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "L"
+    }
+   ]
+  },
+  {
+   "name": "Jenny D.",
+   "status": "Out Week 2",
+   "picks": [
+    {
+     "week": "Week 1",
+     "team": "Arsenal",
+     "result": "W"
+    },
+    {
+     "week": "Week 2",
+     "team": "Chelsea",
+     "result": "L"
     }
    ]
   },
